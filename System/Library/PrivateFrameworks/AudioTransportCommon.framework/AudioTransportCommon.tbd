@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           DFF584D4-7ED7-33DE-87F2-527807E16F3E
+  - target:          arm64e-ios
+    value:           9A54B439-699C-3AF2-83FA-CFED2C4F191E
+install-name:    '/System/Library/PrivateFrameworks/AudioTransportCommon.framework/AudioTransportCommon'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AudioTransportCommonVersionNumber, _AudioTransportCommonVersionString, 
+                       _Float64ToIOAudio2Fixed64, _IOAudio2Fixed64ToFloat64 ]
+    objc-classes:    [ ATCIOA2Device, ATCIOA2Stream, ATCIOA2StreamFormat ]
+...

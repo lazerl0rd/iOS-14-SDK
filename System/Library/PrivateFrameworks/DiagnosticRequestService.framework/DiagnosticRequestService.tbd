@@ -1,0 +1,32 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           75D86BC8-9517-381A-8EF4-1C85BF648ACB
+  - target:          arm64e-ios
+    value:           D548CF42-5A7E-3503-8E49-722FFBB24AB5
+install-name:    '/System/Library/PrivateFrameworks/DiagnosticRequestService.framework/DiagnosticRequestService'
+current-version: 4
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _DRSContextDictionaryForData, _DRSDBFilePath, _DRSDampeningOutcomeStringForOutcome, 
+                       _DRSPersistentContainer, _DRSRequestOutcomeForState, _DRSRequestStateForDampeningOutcome, 
+                       _DRSSystemProfilePlatformStringForPlatform, _DRSSystemProfileVariantStringForParameters, 
+                       _kDRSDMAcceptAll, _kDRSDMDefaultSignatureAcceptanceRate, _kDRSDMDefaultSignatureCap, 
+                       _kDRSDMDefaultSignatureHysteresis, _kDRSDMDefaultTailspinHysteresis, 
+                       _kDRSDMDefaultTotalCap, _kDRSDMHangTracerFirstPartyLongHangIssueCategory, 
+                       _kDRSDMHangTracerFirstPartyMicroHangIssueCategory, _kDRSDMHangTracerFirstPartyNormalHangIssueCategory, 
+                       _kDRSDMHangTracerTeamID, _kDRSDMHangTracerThirdPartyLongHangIssueCategory, 
+                       _kDRSDMHangTracerThirdPartyNormalHangIssueCategory, _kDRSDMNandTeamID, 
+                       _kDRSDMNoCap, _kDRSDMNoHysteresis, _kDRSRequestNoFetchLimit, 
+                       _kDRSRequestResourceTailspin ]
+    objc-classes:    [ DRSCloudKitHelper, DRSDampeningConfiguration, DRSDampeningEnforcementSettings, 
+                       DRSDampeningManager, DRSDecisionServerRequestReply, DRSEnableDataGatheringQuery, 
+                       DRSRequest, DRSService, DRSSubmitLogRequest, DRSSystemProfile, 
+                       DRSTailspinRequest, DRSTeamDampeningConfiguration ]
+...

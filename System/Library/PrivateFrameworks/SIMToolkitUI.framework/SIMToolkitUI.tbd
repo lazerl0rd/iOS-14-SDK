@@ -1,0 +1,35 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           41E1273F-C507-3162-BE51-FC126F7ECF68
+  - target:          arm64e-ios
+    value:           36AD662B-A604-3DB2-8712-A290FB1C7998
+install-name:    '/System/Library/PrivateFrameworks/SIMToolkitUI.framework/SIMToolkitUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _NSStringFromSTKSIMToolkitEvent, _NSStringFromSTKSessionResponseType, 
+                       _STKAlertSessionManagerStart, _STKClass0SMSLog, _STKCommonLog, 
+                       _STKSIMToolkitLog, _STKUSSDHostCommunicationInterface, _STKUSSDLog, 
+                       _STKUSSDSessionCommunicationInterface, _STKUSSDSupplementaryServiceEventTypeKey, 
+                       _STKUSSDSupplementaryServiceNotificationDataKey, _STKUSSDSupplementaryServiceSettingTypeKey ]
+    objc-classes:    [ STKAlertSession, STKAlertSessionEventQueue, STKAlertSessionManager, 
+                       STKCallSetupSessionAction, STKCarrierSubscriptionInfo, STKCarrierSubscriptionMonitor, 
+                       STKClass0SMSAlertSession, STKClass0SMSAlertSessionManager, 
+                       STKClass0SMSSessionAction, STKClass0SMSSessionData, STKIncomingCallUIStateMonitor, 
+                       STKListItem, STKListItemsSessionAction, STKListItemsSessionData, 
+                       STKMutableCallSetupSessionData, STKMutableSessionBehavior, 
+                       STKMutableTextInputSessionData, STKNotifySessionAction, STKNotifySessionData, 
+                       STKSIMToolkitAlertSession, STKSIMToolkitAlertSessionManager, 
+                       STKSessionAction, STKSoundFactory, STKTelephonySelectionListItemsProvider, 
+                       STKTextInputSessionAction, STKTextSessionAction, STKTextSessionData, 
+                       STKUSSDAlertSession, STKUSSDAlertSessionManager, STKUSSDFilter, 
+                       STKUSSDSessionAction, STKUSSDSessionData, STKUserEventMonitor, 
+                       STKYesNoSessionAction, _STKRemoteAlertDescriptor, _STKSIMToolkitResponseProvider, 
+                       _STKUSSDResponseProvider ]
+...

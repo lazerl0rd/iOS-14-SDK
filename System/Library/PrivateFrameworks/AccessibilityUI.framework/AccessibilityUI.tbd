@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           AFA2EEC5-FD1E-3A5F-A367-BE2BC7AB3ABF
+  - target:          arm64e-ios
+    value:           5027F9AB-4153-37F5-AC07-74559928178F
+install-name:    '/System/Library/PrivateFrameworks/AccessibilityUI.framework/AccessibilityUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ AXUIClient, AXUIClientConnection ]
+...

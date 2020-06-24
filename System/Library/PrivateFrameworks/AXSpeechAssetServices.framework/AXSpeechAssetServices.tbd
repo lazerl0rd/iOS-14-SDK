@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           34BD2ED5-4344-3774-B95C-943060A54107
+  - target:          arm64e-ios
+    value:           EC627B53-BA59-3A58-A4CD-143CB184F630
+install-name:    '/System/Library/PrivateFrameworks/AXSpeechAssetServices.framework/AXSpeechAssetServices'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AVSpeechSynthesisVoiceIdentifierFred, _AVSpeechSynthesisVoiceIdentifierVictoria ]
+    objc-classes:    [ AXSettingsVoiceAssetManager, AXSpeechAssetMonitorHelper, AXSpeechPronunciationHelper, 
+                       AXSpeechPronunciationOptions ]
+...

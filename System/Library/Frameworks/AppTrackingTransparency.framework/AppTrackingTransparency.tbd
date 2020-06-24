@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           1B6B54DC-9306-3E31-84CD-0E5F3A7B9211
+  - target:          arm64e-ios
+    value:           6A9727A0-9A45-3CC2-B2F1-87E626D0C5FD
+install-name:    '/System/Library/Frameworks/AppTrackingTransparency.framework/AppTrackingTransparency'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AppTrackingTransparencyVersionNumber, _AppTrackingTransparencyVersionString ]
+    objc-classes:    [ ATTrackingManager ]
+...

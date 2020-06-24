@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           86AC6E99-E5CB-3B2C-9C65-8701DC162715
+  - target:          arm64e-ios
+    value:           AAD54AD8-8F81-3695-9A93-EA9171CF8823
+install-name:    '/System/Library/PrivateFrameworks/ShazamKitUI.framework/ShazamKitUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ SHListeningLayer ]
+...

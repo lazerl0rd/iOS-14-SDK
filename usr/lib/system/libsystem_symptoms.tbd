@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           E89D3484-A9F5-3D40-B748-8C43082B3A5F
+  - target:          armv7s-ios
+    value:           BD7353A8-1C7E-373B-863B-E661CB0CD846
+  - target:          arm64-ios
+    value:           0674845C-C8BF-3A58-9179-AE2C3D56C648
+  - target:          arm64e-ios
+    value:           1A1DF944-2685-31B9-8A12-A4EA1750A596
+install-name:    '/usr/lib/system/libsystem_symptoms.dylib'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ __symptoms_daemon_fallback_initial_disposition, __symptoms_daemon_fallback_subseq_disposition, 
+                       __symptoms_is_daemon_fallback_blacklisted, _symptom_framework_init, 
+                       _symptom_framework_set_version, _symptom_new, _symptom_send, 
+                       _symptom_send_immediate, _symptom_set_additional_qualifier, 
+                       _symptom_set_qualifier ]
+...

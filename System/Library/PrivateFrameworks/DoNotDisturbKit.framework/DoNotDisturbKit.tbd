@@ -1,0 +1,28 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           F228B539-E50B-33E9-B7B5-A7B85F8F88E9
+  - target:          arm64e-ios
+    value:           2DBB0D75-6FCC-3454-A683-2A171C170B1C
+install-name:    '/System/Library/PrivateFrameworks/DoNotDisturbKit.framework/DoNotDisturbKit'
+allowable-clients:
+  - targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    clients:         [ DoNotDisturbKitTests, DoNotDisturbModule, DoNotDisturbSettings, 
+                       NanoSettings, NanoSettingsGlance, SpringBoard, SpringBoardCore ]
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _DNDEndOfEventAssertionIdentifier, _DNDKitRegisterLogging, 
+                       _DNDLogLocation, _DNDLogNotifications, _DNDLogToggleManager, 
+                       _DNDOneHourLifetimeIdentifier, _DNDStringFromToggleTargetState, 
+                       _DNDUntilEveningAssertionIdentifier, _DNDUntilILeaveAssertionIdentifier, 
+                       _DNDUntilMorningAssertionIdentifier, _DoNotDisturbKitVersionNumber, 
+                       _DoNotDisturbKitVersionString, _kEventSearchTime, _kLOIHighConfidence ]
+    objc-classes:    [ DNDAWDMetricsService, DNDLifetimeDetails, DNDLifetimeDetailsProvider, 
+                       DNDNotificationsService, DNDToggleManager ]
+...

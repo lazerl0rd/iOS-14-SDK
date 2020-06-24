@@ -1,0 +1,33 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           1CEC40F5-D992-33C4-BE87-A9850C5983AF
+  - target:          arm64e-ios
+    value:           A1BBDB9A-BAFA-3FDD-841E-128BF89361BD
+install-name:    '/System/Library/PrivateFrameworks/AdPlatformsCommon.framework/AdPlatformsCommon'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _APLogForCategory, _APSimulateCrash, _AdPlatformsCommonVersionNumber, 
+                       _AdPlatformsCommonVersionString, _kAPAutomationLoggingEnabled, 
+                       _kAPMetricAreNetworkDatesKey, _kAPMetricClientBundleIdentifierKey, 
+                       _kAPMetricClientGeneratedIdentifierKey, _kAPMetricContentIdentifierKey, 
+                       _kAPMetricContextIdentifierKey, _kAPMetricDeviceIdentifierKey, 
+                       _kAPMetricIdentifierKey, _kAPMetricInternalMessageRateKey, 
+                       _kAPMetricInternalPropertiesKey, _kAPMetricMetricKey, _kAPMetricOSBuild, 
+                       _kAPMetricOSVersion, _kAPMetricOptionsKey, _kAPMetricPropertiesKey, 
+                       _kAPMetricRouteKey, _kAPMetricTimestampKey, _kAPMetricUserIdentifierKey ]
+    objc-classes:    [ APClientInfo, APContentData, APContentDepiction, APContext, 
+                       APControllerRequesterCoordinator, APLocationInfo, APLocationManager, 
+                       APMescalSigning, APMescalSigningRequestor, APMetric, APMetricDaemonDelivery, 
+                       APMetricNotificationRegistrar, APOrderedMutableDictionary, 
+                       APPCControllerRequester, APRepresentationData, APSupportedSecureEncodedClass, 
+                       APTapAction, APUnfairLock, APUnfairRecursiveLock, APXPCActionRequester, 
+                       APXPCConnection, APXPCListenerManager, APXPCRemoteConnection, 
+                       MetricsModuleCommon ]
+...

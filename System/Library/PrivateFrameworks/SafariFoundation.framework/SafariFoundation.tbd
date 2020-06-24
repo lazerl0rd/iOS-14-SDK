@@ -1,0 +1,37 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           F109ADCE-3976-33E1-9F4A-0122EFB487A1
+  - target:          arm64e-ios
+    value:           B2FCDA1E-C9DD-3017-957A-026751E7386C
+install-name:    '/System/Library/PrivateFrameworks/SafariFoundation.framework/SafariFoundation'
+current-version: 610.1.15
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SFAccountModificationExtensionPointIdentifier, _SFAccountModificationExtensionSupportsStrongPasswordChange, 
+                       _SFAccountModificationExtensionSupportsUpgradeToSignInWithApple, 
+                       _SFAccountModificationOptOutOfSecurityPromptsOnSignIn, _SFAccountModificationPasswordGenerationRequirements, 
+                       _SFAccountModificationSystemEntitlement, _SFAutoFillFromAddressBookPreferenceKey, 
+                       _SFAutoFillHelperErrorDomain, _SFCredentialIdentityStoreIdentifierCreateWithApplicationBundleIdentifier, 
+                       _SFCredentialIdentityStoreIdentifierGetApplicationBundleIdentifier, 
+                       _SFCredentialProviderDeveloperEntitlement, _SFCredentialProviderExtensionPointIdentifier, 
+                       _SFCredentialProviderShowsConfigurationUIKey, _SFCredentialProviderSystemEntitlement, 
+                       _SFExternalCredentialIdentityStoreErrorDomain, _SFPasswordCredentialIdentityInvalidRowIdentifier, 
+                       _SFPasswordGenerationNoLengthLimit, _SFSharablePasswordURLSchemeForAirDrop, 
+                       _maximumNumberOfWebCredentialEntriesToReturnForAppID ]
+    objc-classes:    [ SFAppAutoFillOneTimeCodeProvider, SFAutoFillFeatureManager, 
+                       SFAutoFillHelperProxy, SFAutoFillOneTimeCode, SFCredentialProviderExtensionHelperProxy, 
+                       SFCredentialProviderExtensionManager, SFCredentialProviderExtensionState, 
+                       SFDomainAssociationUtilities, SFExternalCredentialIdentityStore, 
+                       SFExternalCredentialIdentityStoreManager, SFPasswordCredentialIdentity, 
+                       SFSafariCredential, SFSafariCredentialStore, SFSharablePassword, 
+                       SFSharablePasswordReceiver, SFSharedWebCredentialsDatabaseEntry, 
+                       SFStrongPasswordGenerator, SFSuggestedUser, SFSuggestedUserProvider, 
+                       _SFSharablePasswordEncryptionInformation ]
+...

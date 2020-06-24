@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           21EDAF7F-B904-33DE-825B-5B8C839FF934
+  - target:          arm64e-ios
+    value:           DBD845BF-517D-3A56-A6BE-67D11B7CB059
+install-name:    '/System/Library/PrivateFrameworks/HomeAutomationInternal.framework/HomeAutomationInternal'
+allowable-clients:
+  - targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    clients:         [ HomeAutomationFlowDelegatePlugin, HomeAutomationFlowDelegatePluginTests, 
+                       HomeAutomationIntentsExtension, HomeAutomationIntentsExtensionTests, 
+                       HomeAutomationInternalTests, HomeKitIntegrationTests ]
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _HomeAutomationInternalVersionNumber, _HomeAutomationInternalVersionString ]
+...

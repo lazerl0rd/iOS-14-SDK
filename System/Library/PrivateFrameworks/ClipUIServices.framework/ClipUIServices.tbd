@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           E4EF74C2-9CEC-3E17-9D72-7875F7B78EC1
+  - target:          arm64e-ios
+    value:           ADAF7571-6A33-3F3A-9CFE-49563B3B53EE
+install-name:    '/System/Library/PrivateFrameworks/ClipUIServices.framework/ClipUIServices'
+current-version: 20.1
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CPSBannerContainerViewBannerHasAccessibilityFocusKeyPath, 
+                       _CPSBannerContainerViewBannerHiddenKeyPath, _CPSBannerContainerViewTrackingBannerDismissGestureKeyPath ]
+    objc-classes:    [ CPSAppAttributionBanner, CPSBannerContainerView, CPSClipOverlayViewController, 
+                       CPSLaunchViewController ]
+...

@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           85F69AED-DA0C-3D91-98DF-9DB2BD700171
+  - target:          arm64e-ios
+    value:           9FAB51C2-E40B-353F-8960-B5766ABD8246
+install-name:    '/System/Library/PrivateFrameworks/DASActivitySchedulerUI.framework/DASActivitySchedulerUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ _DASUIFetchContentInBackgroundAction, _DASUIFetchContentInBackgroundActionResponse, 
+                       _DASUIHandleRemoteNotificationAction ]
+...

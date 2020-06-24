@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           5715C977-603C-39B0-A685-9AC6D7AAE07C
+  - target:          arm64e-ios
+    value:           F30CDA3D-5DF8-36BA-9428-567056A8FAA0
+install-name:    '/System/Library/PrivateFrameworks/URLFormatting.framework/URLFormatting'
+current-version: 141
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ URLFormattingTestingOverrides ]
+...

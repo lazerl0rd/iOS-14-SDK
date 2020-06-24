@@ -1,0 +1,26 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           6B9B4C96-E05C-3009-8B2A-BDE6B5AA18B9
+  - target:          armv7s-ios
+    value:           48192EE6-80C6-308A-987C-0F1C7AB0717D
+  - target:          arm64-ios
+    value:           3F85F0BC-DFE3-3EC8-91A6-F4090D7774DA
+  - target:          arm64e-ios
+    value:           89801655-8FA7-394E-AA16-F92698BA7950
+install-name:    '/System/Library/PrivateFrameworks/SAML.framework/SAML'
+current-version: 355
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SAMLAttributePropertyNameAccountProviderID, _SAMLAttributePropertyNameAuthenticationTTL, 
+                       _SAMLAttributePropertyNameChannelIDs, _SAMLAttributePropertyNameHBAStatus, 
+                       _SAMLAttributePropertyNameHouseholdID, _SAMLAttributePropertyNameLanguage, 
+                       _SAMLAttributePropertyNameMaxMPAAContentRating, _SAMLAttributePropertyNameMaxVCHIPContentRating, 
+                       _SAMLAttributePropertyNamePostalCodes, _SAMLAttributePropertyNameTransientID, 
+                       _SAMLAttributePropertyNameUserID, _SAMLAuthZDecisionQueryActionPlay, 
+                       _SAMLParserDetailedErrorsKey, _SAMLParserErrorDomain ]
+    objc-classes:    [ SAMLAttributeQuery, SAMLAuthNRequest, SAMLAuthZDecisionQuery, 
+                       SAMLLogoutRequest, SAMLParserController, SAMLResponse, XMLWrapperDoc ]
+...

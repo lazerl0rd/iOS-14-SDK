@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           CC779D20-AF52-3AF1-A50E-A5121849BE3A
+  - target:          arm64e-ios
+    value:           E220727F-3E8F-3A57-B609-228CA06B304D
+install-name:    '/usr/lib/log/liblog_SystemConfiguration.dylib'
+current-version: 1099
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _OSLogCopyFormattedString, _OSStateCreateStringWithData ]
+...

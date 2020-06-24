@@ -1,0 +1,33 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           EC72009E-CA12-32D3-BED4-93C9421246AA
+  - target:          arm64e-ios
+    value:           E00CFBD5-EFC0-33C1-B331-8550DECD38B7
+install-name:    '/System/Library/PrivateFrameworks/DeviceIdentity.framework/DeviceIdentity'
+current-version: 0
+compatibility-version: 0
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _DeviceIdentityCreateClientCertificateRequest, _DeviceIdentityIssueClientCertificateWithCompletion, 
+                       _kMAOptionsAllowInvalidNetworkCertificates, _kMAOptionsBAAAccessControls, 
+                       _kMAOptionsBAACACert, _kMAOptionsBAAClientAttestationData, 
+                       _kMAOptionsBAAClientAttestationPublicKey, _kMAOptionsBAADeleteDuplicateKeychainItems, 
+                       _kMAOptionsBAAIgnoreExistingKeychainItems, _kMAOptionsBAAKeychainAccessGroup, 
+                       _kMAOptionsBAAKeychainLabel, _kMAOptionsBAALocalAuthenticationContext, 
+                       _kMAOptionsBAANetworkTimeoutInterval, _kMAOptionsBAANonce, 
+                       _kMAOptionsBAAOIDAccessControls, _kMAOptionsBAAOIDDeviceIdentifiers, 
+                       _kMAOptionsBAAOIDDeviceIntent, _kMAOptionsBAAOIDDeviceOSInformation, 
+                       _kMAOptionsBAAOIDHardwareProperties, _kMAOptionsBAAOIDIMG4Manifest, 
+                       _kMAOptionsBAAOIDImageCertificateProperties, _kMAOptionsBAAOIDKeyUsageProperties, 
+                       _kMAOptionsBAAOIDNonce, _kMAOptionsBAAOIDSToInclude, _kMAOptionsBAAOIDUCRTDeviceIdentifiers, 
+                       _kMAOptionsBAASCRTAttestation, _kMAOptionsBAAUseAuthenticationUI, 
+                       _kMAOptionsBAAValidity, _kMAOptionsBasebandWaitCount, _kMAOptionsResuseExistingKey, 
+                       _kMAOptionsUseSoftwareGeneratedKey ]
+...

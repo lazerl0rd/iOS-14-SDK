@@ -1,0 +1,29 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           0DD4083F-CAF1-3748-901A-C685F1075892
+  - target:          arm64e-ios
+    value:           5DC0CC79-B8BB-350D-B5D2-4295AC329EA8
+install-name:    '/System/Library/PrivateFrameworks/ScreenTimeUI.framework/ScreenTimeUI'
+current-version: 466
+allowable-clients:
+  - targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    clients:         [ ChatKit, ChatKitTests, ContactsUI, IMCore, InCallService, 
+                       LockoutUI, MobileSMS, MobileSafari, MobileSafariSettings, 
+                       SafariServices, SafariShared, SafariSharedUnitTests, ScreenTimeSettingsUI, 
+                       ScreenTimeUI, ScreenTimeUnlock, ScreenTimeWebExtension, ScreenTimeWidgetExtension, 
+                       SpringBoard, SpringBoardFramework-Tests, Tests ]
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _STIconCacheDidUpdatePersonImageNotificationName, _STNotificationKeyBundleIdentifier, 
+                       _STNotificationKeyDSID, _STNotificationKeyImage, _STNotificationKeyPINSuccess, 
+                       _STRestrictionsPINControllerDidFinishNotification ]
+    objc-classes:    [ STBlockingViewController, STIconCache, STLockoutRestrictionsPINController, 
+                       STLockoutViewController, STRemotePasscodeController ]
+...

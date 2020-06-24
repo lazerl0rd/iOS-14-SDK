@@ -1,0 +1,67 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           8688B114-25D7-31EE-B45E-4E0ACD2CD2BA
+  - target:          arm64e-ios
+    value:           35AA278A-4945-3DC5-AEFC-87B27BB9056A
+install-name:    '/System/Library/PrivateFrameworks/ProactiveSuggestionClientModel.framework/ProactiveSuggestionClientModel'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ATXInfoSuggestionXPCInterface, _ATXPBInfoSuggestionReadFrom, 
+                       _ATXPBProactiveSuggestionClientModelSpecificationReadFrom, 
+                       _ATXPBProactiveSuggestionExecutableSpecificationReadFrom, 
+                       _ATXPBProactiveSuggestionLayoutConfigReadFrom, _ATXPBProactiveSuggestionReadFrom, 
+                       _ATXPBProactiveSuggestionScoreSpecificationReadFrom, _ATXPBProactiveSuggestionUISpecificationReadFrom, 
+                       _ATXProactiveSuggestionClientModelXPCInterface, _ProactiveSuggestionClientModelVersionNumber, 
+                       _ProactiveSuggestionClientModelVersionString, _kATXClientModelRefreshBlendingLayerDarwinNotificationName, 
+                       _kATXInfoSuggestionKeyAppBundleIdentifier, _kATXInfoSuggestionKeyApplicableLayouts, 
+                       _kATXInfoSuggestionKeyClientModelId, _kATXInfoSuggestionKeyConfidenceLevel, 
+                       _kATXInfoSuggestionKeyCriterion, _kATXInfoSuggestionKeyEndDate, 
+                       _kATXInfoSuggestionKeyIntent, _kATXInfoSuggestionKeyMetadata, 
+                       _kATXInfoSuggestionKeyRelevanceScore, _kATXInfoSuggestionKeySourceIdentifier, 
+                       _kATXInfoSuggestionKeyStartDate, _kATXInfoSuggestionKeySuggestionIdentifier, 
+                       _kATXInfoSuggestionKeyWidgetBundleIdentifier, _kATXInfoSuggestionKeyWidgetKind, 
+                       _kATXInfoSuggestionXPCInterfaceMachServiceName, _kATXProactiveSuggestionClientModelXPCInterfaceMachServiceName ]
+    objc-classes:    [ ATXInfoSuggestion, ATXInfoSuggestionFeedbackClient, ATXInfoTimelineDonationClient, 
+                       ATXInfoTimelineEntry, ATXInfoTimelineEntryRelevance, ATXPBInfoSuggestion, 
+                       ATXPBProactiveSuggestion, ATXPBProactiveSuggestionClientModelSpecification, 
+                       ATXPBProactiveSuggestionExecutableSpecification, ATXPBProactiveSuggestionLayoutConfig, 
+                       ATXPBProactiveSuggestionScoreSpecification, ATXPBProactiveSuggestionUISpecification, 
+                       ATXProactiveCardSuggestionClient, ATXProactiveSuggestion, 
+                       ATXProactiveSuggestionClientModel, ATXProactiveSuggestionClientModelSpecification, 
+                       ATXProactiveSuggestionExecutableSpecification, ATXProactiveSuggestionLayoutConfig, 
+                       ATXProactiveSuggestionScoreSpecification, ATXProactiveSuggestionUISpecification ]
+    objc-ivars:      [ ATXPBInfoSuggestion._appBundleIdentifier, ATXPBInfoSuggestion._archivedIntent, 
+                       ATXPBInfoSuggestion._archivedMetadata, ATXPBInfoSuggestion._clientModelId, 
+                       ATXPBInfoSuggestion._confidenceLevel, ATXPBInfoSuggestion._criterion, 
+                       ATXPBInfoSuggestion._endDate, ATXPBInfoSuggestion._has, ATXPBInfoSuggestion._layouts, 
+                       ATXPBInfoSuggestion._relevanceScore, ATXPBInfoSuggestion._sourceIdentifier, 
+                       ATXPBInfoSuggestion._startDate, ATXPBInfoSuggestion._suggestionIdentifier, 
+                       ATXPBInfoSuggestion._widgetBundleIdentifier, ATXPBInfoSuggestion._widgetKind, 
+                       ATXPBProactiveSuggestion._clientModelSpecification, ATXPBProactiveSuggestion._executableSpecification, 
+                       ATXPBProactiveSuggestion._scoreSpecification, ATXPBProactiveSuggestion._uiSpecification, 
+                       ATXPBProactiveSuggestion._uuidString, ATXPBProactiveSuggestionClientModelSpecification._clientModelId, 
+                       ATXPBProactiveSuggestionClientModelSpecification._clientModelVersion, 
+                       ATXPBProactiveSuggestionClientModelSpecification._engagementResetPolicy, 
+                       ATXPBProactiveSuggestionClientModelSpecification._has, ATXPBProactiveSuggestionExecutableSpecification._executable, 
+                       ATXPBProactiveSuggestionExecutableSpecification._executableClassString, 
+                       ATXPBProactiveSuggestionExecutableSpecification._executableDescription, 
+                       ATXPBProactiveSuggestionExecutableSpecification._executableIdentifier, 
+                       ATXPBProactiveSuggestionExecutableSpecification._executableObjectHash, 
+                       ATXPBProactiveSuggestionExecutableSpecification._executableType, 
+                       ATXPBProactiveSuggestionExecutableSpecification._has, ATXPBProactiveSuggestionLayoutConfig._applicableLayoutType, 
+                       ATXPBProactiveSuggestionLayoutConfig._has, ATXPBProactiveSuggestionScoreSpecification._has, 
+                       ATXPBProactiveSuggestionScoreSpecification._rawScore, ATXPBProactiveSuggestionScoreSpecification._suggestedConfidenceCategory, 
+                       ATXPBProactiveSuggestionUISpecification._allowedOnHomeScreen, 
+                       ATXPBProactiveSuggestionUISpecification._allowedOnLockscreen, 
+                       ATXPBProactiveSuggestionUISpecification._allowedOnSpotlight, 
+                       ATXPBProactiveSuggestionUISpecification._has, ATXPBProactiveSuggestionUISpecification._preferredLayoutConfigs, 
+                       ATXPBProactiveSuggestionUISpecification._reason, ATXPBProactiveSuggestionUISpecification._shouldClearOnEngagement, 
+                       ATXPBProactiveSuggestionUISpecification._subtitle, ATXPBProactiveSuggestionUISpecification._title ]
+...

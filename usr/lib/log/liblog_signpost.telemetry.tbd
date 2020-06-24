@@ -1,0 +1,15 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           9F061A0F-1252-3A24-BAD5-6B9FF22F9BB6
+  - target:          arm64e-ios
+    value:           D6A8A463-DEA3-3C5C-ABA3-AA1793DC3899
+install-name:    '/usr/lib/log/liblog_signpost.telemetry.dylib'
+current-version: 49
+...

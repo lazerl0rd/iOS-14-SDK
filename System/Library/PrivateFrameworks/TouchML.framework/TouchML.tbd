@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           FFD6EA53-0578-3B4C-B1F2-86C390FB31D6
+  - target:          arm64e-ios
+    value:           CC202517-8D01-33D7-9077-972A0438B16C
+install-name:    '/System/Library/PrivateFrameworks/TouchML.framework/TouchML'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _TMLAttributedStringForMarkdown, _TouchML_init, _kTMLRuntimeFinalizeSignal, 
+                       _kTMLRuntimeInitializeSignal ]
+    objc-classes:    [ TMLAspect, TMLBlock, TMLContext, TMLExceptionHandler, TMLJSONObject, 
+                       TMLJSONSchema, TMLObjectFinalizer, TMLRuntimeObject, TMLTypes, 
+                       TMLWeakReferenceObject ]
+...

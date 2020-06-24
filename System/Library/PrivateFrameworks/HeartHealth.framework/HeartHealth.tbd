@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           1AEF610A-D49B-3692-93C8-24E8BCDF1447
+  - target:          arm64e-ios
+    value:           2DEF544A-1D13-3270-ACA5-3B25F94659DF
+install-name:    '/System/Library/PrivateFrameworks/HeartHealth.framework/HeartHealth'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _HKHeartRatePluginIdentifier ]
+...

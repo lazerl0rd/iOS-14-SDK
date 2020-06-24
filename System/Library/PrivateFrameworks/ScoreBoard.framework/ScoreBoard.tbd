@@ -1,0 +1,27 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           11172692-AC24-340B-8A1D-F1ADE6DFD6D4
+  - target:          arm64e-ios
+    value:           D7FF68F9-283B-352F-987D-F03421A3D63A
+install-name:    '/System/Library/PrivateFrameworks/ScoreBoard.framework/ScoreBoard'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SCRDASActivityStateString, _SCRErrorDomain, _SCRGenerateRandomIdentifier, 
+                       _SCRIdentifier, _SCRIdentifierWithPrefix, _SCRIsUnitTest, 
+                       _SCRLogCommon, _SCRShortRandomIdentifier, _SCRTokenBucketBudgetErrorDomain, 
+                       _ScoreBoardVersionNumber, _ScoreBoardVersionString ]
+    objc-classes:    [ SCRActivity, SCRActivityScheduler, SCRApprovalCoordinator, 
+                       SCRCompositeGovernor, SCRDASActivityMetadata, SCRDASActivityScheduler, 
+                       SCRIsolatedActivityScheduler, SCRMutableSchedulingConfiguration, 
+                       SCRSchedulingConfiguration, SCRStateMachine, SCRStateTransitionContext, 
+                       SCRTask, SCRTaskAdministrator, SCRTaskHandler, SCRTaskIdentifier, 
+                       SCRTaskScheduler, SCRTaskSession, SCRTaskTargetConfiguration, 
+                       SCRTokenBucketBudget ]
+...

@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           50F90847-8B78-3ED4-81C3-814749C6432F
+  - target:          arm64e-ios
+    value:           4408C2C2-BC1A-359B-B8ED-CEA3EFFE864B
+install-name:    '/System/Library/PrivateFrameworks/AccessibilityFocusEngine.framework/AccessibilityFocusEngine'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AccessibilityFocusEngineVersionNumber, _AccessibilityFocusEngineVersionString ]
+    objc-classes:    [ AXFocusManager ]
+...

@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           12C81E8F-C98A-3E3E-ABA4-AA2108B55ACB
+  - target:          arm64e-ios
+    value:           A43A47A4-4837-3824-85AB-5C61D4E8638D
+install-name:    '/System/Library/PrivateFrameworks/TipKit.framework/TipKit'
+current-version: 0
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _TipKitVersionNumber, _TipKitVersionString, _kTPKContentViewFrameworkBundle ]
+    objc-classes:    [ TPKContent, TPKContentController, TPKContentView, TPKContentViewController, 
+                       TPKTipContent, TPKTipContentCollectionHeaderView, TPKTipContentCollectionViewCell, 
+                       TPKTipContentHintView, TPKTipContentTableViewCell ]
+...

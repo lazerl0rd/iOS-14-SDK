@@ -1,0 +1,50 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           42BF1A91-BA2F-30CA-A681-B688D5C07ACF
+  - target:          arm64e-ios
+    value:           4AB020A1-378B-3B27-8453-867326604A5C
+install-name:    '/System/Library/PrivateFrameworks/CarPlayUI.framework/CarPlayUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CARNextPreviousButtonSize, _CARPlayPauseButtonSize, _CPUIAddGlyph, 
+                       _CPUIAudiobooksBundleIdentifier, _CPUIBackGlyph, _CPUIDescriptionForUserInterfaceStyle, 
+                       _CPUIEllipsisGlyph, _CPUIFilteredString, _CPUIFormattedNumberString, 
+                       _CPUIFormattedPlaybackRateString, _CPUIForwardGlyph, _CPUIFrameworkBundle, 
+                       _CPUIHighlightedImageForTransportButton, _CPUIImageCancelGlyph, 
+                       _CPUIImageDownIndicatorGlyph, _CPUIImageForTransportButton, 
+                       _CPUIImageMaximizeGlyph, _CPUIImageMinimizeGlyph, _CPUIImageNamedWithTraitCollection, 
+                       _CPUIImageRowMaxImageDimension, _CPUIImageRowTitleIndex, _CPUIImageUpIndicatorGlyph, 
+                       _CPUILocalizedExplicitImageForTraitCollection, _CPUILocalizedExplicitLabelString, 
+                       _CPUILocalizedStringForKey, _CPUIMessageComposeGlyph, _CPUINewsBundleIdentifier, 
+                       _CPUINowPlayingButtonStateNamePlaying, _CPUINowPlayingButtonStateNameStopped, 
+                       _CPUINowPlayingLayoutForFrameScaleArtwork, _CPUINowPlayingLayoutTrailingArtworkMinAspectRatio, 
+                       _CPUINowPlayingMaximumNoArtworkSize, _CPUINowPlayingMinimumVerticalPadding, 
+                       _CPUIPauseGlyph, _CPUIPlayModeButtonSize, _CPUIPlayModeControlViewHeight, 
+                       _CPUIPlaybackProgressCompleteGlyphWithSize, _CPUIPodcastsBundleIdentifier, 
+                       _CPUIProgressViewHeight, _CPUIRectByApplyingUserInterfaceLayoutDirectionInRect, 
+                       _CPUIRepeatGlyph, _CPUIRepeatOneGlyph, _CPUIShuffleGlyph, 
+                       _CPUITableCellExplicitLabel, _CPUITimeDurationForSeconds, 
+                       _CPUITraitCollectionSupportsFocus, _CarPlayUIGeneralLogging, 
+                       _CarPlayUIVersionNumber, _CarPlayUIVersionString, __CPUIGlyphFactoryWithTraitCollection, 
+                       __nonCapturedPressType, _kCPUIBannerTransitionAnimationStyleKey ]
+    objc-classes:    [ CPUIBannerTransitionAnimator, CPUIBannerTransitionFadeAnimator, 
+                       CPUIBannerTransitioningDelegate, CPUIBannerViewButton, CPUIHighlightButton, 
+                       CPUIImageRowCell, CPUIImageRowCellConfiguration, CPUILabelButton, 
+                       CPUIMappedImageCache, CPUIMediaButton, CPUIMessageCell, CPUIMessageCellConfiguration, 
+                       CPUINowPlayingButton, CPUINowPlayingButtonView, CPUINowPlayingButtonWrapperView, 
+                       CPUINowPlayingLayoutStacked, CPUINowPlayingLayoutTrailingArtwork, 
+                       CPUINowPlayingManager, CPUINowPlayingSnapshot, CPUINowPlayingView, 
+                       CPUINowPlayingViewController, CPUIPlayModeButton, CPUIPlayModeControlView, 
+                       CPUIPlaybackProgressView, CPUIProgressBarView, CPUIProgressView, 
+                       CPUIRepeatButton, CPUIRoundedLabelButton, CPUIShadowImageView, 
+                       CPUISongDetailsView, CPUITableCell, CPUITableCellAccessory, 
+                       CPUITableCellConfiguration, CPUIThrottle, CPUITitleView, CPUITransportControlView, 
+                       _CPUIBaseTableCell, _CPUINowPlayingLayout ]
+...

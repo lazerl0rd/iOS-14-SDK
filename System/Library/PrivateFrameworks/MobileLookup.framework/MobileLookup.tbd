@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           EE26377B-509D-3E6F-A70A-FC49960DF2B2
+  - target:          armv7s-ios
+    value:           198D7029-2980-3A61-9669-CFEDB97C7FCA
+  - target:          arm64-ios
+    value:           86B52DAE-791D-37DE-8070-877153D34838
+  - target:          arm64e-ios
+    value:           F891F6E9-F194-3697-8450-1CDD0ECE9CAD
+install-name:    '/System/Library/PrivateFrameworks/MobileLookup.framework/MobileLookup'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _MLUMobileLookupVersionNumber, _MLUMobileLookupVersionString ]
+    objc-classes:    [ MLULookupItem ]
+...

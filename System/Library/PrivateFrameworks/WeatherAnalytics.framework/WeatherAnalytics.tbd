@@ -1,0 +1,29 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           12F2D212-4E9E-3B6A-861B-B465ADA5FDAD
+  - target:          arm64e-ios
+    value:           42259CA4-6C49-3BAC-ADA7-FB6E8C34ABA0
+install-name:    '/System/Library/PrivateFrameworks/WeatherAnalytics.framework/WeatherAnalytics'
+current-version: 1618.5
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _WeatherAnalyticsVersionNumber, _WeatherAnalyticsVersionString ]
+    objc-classes:    [ WAAppData, WAAppSessionEndEvent, WAAppSessionStartEvent, WACellularRadioAccessTechnology, 
+                       WADataTableExposureEvent, WADebugData, WADeviceData, WADeviceOrientation, 
+                       WADevicePlatform, WAEndReason, WAFollowingLocationListData, 
+                       WAFollowingLocationListEvent, WAInterfaceOrientation, WAListViewEvent, 
+                       WALocationAccessData, WALocationCondition, WALocationConditionData, 
+                       WALocationData, WALocationExposureEvent, WALocationListPositionData, 
+                       WALocationViewEvent, WAOrientationData, WAOsInstallVariant, 
+                       WAPrivateUserData, WAReferralData, WASessionData, WASessionEndData, 
+                       WAStartMethod, WATemperatureScale, WATemperatureScaleChangeEvent, 
+                       WATemperatureScaleData, WAUserData, WAViewAction, WAViewData, 
+                       WAViewEvent, WAViewType ]
+...

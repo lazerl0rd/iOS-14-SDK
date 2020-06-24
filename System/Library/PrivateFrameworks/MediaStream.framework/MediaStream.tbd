@@ -1,0 +1,38 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           C2561CE6-C186-3758-9492-A8EA404767CA
+  - target:          armv7s-ios
+    value:           4FDF397D-B53E-31E1-AF89-655E01FAD064
+  - target:          arm64-ios
+    value:           2A4E6AE6-90D4-3571-AD5F-0939DA239D69
+  - target:          arm64e-ios
+    value:           F7A3C094-4270-3469-AC6C-731F1D945E9F
+install-name:    '/System/Library/PrivateFrameworks/MediaStream.framework/MediaStream'
+current-version: 302.0.114
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _kMSDoNothingCFTypeDictionaryValueCallbacks ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _MSAlbumSharingInitialize, _MSMSLocalizedString, _MSMediaStreamInitialize, 
+                       _MediaStreamVersionNumber, _MediaStreamVersionString, _XPCSetLogBlocks, 
+                       __MSASSetDaemon, __MSSetDaemon, __XPCLog, __XPCShouldLog, 
+                       _kMSASConnectionErrorDomain, _kMSASNoWakeServiceName, _kMSASServiceName, 
+                       _kMSAuthenticationManagerDidReceiveAuthenticationChangeNotification, 
+                       _kMSBatteryPowerMonitorExternalPowerSourceChangedNotification, 
+                       _kMSCServerSideConfigurationDidChangeNotification, _kMSCXPCReplyError, 
+                       _kMSCXPCReplyRetval, _kMSIDSFacility, _kMSIdleStateDidChangeNotification, 
+                       _kMSMMCSFacility, _kMSMachServiceName, _kMSNoWakeMachServiceName, 
+                       _kMSPerfFacility, _kMSPhotoStreamFacility, _kMSPowerBudgetDidBeginAllowingFileTransferNotification, 
+                       _kMSPowerBudgetDidEndAllowingFileTransferNotification, _kMSServerSideConfigurationDidChangeNotification, 
+                       _kMSSharedStreamFacility, _kMSmstreamdErrorDomain, _kMSmstreamdFacility, 
+                       _kXPCSequenceKey ]
+    objc-classes:    [ MSAMNotificationInfo, MSASConnection, MSASPlatformImplementation, 
+                       MSAlertManager, MSAuthenticationManager, MSBatteryPowerMonitor, 
+                       MSClientSidePauseContext, MSConnection, MSMSPlatform, MSPBTimerContext, 
+                       MSPauseManager, MSPowerAssertionManager, MSPowerBudget, XPCClientConnection, 
+                       XPCNSClientConnection, XPCNSRequest, XPCNSServiceConnection, 
+                       XPCNSServiceListener, XPCRequest, XPCServiceConnection, XPCServiceListener ]
+...

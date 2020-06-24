@@ -1,0 +1,36 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           3BD77711-3B57-3392-889B-C2BDBFDBECC6
+  - target:          arm64e-ios
+    value:           F6DD15F7-98DE-3242-AA1A-30A5BAC77B9F
+install-name:    '/System/Library/PrivateFrameworks/SidecarCore.framework/SidecarCore'
+current-version: 220
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SidecarBundle, _SidecarDeviceGeneration, _SidecarDevicesChangedNotification, 
+                       _SidecarDiagnose, _SidecarDisplayManagerConnectedDevicesChangedNotification, 
+                       _SidecarDisplayManagerPreferencesChangedNotification, _SidecarErrorDomain, 
+                       _SidecarGetProcessUniqueID, _SidecarLocalizedString, _SidecarMessageCreateMutable, 
+                       _SidecarMessageGetDefaults, _SidecarMessageGetDictionaryRepresentation, 
+                       _SidecarMessageGetItemData, _SidecarMessageGetRequestID, _SidecarMessageGetServiceName, 
+                       _SidecarMessageGetTransferID, _SidecarMessageGetType, _SidecarMessageSetDefaults, 
+                       _SidecarMessageSetItemData, _SidecarMessageSetItemMetaData, 
+                       _SidecarMessageSetRequestID, _SidecarMessageSetServiceName, 
+                       _SidecarMessageSetTransferID, _SidecarMessageSetType, _SidecarOptOutOfReconnect, 
+                       _SidecarRegisterServicePresenter, _SidecarRegisterServiceProvider, 
+                       _SidecarServiceNameAnnotation, _SidecarServiceNameDisplay, 
+                       _SidecarServiceNameMarkupDisplay, _SidecarServiceNameScanDocument, 
+                       _SidecarServiceNameSignature, _SidecarServiceNameSketch, _SidecarServiceNameTakePhoto, 
+                       _SidecarServicePresenterReady, _SidecarServiceProviderReady, 
+                       _kUTType_iPadPro ]
+    objc-classes:    [ SidecarDebugRequest, SidecarDevice, SidecarDisplayConfig, 
+                       SidecarItem, SidecarRequest, SidecarResponse, SidecarService, 
+                       SidecarSession, SidecarStream ]
+...

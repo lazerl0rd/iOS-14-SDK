@@ -1,0 +1,33 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           74A623DF-8FD3-30B0-80BF-77B21649A33A
+  - target:          arm64e-ios
+    value:           47C1DCF5-D5AB-3BBB-891A-FF1FDD0D9EE3
+install-name:    '/System/Library/PrivateFrameworks/CellularBridgeUI.framework/CellularBridgeUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _COSDeviceAssetDirectoryPath, _COSDeviceAssetString, _CTSUServerConnectionRef, 
+                       _CTSUServerQueue, _CellularBridgeUIVersionNumber, _CellularBridgeUIVersionString, 
+                       _IsCurrentDevicePairing, _NANOPHONE_APPLICATION_BUNDLE_ID, 
+                       _NPHCameraHitRuntimeError, _NPHCellularDataUsageErrorDomain, 
+                       _NPHCellularErrorDomain, _NPHCellularErrorLinkKey, _NPHCellularErrorLinkTextKey, 
+                       _NPHCellularErrorTitleKey, _NPHCellularPlanInfoDidChangeNotification, 
+                       _NPHCellularPlanInfoError, _NPHDeriveProgramName, _NPHDeviceHasBaseband, 
+                       _NPHDeviceOSIsInternalInstall, _NPHIsDebugBuild, _NPHIsWalkaboutEnabled, 
+                       _NPHSharedUtilitiesAppendBuildVersion, _NPHSharedUtilitiesLocaleHaptic, 
+                       _NPHSharedUtilitiesLocaleHapticDucked, _NPHWiFiStringKey, 
+                       _NSStringFromTUCallDisconnectedReason, _mach_time_elapsed_to_seconds, 
+                       _nph_ensure_on_main_queue, _nph_general_log ]
+    objc-classes:    [ NPHBSCellularConfirmationCodeViewController, NPHBSCellularFauxCardInfoViewController, 
+                       NPHBSCellularFauxCardNavigationController, NPHBSCellularFauxCardViewController, 
+                       NPHCellularBridgeBarcodeScannerView, NPHCellularBridgeUIManager, 
+                       NPHCellularSetupViewController, NPHServiceSubscriptionInfo, 
+                       NPHSetupTableViewCell, NPHSharedUtilities ]
+...

@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           AC103119-2933-3B8A-96ED-5A6132B6A615
+  - target:          arm64e-ios
+    value:           51FD11F9-C3F4-36D7-B6E9-29CB4838AC9E
+install-name:    '/System/Library/PrivateFrameworks/AppAttestInternal.framework/AppAttestInternal'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AppAttest_AppAttestation_Assert, _AppAttest_AppAttestation_AttestKey, 
+                       _AppAttest_AppAttestation_CreateKey, _AppAttest_AppAttestation_IsEligibleApplication, 
+                       _AppAttest_AppAttestation_IsSupported, _AppAttest_Common_AttestKey, 
+                       _AppAttest_WebAuthentication_AttestKey, _AppAttest_WebAuthentication_IsSupported, 
+                       __DCAALogSystem ]
+    objc-classes:    [ AppAttestKeychainCleanupController ]
+...

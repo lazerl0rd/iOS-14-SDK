@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           B25717E5-3116-3981-9F22-9C8B374E0C1F
+  - target:          arm64e-ios
+    value:           FD622CBF-60ED-338A-B773-6FADFF9099FD
+install-name:    '/System/Library/PrivateFrameworks/UVFSXPCService.framework/UVFSXPCService'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _UVFSXPCServiceVersionNumber, _UVFSXPCServiceVersionString ]
+...

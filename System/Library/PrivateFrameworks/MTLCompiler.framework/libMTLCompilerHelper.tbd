@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           74B35BDC-ADB2-3CC3-8C7D-5A9CA4E7BD94
+  - target:          armv7s-ios
+    value:           EA3E5F1A-BFEF-3EC8-98ED-AB5B9B17FA2D
+  - target:          arm64-ios
+    value:           816BC6DF-7DB6-37F4-A2AE-ADC0E9FE6B25
+  - target:          arm64e-ios
+    value:           1AF3E5E9-29C6-3AA7-AC89-4598109C9C9A
+install-name:    '/System/Library/PrivateFrameworks/MTLCompiler.framework/libMTLCompilerHelper.dylib'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    weak-symbols:    [ __ZTI26MTLCompilerHelperInterface, __ZTI28MTLCompilerBuiltInFileReader, 
+                       __ZTS26MTLCompilerHelperInterface, __ZTS28MTLCompilerBuiltInFileReader ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _createCompilerHelper, _deleteCompilerHelper ]
+...

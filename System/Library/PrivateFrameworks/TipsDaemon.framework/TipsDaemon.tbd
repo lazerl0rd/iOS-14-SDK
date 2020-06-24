@@ -1,0 +1,50 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           4CFEA447-5FEE-3074-B737-ACF947458095
+  - target:          arm64e-ios
+    value:           6FD0F0DC-774A-3418-AFA1-62CA8A96526B
+install-name:    '/System/Library/PrivateFrameworks/TipsDaemon.framework/TipsDaemon'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _TPSContextualEventSinceDateGracePeriod, _TPSDeliveryPreconditionRootKey, 
+                       _TPSTipsManagerErrorDomain, _TipsDaemonVersionNumber, _TipsDaemonVersionString ]
+    objc-classes:    [ TPSAnalyticsEventProcessedUsageEvents, TPSAnalyticsHistoricTipsDataProcessor, 
+                       TPSAnalyticsProcessingController, TPSAnalyticsProcessor, TPSAnalyticsUsageEventsProcessor, 
+                       TPSAnalyticsUsageInfo, TPSAppStoreRegionValidation, TPSAppStoreRegionsCondition, 
+                       TPSAppleArcadeValidation, TPSAppleCardSetupValidation, TPSApplePayActivationValidation, 
+                       TPSApplePayPeerValidation, TPSApplePaySetupValidation, TPSBetaUserValidation, 
+                       TPSBlockValidation, TPSBluetoothChecker, TPSCapability, TPSCloudAccountChecker, 
+                       TPSCloudAccountValidation, TPSCloudBackupValidation, TPSCloudController, 
+                       TPSCloudDeviceInfo, TPSCloudDeviceValidation, TPSCloudDevicesCondition, 
+                       TPSCloudDriveValidation, TPSCloudFindMyValidation, TPSCloudMusicCatalogPlaybackValidation, 
+                       TPSCloudPhotoLibraryValidation, TPSCondition, TPSContextualCondition, 
+                       TPSContextualEventValidation, TPSContextualInfo, TPSContextualRule, 
+                       TPSCustomCapabilityValidationBuilder, TPSDeliveryNotification, 
+                       TPSDeliveryPrecondition, TPSDeviceCapability, TPSDeviceCapabilityCondition, 
+                       TPSDeviceCapabilityValidation, TPSDeviceValidation, TPSDevicesCondition, 
+                       TPSDiscoverabilityController, TPSDualSimValidation, TPSEventsHistoryController, 
+                       TPSExtendedKeyboardValidation, TPSGestaltValidation, TPSHRAccountInfoStatusValidation, 
+                       TPSHandwritingKeyboardValidation, TPSHeySiriValidation, TPSHomeAccessoriesValidation, 
+                       TPSHomeSetupValidation, TPSInclusivityCondition, TPSInclusivityInfo, 
+                       TPSInclusivityValidation, TPSInstalledAppInfo, TPSInstalledAppsCondition, 
+                       TPSInstalledAppsValidation, TPSInstalledKeyboardValidation, 
+                       TPSKeyboardUtilities, TPSMedicalIDValidation, TPSMultiLanguageValidation, 
+                       TPSNRDeviceCapability, TPSNRDeviceCapabilityCondition, TPSNRDeviceCapabilityValidation, 
+                       TPSNRElectrocardiogramValidation, TPSNRFallDetectionValidation, 
+                       TPSNotificationCache, TPSNotificationController, TPSPairedCarPlayValidation, 
+                       TPSPairedDeviceValidation, TPSPairedDevicesCondition, TPSPairedHomePodValidation, 
+                       TPSPairedWatchValidation, TPSPeopleSuggestionValidation, TPSPreferredLanguageValidation, 
+                       TPSProactiveSuggestion, TPSRegionsCondition, TPSRegionsValidation, 
+                       TPSScreenTimeCloudValidation, TPSScreenTimeValidation, TPSSiriEnabledValidation, 
+                       TPSSiriLanguageValidation, TPSSiriLanguagesCondition, TPSSiriSystemLanguageMatchValidation, 
+                       TPSTargetingCache, TPSTargetingValidateOperation, TPSTargetingValidation, 
+                       TPSTargetingValidator, TPSTipsManager, TPSUserNotification, 
+                       TPSUserTypeCondition, TPSUserTypesValidation, TPSWelcomeDocument ]
+...

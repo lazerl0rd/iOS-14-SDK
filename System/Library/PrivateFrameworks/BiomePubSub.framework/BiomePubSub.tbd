@@ -1,0 +1,37 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           4B42EF45-FE60-3680-B20E-AF542365705E
+  - target:          arm64e-ios
+    value:           43372C9D-F234-3B34-A912-BE09A253BC01
+install-name:    '/System/Library/PrivateFrameworks/BiomePubSub.framework/BiomePubSub'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _BPSDemandNone, _BPSDemandUnlimited, _BiomePubSubVersionNumber, 
+                       _BiomePubSubVersionString ]
+    objc-classes:    [ BPSAggregations, BPSAggregator, BPSCollect, BPSCombineLatest, 
+                       BPSCompletion, BPSDemandSink, BPSEmpty, BPSFilter, BPSFilterProducer, 
+                       BPSFlatMap, BPSFuture, BPSFutureResult, BPSLast, BPSMap, BPSMerge, 
+                       BPSMergeMany, BPSOrderedMerge, BPSPartialCompletion, BPSPassThroughSubject, 
+                       BPSPublisher, BPSReduce, BPSReduceProducer, BPSScan, BPSSequence, 
+                       BPSSink, BPSSubscriberList, BPSSubscription, BPSSubscriptionStatus, 
+                       BPSTuple, BPSZip, BPSZipMany, _BPSAbstractCombineLatest, _BPSAbstractCombineLatestSide, 
+                       _BPSAbstractOrderedMerge, _BPSAbstractOrderedMergeSide, _BPSAbstractZip, 
+                       _BPSAbstractZipSide, _BPSCollectInner, _BPSCombineLatest2Inner, 
+                       _BPSFilterInner, _BPSFlatMapOuter, _BPSFlatMapSide, _BPSInnerConduit, 
+                       _BPSInnerFutureConduit, _BPSMapInner, _BPSMerged, _BPSMergedSide, 
+                       _BPSOrderedMergeManyInner, _BPSReduceInner, _BPSScanInner, 
+                       _BPSSequenceInner, _BPSZip2Inner, _BPSZipManyInner, _CMLastInnser ]
+    objc-ivars:      [ _BPSAbstractCombineLatest._downstreamLock, _BPSAbstractCombineLatest._lock, 
+                       _BPSAbstractOrderedMerge._downstreamLock, _BPSAbstractOrderedMerge._lock, 
+                       _BPSAbstractZip._downstreamLock, _BPSAbstractZip._lock, _BPSFlatMapOuter._downstreamLock, 
+                       _BPSFlatMapOuter._lock, _BPSFlatMapOuter._outerLock, _BPSInnerConduit._lock, 
+                       _BPSInnerFutureConduit._downstreamLock, _BPSInnerFutureConduit._lock, 
+                       _BPSMerged._downstreamLock, _BPSMerged._lock, _BPSSequenceInner._lock ]
+...

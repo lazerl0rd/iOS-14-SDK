@@ -1,0 +1,31 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           022299B3-832F-3E1A-9B4B-B6ECEE8AF4B6
+  - target:          armv7s-ios
+    value:           FC80A028-BCAE-3177-9102-13218A15A07C
+  - target:          arm64-ios
+    value:           C807280B-295B-32ED-86DA-65D3F456C481
+  - target:          arm64e-ios
+    value:           18A15F36-6E9B-31C4-81AE-00982B504788
+install-name:    '/System/Library/PrivateFrameworks/CloudPhotoServices.framework/CloudPhotoServices'
+current-version: 302.0.114
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _CPLIsWideGamutDisplay ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CloudPhotoServicesOptionBakeInOrientationKey, _CloudPhotoServicesOptionColorOutputKey, 
+                       _CloudPhotoServicesOptionExportPresetKey, _CloudPhotoServicesOptionIsPassthroughConversionKey, 
+                       _CloudPhotoServicesOptionLivePhotoPairingIdentifierKey, _CloudPhotoServicesOptionMaximumPixelCountKey, 
+                       _CloudPhotoServicesOptionOriginatingSignatureKey, _CloudPhotoServicesOptionOutputFileTypeKey, 
+                       _CloudPhotoServicesOptionRenderOriginatingSignatureKey, _CloudPhotoServicesOptionRequestReasonKey, 
+                       _CloudPhotoServicesOptionTargetFileSizeKey, _CloudPhotoServicesRetryCount, 
+                       _CloudPhotoServicesRetryDelay, _CloudPhotoServicesVersionNumber, 
+                       _CloudPhotoServicesVersionString, _CloudPhotoServicesVideoConversionPowerEfficiencyKey, 
+                       _CloudPhotoServicesVideoConversionPowerEfficiencyMinimumDurationKey, 
+                       _CloudPhotoServicesVideoConversionPowerEfficiencyOverrideUserDefaultsKey, 
+                       __logDropDerivatives ]
+    objc-classes:    [ CloudPhotoServices, CloudPhotoServicesUtilities ]
+...

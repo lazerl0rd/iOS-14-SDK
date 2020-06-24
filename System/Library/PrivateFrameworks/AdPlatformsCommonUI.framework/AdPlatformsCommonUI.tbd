@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           86EA4A3D-8EA9-3EAB-A645-CA1ABB3206C1
+  - target:          arm64e-ios
+    value:           83F35D18-FC4E-3B7A-91B6-97ED4924C8F4
+install-name:    '/System/Library/PrivateFrameworks/AdPlatformsCommonUI.framework/AdPlatformsCommonUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AdPlatformsCommonUIVersionNumber, _AdPlatformsCommonUIVersionString ]
+    objc-classes:    [ APClientInfoUI, APHomeButton ]
+...

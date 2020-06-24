@@ -1,0 +1,27 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           D3DECB3F-1144-37AF-B4B9-2F1E6F43EBC1
+  - target:          arm64e-ios
+    value:           F2087A77-EE80-3FBE-9857-16831729F8CF
+install-name:    '/System/Library/PrivateFrameworks/NeutrinoKit.framework/NeutrinoKit'
+current-version: 302.0.114
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _NUBoundingRectForRotatedRect, _NUEdgeInsetsInsetRect, _NUFitScaleForImageRectInRect, 
+                       _NUMaxRectInRotatedRect, _NUMediaTimingFunctionForUIAnimationCurve, 
+                       _NURectCenterRectInRect, _NURectGetMidpoint, _NeutrinoKitVersionNumber, 
+                       _NeutrinoKitVersionString, __NUViewCommonInit, __commonInit, 
+                       _stringFromTransform ]
+    objc-classes:    [ NUAVPlayerController, NUAVPlayerView, NUDebugRenderView, NUGLLayer, 
+                       NUImageLayer, NUMediaView, NUMediaViewRenderer, NURenderView, 
+                       NUScrollView, NUTiledImageLayer, NUViewGeometry, NUViewport, 
+                       NUViewportRegionPolicy, _NUAVPlayerItemObservation, _NUBackfillLayer, 
+                       _NUContainerLayer, _NUROILayer, _NUTiledBackfillLayer, _NUTiledROILayer ]
+...

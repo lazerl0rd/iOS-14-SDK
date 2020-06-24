@@ -1,0 +1,28 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           F5DA059B-54F7-3BB3-BD47-1E868D25203D
+  - target:          arm64e-ios
+    value:           3F77D43F-7ECA-312C-A936-7A7CA25DFF7B
+install-name:    '/System/Library/PrivateFrameworks/RemoteCoreML.framework/RemoteCoreML'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _RemoteCoreMLVersionNumber, _RemoteCoreMLVersionString, _g_inbound_connection, 
+                       _kMLAckFailNetworkHeaderEncoding, _kMLAckSuccessNetworkHeaderEncoding, 
+                       _kMLCustomNetworkHeaderEncoding, _kMLErrorNetworkHeaderEncoding, 
+                       _kMLIncomingDataNetworkHeaderEncoding, _kMLLoadNetworkHeaderEncoding, 
+                       _kMLNetworkFamilyKey, _kMLNetworkLocalAddrKey, _kMLNetworkLocalPortKey, 
+                       _kMLNetworkNameIdentifierKey, _kMLNetworkPortNumberKey, _kMLNetworkPskKey, 
+                       _kMLNetworkUseAWDLKey, _kMLNetworkUseBonjourKey, _kMLNetworkUseTLSKey, 
+                       _kMLNetworkUseUDPKey, _kMLPredictNetworkHeaderEncoding, _kMLTextNetworkHeaderEncoding, 
+                       _kMLUnLoadNetworkHeaderEncoding ]
+    objc-classes:    [ _MLLog, _MLNetworkHeaderEncoding, _MLNetworkOptions, _MLNetworkPacket, 
+                       _MLNetworkUtilities, _MLNetworking, _MLRemoteConnection, _MLRemoteCoreMLErrors, 
+                       _MLServer ]
+...

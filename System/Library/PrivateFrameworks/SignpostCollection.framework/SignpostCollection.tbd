@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           C345CFD4-4835-32DA-8CF9-B143FCE87382
+  - target:          arm64e-ios
+    value:           2FA29A92-35A0-359C-88CE-880E569996FA
+install-name:    '/System/Library/PrivateFrameworks/SignpostCollection.framework/SignpostCollection'
+current-version: 49
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SignpostCollectionVersionNumber, _SignpostCollectionVersionString, 
+                       _SignpostPlatformForDevice, _SignpostPlatformForString, _SignpostSystemTimebaseRatio, 
+                       _StringForSignpostPlatform, __signpostcollection_debug_log, 
+                       _kSignpostNotification_NoTimeout ]
+    objc-classes:    [ SignpostSerializationFilterConfiguration, SignpostSupportObjectSerializer ]
+...

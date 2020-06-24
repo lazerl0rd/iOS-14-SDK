@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           E330FF41-6F19-34E1-881F-B88B96855CE8
+  - target:          arm64e-ios
+    value:           864EF3BB-2D4F-33F6-9D55-68663E7E3420
+install-name:    '/System/Library/PrivateFrameworks/OSASubmissionClient.framework/OSASubmissionClient'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _OSASubmissionClientVersionNumber, _OSASubmissionClientVersionString ]
+    objc-classes:    [ OSASubmissionClient ]
+...

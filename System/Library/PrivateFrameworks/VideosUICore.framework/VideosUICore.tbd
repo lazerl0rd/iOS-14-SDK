@@ -1,0 +1,44 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           625F5D78-FCA8-31E9-89DE-99E7BB722399
+  - target:          arm64e-ios
+    value:           415E93A9-A8CC-3910-AB79-FF82BC73DF70
+install-name:    '/System/Library/PrivateFrameworks/VideosUICore.framework/VideosUICore'
+current-version: 532
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _VUIBoolLogString, _VUIDefaultsAvailabilityEndOverrideInSeconds, 
+                       _VUIDefaultsCanaryURL, _VUIDefaultsCollectionMaxCacheValueKey, 
+                       _VUIDefaultsCollectionRefreshTypeValueKey, _VUIDefaultsDownloadExpirationOverrideInSeconds, 
+                       _VUIDefaultsEnableDebugUI, _VUIDefaultsEnableDemoMode, _VUIDefaultsEnableMetricsExpandedLogging, 
+                       _VUIDefaultsEnableMetricsLogging, _VUIDefaultsEnableMetricsPageRenderLogging, 
+                       _VUIDefaultsEnableRefreshEventDebug, _VUIDefaultsForceGDPRFirstTimeFlow, 
+                       _VUIDefaultsForceGDPRWhatsNewFlow, _VUIDefaultsPageMaxCacheValueKey, 
+                       _VUIDefaultsPageRefreshTypeValueKey, _VUIDefaultsUTSBaseURL, 
+                       _VUIDefaultsWLKDefaultsDomain, _VUIDurationValueTransformerName, 
+                       _VUIError, _VUIErrorCancelled, _VUIErrorCancelledWithUnderlyingError, 
+                       _VUIErrorIsCancelled, _VUIErrorIsErrorCode, _VUIErrorIsErrorDomainAndCode, 
+                       _VUIErrorWithDomain, _VUIFeatureFlagKeyDefaultsKey, _VUIFeatureFlagKeyDomain, 
+                       _VUIFeatureFlagKeyFeatureDescription, _VUIFeatureFlagKeyFeatureName, 
+                       _VUIFeatureFlagKeyIOSDomain, _VUIFeatureFlagKeyIsEnabledByDefault, 
+                       _VUIFeatureFlagKeyIsIOS, _VUIFeatureFlagKeyIsTVOS, _VUIFeatureFlagKeyPlatform, 
+                       _VUIFeatureFlagKeyTVOSDomain, _VUINetworkReachabilityMonitorNetworkReachabilityDidChangeNotification, 
+                       _VUINetworkReachabilityMonitorNetworkReachabilityDidChangeUserInfoKeyNetworkReachable, 
+                       _VUIRequireKeyedCoder, _VUIRequireMainThread, _VUIStateMachineContextKey, 
+                       _VUIStateMachineNewStateKey, _VUIStateMachineOldStateKey, 
+                       _VUIStateMachineStateChangedNotification, _VUIWaitForDebugger, 
+                       _VUIWaitForDebuggerUntilDate, _VideosUICoreErrorDomain ]
+    objc-classes:    [ VUIAsynchronousOperation, VUIAsynchronousWorkToken, VUICollectionChange, 
+                       VUICollectionChangeSet, VUICollectionComparator, VUIDebugDefaults, 
+                       VUIDelayOperation, VUIDurationValueTransformer, VUIEntitiesSortedByDateValueTransformer, 
+                       VUIFeatureFlag, VUIFeatureManager, VUIMobileGestaltLookup, 
+                       VUINetworkReachabilityMonitor, VUIRestrictions, VUISortUtilities, 
+                       VUIStateMachine, VUITitleSortDescriptor, VUIURLRequestOperation ]
+...

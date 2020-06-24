@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           858F0EC6-B8B6-3021-913D-E1523DEF5663
+  - target:          arm64e-ios
+    value:           C14D51AD-BBA0-3491-B7BE-43948F334B4B
+install-name:    '/System/Library/PrivateFrameworks/SignpostNotification.framework/SignpostNotification'
+current-version: 49
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _EnableSignpostNotificationGeneration, _SignpostGetNewNotificationConnection, 
+                       _SignpostNotificationSendNotificationSubscriptionRequestOnConnection, 
+                       _SignpostNotificationVersionNumber, _SignpostNotificationVersionString ]
+...

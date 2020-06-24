@@ -1,0 +1,35 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           76C9D70E-C432-3D82-9310-986ACE6F6B06
+  - target:          arm64e-ios
+    value:           DD60E07B-0C0F-3BC3-8F17-4C0BDCAC43E0
+install-name:    '/System/Library/PrivateFrameworks/SoftwareUpdateCoreTest.framework/SoftwareUpdateCoreTest'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SUCoreTestExecOutputLocation, _kSUCoreTestBuildVersionAppleTVAsHopeGM, 
+                       _kSUCoreTestBuildVersionAppleTVAsYager, _kSUCoreTestBuildVersionAppleTVPreHopeGM, 
+                       _kSUCoreTestBuildVersionAudioAccessoryAsPeaceGM, _kSUCoreTestBuildVersionAudioAccessoryAsYukonB, 
+                       _kSUCoreTestBuildVersionAudioAccessoryPrePeaceGM, _kSUCoreTestBuildVersionIOSAsFuture, 
+                       _kSUCoreTestBuildVersionIOSAsMaxFuture, _kSUCoreTestBuildVersionIOSAsPeaceGM, 
+                       _kSUCoreTestBuildVersionIOSAsYukon, _kSUCoreTestBuildVersionIOSPrePeaceGM, 
+                       _kSUCoreTestBuildVersionWatchAsGloryGM, _kSUCoreTestBuildVersionWatchAsGrace, 
+                       _kSUCoreTestBuildVersionWatchPreGloryGM, _kSUCoreTestCurlCommandPath, 
+                       _kSUCoreTestDeviceClassAppleTV, _kSUCoreTestDeviceClassAudioAccessory, 
+                       _kSUCoreTestDeviceClassIPad, _kSUCoreTestDeviceClassIPhone, 
+                       _kSUCoreTestDeviceClassIPod, _kSUCoreTestDeviceClassWatch, 
+                       _kSUCoreTestOSVersionAppleTVAsHopeGM, _kSUCoreTestOSVersionAppleTVAsYager, 
+                       _kSUCoreTestOSVersionAsFuture, _kSUCoreTestOSVersionAudioAccessoryAsPeaceGM, 
+                       _kSUCoreTestOSVersionAudioAccessoryAsYukonB, _kSUCoreTestOSVersionIOSAsPeaceGM, 
+                       _kSUCoreTestOSVersionIOSAsYukon, _kSUCoreTestOSVersionWatchAsGloryGM, 
+                       _kSUCoreTestOSVersionWatchAsGrace, _kSUTestToolErrorDomain ]
+    objc-classes:    [ SUCoreTestAssert, SUCoreTestNetworkCheck, SUCoreTestNetworkResilient, 
+                       SUCoreTestTrackProgress, SUCoreTestUtilities, SUTestTool, 
+                       SUTestToolArguments ]
+...

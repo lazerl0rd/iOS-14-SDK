@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           A7B17BDB-DE84-3571-B11A-6DCF82DF082F
+  - target:          arm64e-ios
+    value:           347B942A-08A4-30A2-AB40-11DDF83625C3
+install-name:    '/usr/lib/libMTLCapture.dylib'
+current-version: 200.61.1
+compatibility-version: 1.1
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _DYMTLWrapDeviceWithDebugLayer, _GTMTLGuestAppClient_GetMTLCaptureScopes, 
+                       _GTMTLGuestAppClient_GetMTLCommandQueues, _GTMTLGuestAppClient_getUnsupportedFenumAndCategory, 
+                       _GTMTLGuestAppClient_initGlobalTransportWithHostURL, _GTMTLGuestAppClient_notifyUnsupportedFenum, 
+                       _GTMTLGuestAppClient_unsupportedFenumDetected ]
+...

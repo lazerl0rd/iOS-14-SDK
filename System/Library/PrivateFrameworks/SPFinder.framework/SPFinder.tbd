@@ -1,0 +1,27 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           D51CAEE6-5575-3204-8354-774FC0EBB3F9
+  - target:          arm64e-ios
+    value:           EE7CBC25-4FD5-3735-BEB2-506DD5A7D821
+install-name:    '/System/Library/PrivateFrameworks/SPFinder.framework/SPFinder'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SPFinderDisabledReasonCannotPublishAnonymously, _SPFinderDisabledReasonFindMyiPhoneOff, 
+                       _SPFinderDisabledReasonLocationServices, _SPFinderDisabledReasonLocationServicesFindMyFramework, 
+                       _SPFinderDisabledReasonLowAccountSecurity, _SPFinderDisabledReasonNone, 
+                       _SPFinderDisabledReasonServiceDisabled, _SPFinderDisabledReasonUserOptOut, 
+                       _SPFinderDisabledReasoniCloudSignedOut, _SPFinderStateChangedNotification ]
+    objc-classes:    [ SPAdvertisement, SPAdvertisementCache, SPAdvertisementCacheSearchCriteria, 
+                       SPAdvertisementCacheSearchResult, SPBeaconAdvertisement, SPBeaconPayload, 
+                       SPBeaconPayloadCacheSearchCriteria, SPBeaconPayloadCacheSearchResult, 
+                       SPEstimatedLocation, SPFinderInterface, SPFinderStateInfo, 
+                       SPFinderStateManager, SPScheduler, SPSchedulerInformation, 
+                       SPSearchResultMarker ]
+...

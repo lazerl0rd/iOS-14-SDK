@@ -1,0 +1,31 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           889F4390-5A38-3D57-ACBD-B0791C256E15
+  - target:          armv7s-ios
+    value:           FC22CEB9-0CFD-35D8-8B22-64475D68C4E6
+  - target:          arm64-ios
+    value:           7C1AA267-A611-30EB-A9DE-E9C48D691A3B
+  - target:          arm64e-ios
+    value:           C22D9D7B-4338-3544-84B0-4518908BC629
+install-name:    '/System/Library/PrivateFrameworks/IntentsCore.framework/IntentsCore'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    objc-classes:    [ INCSchemaManager, INCWatchdogTimer ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _INCDecodeHashedRouteUIDs, _INCDeserializeNSUserActivityData, 
+                       _INCExtensionErrorDomain, _INCExtensionTransactionStateTypeGetName, 
+                       _INCExtractPreferencesResponseFromMetricsContext, _INCGenerateMetricsContextUsingAppPreferenceResponse, 
+                       _INCGetCurrentGroupDeviceUIDs, _INCNativeMessagesAppBundleIdentifier, 
+                       _INCRouteAudioToAirplayOutputDevices, _INCRouteAudioToAirplayOutputDevicesForAudioSession, 
+                       _INCSerializeNSUserActivity, _IntentsCoreVersionNumber, _IntentsCoreVersionString ]
+    objc-classes:    [ INCAppLaunchRequest, INCAppProxy, INCChronoIntentProvider, 
+                       INCChronoOptions, INCExecutionInfo, INCExecutionInfoResolver, 
+                       INCExtensionConnection, INCExtensionError, INCExtensionManager, 
+                       INCExtensionPlugInBundleManager, INCExtensionProxy, INCExtensionRequest, 
+                       INCExtensionTransaction, INCExtensionTransactionState, INCIntentDefaultValueProvider, 
+                       INCIntentExecutionInfo, INCIntentExecutionInfoResolver, INCLocalExtensionRegistry, 
+                       INCUserActivityExecutionInfo, INCWidgetIntentProvider, INCWidgetOptions ]
+...

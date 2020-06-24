@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           096E9616-D3E4-3244-B2C7-0B593229E0C9
+  - target:          arm64e-ios
+    value:           28330747-1CF2-3BF4-840E-553A92E5A2A2
+install-name:    '/System/Library/PrivateFrameworks/AdPlatforms.framework/AdPlatforms'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AdPlatformsVersionNumber, _AdPlatformsVersionString ]
+    objc-classes:    [ ADAttribution, ADStatusConditionRateLimitedObject, ADStatusConditions, 
+                       ADStatusConditionsImpl ]
+...

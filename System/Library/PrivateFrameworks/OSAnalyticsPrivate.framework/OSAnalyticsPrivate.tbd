@@ -1,0 +1,23 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           41FA4246-8816-385E-A838-6D754DE714BE
+  - target:          arm64e-ios
+    value:           5015DA1D-FF5D-34D2-96C9-D404BB2D4AB4
+install-name:    '/System/Library/PrivateFrameworks/OSAnalyticsPrivate.framework/OSAnalyticsPrivate'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _OSAnalyticsPrivateVersionNumber, _OSAnalyticsPrivateVersionString ]
+    objc-classes:    [ OSAEphemeralLog, OSAHttpSubmitter, OSAStreamDeflater, OSASubmissionPolicy, 
+                       OSASubmitter, PCCEndpoint, PCCGroupJob, PCCIDSEndpoint, PCCJob, 
+                       PCCProxiedDevice, PCCProxyingDevice, PCCRequest ]
+    objc-ivars:      [ OSASubmitter._dryRun, OSASubmitter._responseCode, OSASubmitter._responseData, 
+                       OSASubmitter._responseError, OSASubmitter._responseHeaders, 
+                       PCCEndpoint._delegate, PCCJob._errObj, PCCJob._package ]
+...

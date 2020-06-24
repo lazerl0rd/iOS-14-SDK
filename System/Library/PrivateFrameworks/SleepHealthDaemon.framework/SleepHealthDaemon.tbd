@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           4EBFBBFD-3456-316D-B300-7F18A1ECFD57
+  - target:          arm64e-ios
+    value:           B710B41A-D5BE-3931-AA68-33494338ED67
+install-name:    '/System/Library/PrivateFrameworks/SleepHealthDaemon.framework/SleepHealthDaemon'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ HDSHPluginServer, HDSHProfileExtension, HDSHSleepDaySummaryBuilder, 
+                       HDSHSleepDaySummaryEnumerator, HDSHSleepDaySummaryQueryServer, 
+                       HDSHSleepHealthDaemonPlugin, HDSHSleepHealthDaemonTestPlugin ]
+...

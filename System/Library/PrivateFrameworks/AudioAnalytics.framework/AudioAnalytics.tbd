@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           1466819B-56CA-3C00-98E6-2F00E523C660
+  - target:          arm64e-ios
+    value:           03054502-82FA-3F66-9391-A95970CED6AB
+install-name:    '/System/Library/PrivateFrameworks/AudioAnalytics.framework/AudioAnalytics'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AudioAnalyticsVersionNumber, _AudioAnalyticsVersionString ]
+...

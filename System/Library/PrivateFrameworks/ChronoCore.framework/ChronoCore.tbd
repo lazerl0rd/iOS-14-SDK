@@ -1,0 +1,95 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           C24EB5AA-8316-32B3-9F0E-35D9E9F11D54
+  - target:          arm64e-ios
+    value:           C7699DA8-7838-3C5B-8581-B2415CFAC34D
+install-name:    '/System/Library/PrivateFrameworks/ChronoCore.framework/ChronoCore'
+swift-abi-version: 7
+allowable-clients:
+  - targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    clients:         [ ChronoCoreTests, Gaspar, Xcode, Xcode Previews, chronod ]
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ '_$s10ChronoCore0A11MetadataLogSo9OS_os_logCvg', '_$s10ChronoCore0A9CommonLogSo9OS_os_logCvg', 
+                       '_$s10ChronoCore0aB5ErrorO010URLSessionC0O09malformedD14InfoDictionaryyAESScAEmFWC', 
+                       '_$s10ChronoCore0aB5ErrorO010URLSessionC0O21failedToFindExtensionyA2EmFWC', 
+                       '_$s10ChronoCore0aB5ErrorO010URLSessionC0OMa', '_$s10ChronoCore0aB5ErrorO010URLSessionC0OMn', 
+                       '_$s10ChronoCore0aB5ErrorO010URLSessionC0ON', '_$s10ChronoCore0aB5ErrorO010URLSessionC0Os0C0AAMc', 
+                       '_$s10ChronoCore0aB5ErrorO08TimelineC0O013failedToFetchD0yA2EmFWC', 
+                       '_$s10ChronoCore0aB5ErrorO08TimelineC0O17extensionNotFoundyA2EmFWC', 
+                       '_$s10ChronoCore0aB5ErrorO08TimelineC0O19environmentNotFoundyA2EmFWC', 
+                       '_$s10ChronoCore0aB5ErrorO08TimelineC0O2eeoiySbAE_AEtFZ', 
+                       '_$s10ChronoCore0aB5ErrorO08TimelineC0O4hash4intoys6HasherVz_tF', 
+                       '_$s10ChronoCore0aB5ErrorO08TimelineC0O9hashValueSivg', '_$s10ChronoCore0aB5ErrorO08TimelineC0O9hashValueSivpMV', 
+                       '_$s10ChronoCore0aB5ErrorO08TimelineC0OMa', '_$s10ChronoCore0aB5ErrorO08TimelineC0OMn', 
+                       '_$s10ChronoCore0aB5ErrorO08TimelineC0ON', '_$s10ChronoCore0aB5ErrorO08TimelineC0OSHAAMc', 
+                       '_$s10ChronoCore0aB5ErrorO08TimelineC0OSQAAMc', '_$s10ChronoCore0aB5ErrorO08TimelineC0Os0C0AAMc', 
+                       '_$s10ChronoCore0aB5ErrorO08metadataC0yA2CmFWC', '_$s10ChronoCore0aB5ErrorO10Foundation09LocalizedC0AAMc', 
+                       '_$s10ChronoCore0aB5ErrorO10Foundation13CustomNSErrorAAMc', 
+                       '_$s10ChronoCore0aB5ErrorO11errorDomainSSvgZ', '_$s10ChronoCore0aB5ErrorO15budgetExhaustedyA2CmFWC', 
+                       '_$s10ChronoCore0aB5ErrorO15noXPCConnectionyA2CmFWC', '_$s10ChronoCore0aB5ErrorO16debugDescriptionSSvg', 
+                       '_$s10ChronoCore0aB5ErrorO16debugDescriptionSSvpMV', '_$s10ChronoCore0aB5ErrorO16errorDescriptionSSSgvg', 
+                       '_$s10ChronoCore0aB5ErrorO16errorDescriptionSSSgvpMV', '_$s10ChronoCore0aB5ErrorO20invalidXPCConnectionyA2CmFWC', 
+                       '_$s10ChronoCore0aB5ErrorO23toolServicesUnavailableyA2CmFWC', 
+                       '_$s10ChronoCore0aB5ErrorO23unknownExtensionProcessyA2CmFWC', 
+                       '_$s10ChronoCore0aB5ErrorO24invalidSizeConfigurationyA2CmFWC', 
+                       '_$s10ChronoCore0aB5ErrorO24remoteContextUnavailableyA2CmFWC', 
+                       '_$s10ChronoCore0aB5ErrorO25chronoServicesUnavailableyA2CmFWC', 
+                       '_$s10ChronoCore0aB5ErrorO26clientProcessNotAuthorizedyA2CmFWC', 
+                       '_$s10ChronoCore0aB5ErrorO29noTimelineForBundleIdentifieryA2CmFWC', 
+                       '_$s10ChronoCore0aB5ErrorO29unknownStateCaptureIdentifieryA2CmFWC', 
+                       '_$s10ChronoCore0aB5ErrorO36multipleTimelinesForBundleIdentifieryA2CmFWC', 
+                       '_$s10ChronoCore0aB5ErrorO8rawValueACSgSi_tcfC', '_$s10ChronoCore0aB5ErrorO8rawValueSivg', 
+                       '_$s10ChronoCore0aB5ErrorO8rawValueSivpMV', '_$s10ChronoCore0aB5ErrorOMa', 
+                       '_$s10ChronoCore0aB5ErrorOMn', '_$s10ChronoCore0aB5ErrorON', 
+                       '_$s10ChronoCore0aB5ErrorOSHAAMc', '_$s10ChronoCore0aB5ErrorOSQAAMc', 
+                       '_$s10ChronoCore0aB5ErrorOSYAAMc', '_$s10ChronoCore0aB5ErrorOs0C0AAMc', 
+                       '_$s10ChronoCore0aB5ErrorOs28CustomDebugStringConvertibleAAMc', 
+                       '_$s10ChronoCore16KeybagMonitoringMp', '_$s10ChronoCore16KeybagMonitoringP23deviceUnlockedSinceBootSbvgTj', 
+                       '_$s10ChronoCore16KeybagMonitoringP23deviceUnlockedSinceBootSbvgTq', 
+                       '_$s10ChronoCore16KeybagMonitoringP24isProtectedDataAvailableSbvgTj', 
+                       '_$s10ChronoCore16KeybagMonitoringP24isProtectedDataAvailableSbvgTq', 
+                       '_$s10ChronoCore16KeybagMonitoringP25lockStateChangedPublisher7Combine03AnyH0VySbs5NeverOGvgTj', 
+                       '_$s10ChronoCore16KeybagMonitoringP25lockStateChangedPublisher7Combine03AnyH0VySbs5NeverOGvgTq', 
+                       '_$s10ChronoCore16KeybagMonitoringP26firstUnlockReloadPublisher7Combine03AnyH0Vyyts5NeverOGvgTj', 
+                       '_$s10ChronoCore16KeybagMonitoringP26firstUnlockReloadPublisher7Combine03AnyH0Vyyts5NeverOGvgTq', 
+                       '_$s10ChronoCore16KeybagMonitoringP32firstUnlockStateChangedPublisher7Combine03AnyI0VySbs5NeverOGvgTj', 
+                       '_$s10ChronoCore16KeybagMonitoringP32firstUnlockStateChangedPublisher7Combine03AnyI0VySbs5NeverOGvgTq', 
+                       '_$s10ChronoCore16KeybagMonitoringTL', '_$s10ChronoCore17ProcessMonitoringMp', 
+                       '_$s10ChronoCore17ProcessMonitoringP24isExtensionBeingDebugged3forSbSS_tFTj', 
+                       '_$s10ChronoCore17ProcessMonitoringP24isExtensionBeingDebugged3forSbSS_tFTq', 
+                       '_$s10ChronoCore17ProcessMonitoringP52isContainingApplicationRunningWithBudgetExemptReason3forSbSS_tFTj', 
+                       '_$s10ChronoCore17ProcessMonitoringP52isContainingApplicationRunningWithBudgetExemptReason3forSbSS_tFTq', 
+                       '_$s10ChronoCore17ProcessMonitoringTL', '_$s10ChronoCore21_ChronodStartupHelperC9bootstrapyyFZ', 
+                       '_$s10ChronoCore21_ChronodStartupHelperCMa', '_$s10ChronoCore21_ChronodStartupHelperCMm', 
+                       '_$s10ChronoCore21_ChronodStartupHelperCMn', '_$s10ChronoCore21_ChronodStartupHelperCMo', 
+                       '_$s10ChronoCore21_ChronodStartupHelperCMu', '_$s10ChronoCore21_ChronodStartupHelperCN', 
+                       '_$s10ChronoCore21_ChronodStartupHelperCfD', '_$s10ChronoCore21_ChronodStartupHelperCfd', 
+                       '_$s10ChronoCore22AllowLocationAssertionCMa', '_$s10ChronoCore22AllowLocationAssertionCMm', 
+                       '_$s10ChronoCore22AllowLocationAssertionCMn', '_$s10ChronoCore22AllowLocationAssertionCMo', 
+                       '_$s10ChronoCore22AllowLocationAssertionCMu', '_$s10ChronoCore22AllowLocationAssertionCN', 
+                       '_$s10ChronoCore22AllowLocationAssertionCfD', '_$s10ChronoCore22AllowLocationAssertionCfd', 
+                       '_$s7Combine10PublishersO10ChronoCoreE20WithExtendedLifetimeV7receive10subscriberyqd___tAA10SubscriberRd__7FailureQyd__AJRtz5InputQyd__6OutputRtzlF', 
+                       '_$s7Combine10PublishersO10ChronoCoreE20WithExtendedLifetimeV8extendedq_vg', 
+                       '_$s7Combine10PublishersO10ChronoCoreE20WithExtendedLifetimeV8extendedq_vpMV', 
+                       '_$s7Combine10PublishersO10ChronoCoreE20WithExtendedLifetimeV8upstream9extendingAFy_xq_Gx_q_tcfC', 
+                       '_$s7Combine10PublishersO10ChronoCoreE20WithExtendedLifetimeV8upstreamxvg', 
+                       '_$s7Combine10PublishersO10ChronoCoreE20WithExtendedLifetimeV8upstreamxvpMV', 
+                       '_$s7Combine10PublishersO10ChronoCoreE20WithExtendedLifetimeVMa', 
+                       '_$s7Combine10PublishersO10ChronoCoreE20WithExtendedLifetimeVMn', 
+                       '_$s7Combine10PublishersO10ChronoCoreE20WithExtendedLifetimeVy_xq_GAA9PublisherADMc', 
+                       '_$s7Combine9PublisherP10ChronoCoreE20withExtendedLifetimeyAA10PublishersOADE04WithfG0Vy_xqd__Gqd__lF', 
+                       '_$s9ChronoKit0A13MetadataStoreC0A4CoreE6sharedACvMZ', '_$s9ChronoKit0A13MetadataStoreC0A4CoreE6sharedACvgZ', 
+                       '_$s9ChronoKit0A13MetadataStoreC0A4CoreE6sharedACvsZ', _CHDForwardEntriesToProactive, 
+                       _CHDMonotonicTimeForever, _CHDMonotonicTimeNow, _CHDMonotonicTimePlusInterval, 
+                       _CHDRegisterForTemporaryFolder, _CHDSerializeNSUserActivity, 
+                       _ChronoCoreVersionNumber, _ChronoCoreVersionString ]
+    objc-classes:    [ CHCWorkloop, CHDMonotonicTimer, CHDProactiveEntry ]
+...

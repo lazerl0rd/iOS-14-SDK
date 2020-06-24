@@ -1,0 +1,23 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           B01A502D-1029-3792-8273-060219849A12
+  - target:          arm64e-ios
+    value:           B021771C-AA3A-3187-B8E0-4D4E9466BBE4
+install-name:    '/System/Library/PrivateFrameworks/PDS.framework/PDS'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _PDSCDCacheErrorDomain, _PDSInternalClientIDEntitlementKey, 
+                       _PDSInternalDaemonMachServiceName, _PDSInternalToolEntitlementKey, 
+                       _PDSInternalWildcardClientID, _PDSRegistrarErrorDomain, _PDSStringForEntryState, 
+                       _PDSUserErrorDomain, _PDSXPCErrorDomain, _pds_defaultLog, 
+                       _pds_oversizedLog ]
+    objc-classes:    [ PDSEntry, PDSRegistrar, PDSRegistration, PDSRemoteRegistry, 
+                       PDSUser, PDSXPCAdapter, PDSXPCConnector, PDSXPCInterface ]
+...

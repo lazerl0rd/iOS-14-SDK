@@ -1,0 +1,45 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           72C4D49A-EF65-3B0E-BBBE-C8F839EBBA0F
+  - target:          arm64e-ios
+    value:           0CB739EF-2F40-355E-861E-0BB89DDFE334
+install-name:    '/System/Library/Frameworks/MediaSetup.framework/MediaSetup'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _MSCloudKitErrorDomain, _MSDefaultServiceRecordName, _MSDefaultServiceRecordType, 
+                       _MSErrorDomain, _MSHomeParticipantHomeIdentifier, _MSHomeParticipantHomeUserIdentifier, 
+                       _MSPlaceholderRecordName, _MSPlaceholderRecordType, _MSPublicInfoRecordZoneName, 
+                       _MSPublicInfoServiceRecordType, _MSServiceAccountRecordType, 
+                       _MSServiceSetupErrorDomain, _MSUserInfoErrorStringKey, _MediaServiceAccountName, 
+                       _MediaServiceAuthClientID, _MediaServiceAuthClientSecret, 
+                       _MediaServiceAuthConfiguration, _MediaServiceAuthCredential, 
+                       _MediaServiceAuthFatalError, _MediaServiceAuthURL, _MediaServiceBundleIdentifier, 
+                       _MediaServiceConfigurationAsset, _MediaServiceConfigurationETag, 
+                       _MediaServiceConfigurationPublicKey, _MediaServiceConfigurationURL, 
+                       _MediaServiceIconPath, _MediaServiceIdentifier, _MediaServiceName, 
+                       _MediaServiceType, _MediaServiceUpdateListeningHistory, _MediaSetupVersionNumber, 
+                       _MediaSetupVersionString, _kAPSDelegatePort, _kAPSTopic, _kAppleMusicApplicationIdentifier, 
+                       _kAppleMusicBundleIdentifier, _kAppleMusicServiceIdentifier, 
+                       _kAppleMusicServiceType, _kBackgroundActivityDataRefreshTaskIdentifier, 
+                       _kBackgroundActivityPublicDatabaseRefreshTaskIdentifier, _kCKDatabaseAccessUserInfoHomeIDKey, 
+                       _kCKDatabaseAccessUserInfoHomeUserIDKey, _kCloudMediaServicesBundleIdentifier, 
+                       _kHomeMultiUserStatusChangedNotification, _kHomeUserCloudShareChangedNotification, 
+                       _kHomeUserCloudShareRepairNotification, _kLanguageChangedNotification, 
+                       _kMediaSetupCloudKitContainerIdentifier, _kMediaSetupDeveloperUserDefaultsDomain, 
+                       _kMediaSetupExtensionIdentifier, _kMediaSetupInterfaceEntitlementKey, 
+                       _kMediaSetupKeyHostBundleID, _kMediaSetupKeyMediaService, 
+                       _kMediaSetupKeyTestUIFlags, _kMediaSetupMachServiceName, _kMediaSetupPublicCloudKitContainerIdentifier, 
+                       _kMediaSetupServiceEntitlement, _kMediaSetupServicesChanged, 
+                       _kMediaSetupTestingProfileDefaultsIdentifier, _kMediaSetupUserDefaultsDomain, 
+                       _kPodcastsBundleIdentifier ]
+    objc-classes:    [ MSAssistantPreferences, MSDDefaultsInfo, MSPublicDBInfo, MSServer, 
+                       MSServiceAccount, MSServiceUpdatedHandler, MSSetupViewController, 
+                       MediaService, MediaServiceConfiguration, _MSRemoteViewController ]
+...

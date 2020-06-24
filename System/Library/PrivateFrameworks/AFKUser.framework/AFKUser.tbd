@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           42CAB5F1-DA5A-399D-9115-B75F8182D092
+  - target:          arm64e-ios
+    value:           2AD15D09-0853-36BD-9487-3286F7FE9512
+install-name:    '/System/Library/PrivateFrameworks/AFKUser.framework/AFKUser'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AFKUserVersionNumber, _AFKUserVersionString, _kAFKEventCancel, 
+                       _kAFKEventError ]
+    objc-classes:    [ AFKEndpointInterface ]
+...

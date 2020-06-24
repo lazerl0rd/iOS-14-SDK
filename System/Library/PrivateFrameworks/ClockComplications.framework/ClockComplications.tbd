@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           933A8BAB-51D0-3CBB-AD3F-74FF1504CEF6
+  - target:          arm64e-ios
+    value:           EF0C490E-EA2A-33C4-9C8C-E7F3378B7BFE
+install-name:    '/System/Library/PrivateFrameworks/ClockComplications.framework/ClockComplications'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ClockComplicationsVersionNumber, _ClockComplicationsVersionString ]
+    objc-classes:    [ CLKCBundleComplication, CLKCComplication, CLKCComplicationBundleDataSource, 
+                       CLKCComplicationBundleDataSourceContainer, CLKCComplicationDataSource ]
+...

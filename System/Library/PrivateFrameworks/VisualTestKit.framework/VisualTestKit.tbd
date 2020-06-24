@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           2A090892-3F06-3D7F-887C-92D8E2609F75
+  - target:          arm64e-ios
+    value:           DF8A01A3-8387-3A53-B803-9067AEDC7A50
+install-name:    '/System/Library/PrivateFrameworks/VisualTestKit.framework/VisualTestKit'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _NSStringFromVTKAssertID, _VTKID, ___VTKAddExclusionAreaAt, 
+                       ___VTKAddHorizontalGuideAt, ___VTKAddSqureGuideAt, ___VTKAddVerticalGuideAt, 
+                       ___VTKAssertView, ___VTKExclusionAreaStatusBar, ___VTKSetImageComparatorStrategy, 
+                       ___VTKSetImageComparisonOptions, ___VTKSetReferenceImagesDirectory, 
+                       ___VTKSetReferenceItemSourceType ]
+    objc-classes:    [ VTKAssertID ]
+...

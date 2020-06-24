@@ -1,0 +1,39 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           5154F3BA-543A-3D04-9C0D-7FF42BD18B19
+  - target:          arm64e-ios
+    value:           DE9215A0-CC90-376F-AD2A-6208A5107774
+install-name:    '/System/Library/PrivateFrameworks/BrookServices.framework/BrookServices'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _BRKBuildVersion, _BRKBundle, _BRKCreateDirectory, _BRKCreateDispatchQueue, 
+                       _BRKCrownOrientationIsRight, _BRKCurrentDeviceVariant, _BRKCurrentLanguageRequiresTallScript, 
+                       _BRKDataCollectionServicesEnabledKey, _BRKDefaultsBrookAvailableKey, 
+                       _BRKDefaultsCoolDownIntervalKey, _BRKDefaultsEnabledKey, _BRKDefaultsHapticsEnabledKey, 
+                       _BRKDefaultsLastDataCollectionUploadDateKey, _BRKDefaultsOnboardingCompleteKey, 
+                       _BRKDefaultsOverrideDataCollectionAuthorizationKey, _BRKDefaultsRemindersEnabledKey, 
+                       _BRKDefaultsScrubbingDetectorEnabledKey, _BRKDefaultsVibeHapticsEnabledKey, 
+                       _BRKDescriptionStringFromDictionary, _BRKDetectorVersion, 
+                       _BRKDeviceIsLocked, _BRKDeviceLocale, _BRKDeviceLockStateChangedNotification, 
+                       _BRKDeviceOrientationDidChangeNotification, _BRKDeviceRegion, 
+                       _BRKDeviceTimezone, _BRKDeviceTimezoneOffset, _BRKDeviceUnlockedSinceBoot, 
+                       _BRKFileModifiedDate, _BRKFileSize, _BRKHardwareVersion, _BRKIDSMessageReadFrom, 
+                       _BRKIsInternalBuild, _BRKIsInternalCarryEnabled, _BRKLoggingObjectForDomain, 
+                       _BRKMarkFilePurgeable, _BRKNumberIfFloatingPoint, _BRKSettingsDidUpdateNotification, 
+                       _BRKSettingsVersionKey, _BRKSignificantTimeChangeNotification, 
+                       _BRKWristOrientationIsRight, _BrookServicesVersionNumber, 
+                       _BrookServicesVersionString, __BRKFileAttributes, __BRKHandleNPSNotification, 
+                       __BRKLocalesRequiringTallScript, __BRKRegisterForLockedStatusChange, 
+                       __BRKSharedBackgroundQueue, __BRKSharedUtilityQueue ]
+    objc-classes:    [ BRKIDSMessage, BRKIDSService, BRKSettings, BRKUserNotificationManager, 
+                       _BRKDeviceOrientationNotificationProxy, _BRKSignificantTimeChangeNotifier ]
+    objc-ivars:      [ BRKIDSMessage._has, BRKIDSMessage._identifier, BRKIDSMessage._latitude, 
+                       BRKIDSMessage._longitude ]
+...

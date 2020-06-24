@@ -1,0 +1,28 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           15E7C250-0C5B-388C-87D5-35BCD3DE6911
+  - target:          armv7s-ios
+    value:           5B658591-2769-3BCD-B996-32A1BF9DABD7
+  - target:          arm64-ios
+    value:           ABE21537-3F52-34A7-B218-5822B51CEF77
+  - target:          arm64e-ios
+    value:           6C87019B-6862-379F-99A0-52A9CE14D151
+install-name:    '/System/Library/PrivateFrameworks/FMF.framework/FMF'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _FMFDevicesChangedNotification, _FMFErrorDomain, _FMFFenceAcceptanceStatusAccepted, 
+                       _FMFFenceAcceptanceStatusPending, _FMFFenceAcceptanceStatusPendingHidden, 
+                       _FMFFenceErrorDomain, _FMFFenceTriggerArriving, _FMFFenceTriggerImmediate, 
+                       _FMFFenceTriggerLeaving, _FMFFenceTriggerStatusEnter, _FMFFenceTriggerStatusExit, 
+                       _FMFFenceTriggerStatusUndetermined, _FMFFenceTypeNotifyMe, 
+                       _FMFFenceTypeNotifyOther, _FMFFollowersChangedNotification, 
+                       _FMFGroupIdDefault, _FMFGroupIdGroup, _FMFGroupIdOneToOne, 
+                       _FMFHomeKitAutomationDeviceChangedNotification, _FMFMeDeviceChangedNotification, 
+                       _kFMFSyncXPCTimeout, _kMapImageKey ]
+    objc-classes:    [ FMFAppAccountInfo, FMFContactUtility, FMFDevice, FMFFence, 
+                       FMFFriendshipRequest, FMFHandle, FMFLocation, FMFMapImageRequest, 
+                       FMFMapSession, FMFPlacemark, FMFSession, FMFSynchronizer ]
+...

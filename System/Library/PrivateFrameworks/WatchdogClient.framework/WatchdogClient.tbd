@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           1F753446-AE24-3548-8972-0F7B131E6EE7
+  - target:          arm64e-ios
+    value:           25A00048-9A08-306C-A78B-69FB6A3F035D
+install-name:    '/System/Library/PrivateFrameworks/WatchdogClient.framework/WatchdogClient'
+current-version: 94
+compatibility-version: 0
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _wd_endpoint_activate, _wd_endpoint_add_queue, _wd_endpoint_add_work_processor, 
+                       _wd_endpoint_register, _wd_endpoint_set_alive_func ]
+...

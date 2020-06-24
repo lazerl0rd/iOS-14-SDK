@@ -1,0 +1,59 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           7DB848D6-04CE-3BD5-A694-A078B89A51EB
+  - target:          arm64e-ios
+    value:           9A1B0EE1-0EE2-3ED2-8E51-7D06DB4FF60C
+install-name:    '/System/Library/PrivateFrameworks/WeatherCharts.framework/WeatherCharts'
+current-version: 1618.5
+swift-abi-version: 7
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ '_$s13WeatherCharts16NextHourGridViewC14layoutSubviewsyyF', 
+                       '_$s13WeatherCharts16NextHourGridViewC5frameACSo6CGRectV_tcfC', 
+                       '_$s13WeatherCharts16NextHourGridViewC5frameACSo6CGRectV_tcfc', 
+                       '_$s13WeatherCharts16NextHourGridViewCMa', '_$s13WeatherCharts16NextHourGridViewCMn', 
+                       '_$s13WeatherCharts16NextHourGridViewCN', '_$s13WeatherCharts16NextHourGridViewCfD', 
+                       '_$s13WeatherCharts17NextHourChartViewC23layoutAttributesFactoryAA0cd6LayouthI0Vvpfi', 
+                       '_$s13WeatherCharts17NextHourChartViewC3for4size7minutes8timeZoneAcA0cdeF7ContextO_So6CGSizeVSayAA0cdF11MinuteModelCG10Foundation04TimeK0VtcfC', 
+                       '_$s13WeatherCharts17NextHourChartViewC3for4size7minutes8timeZoneAcA0cdeF7ContextO_So6CGSizeVSayAA0cdF11MinuteModelCG10Foundation04TimeK0VtcfCTq', 
+                       '_$s13WeatherCharts17NextHourChartViewC3for4size7minutes8timeZoneAcA0cdeF7ContextO_So6CGSizeVSayAA0cdF11MinuteModelCG10Foundation04TimeK0Vtcfc', 
+                       '_$s13WeatherCharts17NextHourChartViewC3for4withAcA0cdeF7ContextO_SayAA0cdF11MinuteModelCGtcfC', 
+                       '_$s13WeatherCharts17NextHourChartViewC3for4withAcA0cdeF7ContextO_SayAA0cdF11MinuteModelCGtcfCTq', 
+                       '_$s13WeatherCharts17NextHourChartViewC3for4withAcA0cdeF7ContextO_SayAA0cdF11MinuteModelCGtcfc', 
+                       '_$s13WeatherCharts17NextHourChartViewC5frameACSo6CGRectV_tcfC', 
+                       '_$s13WeatherCharts17NextHourChartViewC5frameACSo6CGRectV_tcfc', 
+                       '_$s13WeatherCharts17NextHourChartViewC6stylerAA0cD6StylerVvpfi', 
+                       '_$s13WeatherCharts17NextHourChartViewCMa', '_$s13WeatherCharts17NextHourChartViewCMn', 
+                       '_$s13WeatherCharts17NextHourChartViewCN', '_$s13WeatherCharts17NextHourChartViewCfD', 
+                       '_$s13WeatherCharts20NextHourTimelineViewC010twentyFourD9PreferredSbyF', 
+                       '_$s13WeatherCharts20NextHourTimelineViewC14layoutSubviewsyyF', 
+                       '_$s13WeatherCharts20NextHourTimelineViewC5frameACSo6CGRectV_tcfC', 
+                       '_$s13WeatherCharts20NextHourTimelineViewC5frameACSo6CGRectV_tcfc', 
+                       '_$s13WeatherCharts20NextHourTimelineViewCMa', '_$s13WeatherCharts20NextHourTimelineViewCMn', 
+                       '_$s13WeatherCharts20NextHourTimelineViewCN', '_$s13WeatherCharts20NextHourTimelineViewCfD', 
+                       '_$s13WeatherCharts23NextHourViewMinuteModelC22precipitationIntensity4dateACSd_10Foundation4DateVtcfC', 
+                       '_$s13WeatherCharts23NextHourViewMinuteModelC22precipitationIntensity4dateACSd_10Foundation4DateVtcfCTq', 
+                       '_$s13WeatherCharts23NextHourViewMinuteModelC22precipitationIntensity4dateACSd_10Foundation4DateVtcfc', 
+                       '_$s13WeatherCharts23NextHourViewMinuteModelC22precipitationIntensityACSd_tcfC', 
+                       '_$s13WeatherCharts23NextHourViewMinuteModelC22precipitationIntensityACSd_tcfCTq', 
+                       '_$s13WeatherCharts23NextHourViewMinuteModelC22precipitationIntensityACSd_tcfc', 
+                       '_$s13WeatherCharts23NextHourViewMinuteModelCACycfC', '_$s13WeatherCharts23NextHourViewMinuteModelCACycfc', 
+                       '_$s13WeatherCharts23NextHourViewMinuteModelCMa', '_$s13WeatherCharts23NextHourViewMinuteModelCMn', 
+                       '_$s13WeatherCharts23NextHourViewMinuteModelCN', '_$s13WeatherCharts23NextHourViewMinuteModelCfD', 
+                       '_$s13WeatherCharts24NextHourChartViewContextO8rawValueACSgSi_tcfC', 
+                       '_$s13WeatherCharts24NextHourChartViewContextO8rawValueSivg', 
+                       '_$s13WeatherCharts24NextHourChartViewContextO8rawValueSivpMV', 
+                       '_$s13WeatherCharts24NextHourChartViewContextOMa', '_$s13WeatherCharts24NextHourChartViewContextOMn', 
+                       '_$s13WeatherCharts24NextHourChartViewContextON', '_$s13WeatherCharts24NextHourChartViewContextOSHAAMc', 
+                       '_$s13WeatherCharts24NextHourChartViewContextOSQAAMc', '_$s13WeatherCharts24NextHourChartViewContextOSYAAMc', 
+                       _WeatherChartsVersionNumber, _WeatherChartsVersionString ]
+    objc-classes:    [ WCNextHourChartView, WCNextHourViewMinute, _TtC13WeatherCharts16NextHourGridView, 
+                       _TtC13WeatherCharts20NextHourTimelineView ]
+...

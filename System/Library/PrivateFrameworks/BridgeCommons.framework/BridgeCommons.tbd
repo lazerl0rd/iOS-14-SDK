@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           09FCEF48-1409-3DEE-ACCC-46C5FAD07A2B
+  - target:          arm64e-ios
+    value:           9EE083E1-5343-349A-ACA8-2872DAC5A6A3
+install-name:    '/System/Library/PrivateFrameworks/BridgeCommons.framework/BridgeCommons'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _BCViewContollerForModallyPresentingTheUrl, _BridgeCommonsVersionNumber, 
+                       _BridgeCommonsVersionString ]
+    objc-classes:    [ BCCAReporter, BCDiscoverPluginManager, BCPluginLoader ]
+...

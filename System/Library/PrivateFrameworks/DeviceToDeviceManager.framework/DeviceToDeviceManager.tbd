@@ -1,0 +1,25 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           57ADDBEC-7689-317F-B572-64DE413445F2
+  - target:          armv7s-ios
+    value:           8C146B78-F876-32E2-B150-1E67A9D9C3E4
+  - target:          arm64-ios
+    value:           6F8CBD91-5CF6-3E6D-BBE6-7A10BA74A61A
+  - target:          arm64e-ios
+    value:           514C2242-743F-3944-B3A0-8873B025773D
+install-name:    '/System/Library/PrivateFrameworks/DeviceToDeviceManager.framework/DeviceToDeviceManager'
+current-version: 38
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _D2DInitialize, _D2DRelease, _D2DRetain, _D2DStartAdvertisingPair, 
+                       _D2DStartAdvertisingPairOnTransport, _D2DStartBrowsingForKey, 
+                       _D2DStartBrowsingForKeyOnTransport, _D2DStartResolvingPair, 
+                       _D2DStartResolvingPairOnTransport, _D2DStopAdvertisingPair, 
+                       _D2DStopAdvertisingPairOnTransport, _D2DStopBrowsingForKey, 
+                       _D2DStopBrowsingForKeyOnTransport, _D2DStopResolvingPair, 
+                       _D2DStopResolvingPairOnTransport, _D2DTerminate, _DeviceToDeviceManagerVersionNumber, 
+                       _DeviceToDeviceManagerVersionString ]
+...

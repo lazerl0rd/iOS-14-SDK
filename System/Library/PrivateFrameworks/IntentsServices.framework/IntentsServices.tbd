@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           1D0F54C3-1510-331E-BAC9-E629F05750E2
+  - target:          arm64e-ios
+    value:           08D1003E-1A45-3E04-B5A9-43891307547E
+install-name:    '/System/Library/PrivateFrameworks/IntentsServices.framework/IntentsServices'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _INSAssistantErrorDomain, _INSExtensionServiceTraceCompletionHandlerWithCode, 
+                       _INSExtractPreferencesResponseFromMetricsContext, _INSGenerateMetricsContextUsingAppPreferenceResponse, 
+                       _INSJSONEncodedIntent, _INSJSONEncodedIntentResponse, _INSJSONEncodedSlotResolutionResult, 
+                       _INSSiriAceErrorDomain, _INSSiriSerializedUserActivityKey, 
+                       _IntentsServicesVersionNumber, _IntentsServicesVersionString ]
+    objc-classes:    [ INSAnalytics, INSExtensionService ]
+...

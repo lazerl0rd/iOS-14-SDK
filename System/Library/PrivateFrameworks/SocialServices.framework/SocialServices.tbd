@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           D7F7A3E1-1B05-3802-8746-C7EE22A536E7
+  - target:          arm64e-ios
+    value:           5CBA1636-B91C-3B9B-9CE1-1BB7F78D4B33
+install-name:    '/System/Library/PrivateFrameworks/SocialServices.framework/SocialServices'
+current-version: 87
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ SLGoogleAuthController ]
+...

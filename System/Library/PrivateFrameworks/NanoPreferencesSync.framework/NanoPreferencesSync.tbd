@@ -1,0 +1,25 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           B69492BD-09E4-31B0-AD1F-42264E93BC19
+  - target:          armv7s-ios
+    value:           124A5A87-ED3D-3579-8724-0B75D6B17BD7
+  - target:          arm64-ios
+    value:           18891DAC-B45D-31A8-9961-230D500B13B9
+  - target:          arm64e-ios
+    value:           646F185F-77BA-34BE-AE91-B31E942F506F
+install-name:    '/System/Library/PrivateFrameworks/NanoPreferencesSync.framework/NanoPreferencesSync'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _NPSHasCompletedInitialSync, _NPSLoggingDaemonObjectInit, 
+                       _NPSLoggingDomainAccessorObjectInit, _NPSLoggingFrameworkObjectInit, 
+                       _NPSManagedConfigurationClientID, _NPSShouldRun, _kNPSInitialSyncCompletionDarwinNotification, 
+                       _kNPSInitialSyncKey, _kNPSPathComponentsToBackupFolderWithinPairingDataStore, 
+                       _kNanoPreferencesSyncDomain, _nps_daemon_log, _nps_domain_accessor_log, 
+                       _nps_framework_log ]
+    objc-classes:    [ NPSDomainAccessor, NPSDomainAccessorFilePresenter, NPSDomainAccessorInternal, 
+                       NPSDomainAccessorUtils, NPSManager, NPSPrefPlistProtectedUtil, 
+                       NPSPrefPlistSizeUtil ]
+...

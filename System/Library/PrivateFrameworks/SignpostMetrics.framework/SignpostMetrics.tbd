@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           CC9535FB-064E-333B-96A1-F4C6C70E1174
+  - target:          arm64e-ios
+    value:           CAEBFB04-0D92-333B-997B-7C80AA2ADE43
+install-name:    '/System/Library/PrivateFrameworks/SignpostMetrics.framework/SignpostMetrics'
+current-version: 49
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SignpostMetricsVersionNumber, _SignpostMetricsVersionString, 
+                       __MXSignpostMetricsSnapshot ]
+    objc-classes:    [ SignpostMetricsSnapshotter ]
+...

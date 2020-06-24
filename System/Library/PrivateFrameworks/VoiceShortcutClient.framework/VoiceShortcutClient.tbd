@@ -1,0 +1,64 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           AB831B73-F12C-3C16-B63A-FE4C3C056533
+  - target:          arm64e-ios
+    value:           E702EE09-E07C-3C75-B613-CF36F200E26A
+install-name:    '/System/Library/PrivateFrameworks/VoiceShortcutClient.framework/VoiceShortcutClient'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _VCBundleIdentifierAppPodcasts, _VCBundleIdentifierAppStore, 
+                       _VCBundleIdentifierCalendar, _VCBundleIdentifierContacts, 
+                       _VCBundleIdentifierDaemon, _VCBundleIdentifierDocuments, _VCBundleIdentifierFaceTime, 
+                       _VCBundleIdentifierHealth, _VCBundleIdentifierHome, _VCBundleIdentifierMail, 
+                       _VCBundleIdentifierMaps, _VCBundleIdentifierMessages, _VCBundleIdentifierMobilePhone, 
+                       _VCBundleIdentifierMusic, _VCBundleIdentifierNotes, _VCBundleIdentifierPassbookUIService, 
+                       _VCBundleIdentifierPhoneIntentHandler, _VCBundleIdentifierPhotos, 
+                       _VCBundleIdentifierPodcasts, _VCBundleIdentifierPreferences, 
+                       _VCBundleIdentifierReminders, _VCBundleIdentifierSafari, _VCBundleIdentifierShortcutsExtensionWatchOS, 
+                       _VCBundleIdentifierShortcutsMacOS, _VCBundleIdentifierShortcutsRemovalService, 
+                       _VCBundleIdentifierShortcutsWatchOS, _VCBundleIdentifierShortcutsWidgetConfigurationExtension, 
+                       _VCBundleIdentifierShortcutsiOS, _VCBundleIdentifierShortcutsiOSAppStore, 
+                       _VCBundleIdentifierSidecar, _VCBundleIdentifierSiri, _VCBundleIdentifierSpotlight, 
+                       _VCBundleIdentifierTV, _VCBundleIdentifierVoiceMemos, _VCBundleIdentifierWallet, 
+                       _VCBundleIdentifierWeather, _VCBundleIdentifieriTunesStore, 
+                       _VCCKAccountAddedNotification, _VCCKAccountModifiedNotification, 
+                       _VCCurrentPlatformShortcutsAppBundleIdentifier, _VCDKQuerySourceId, 
+                       _VCDeviceHasBeenUnlocked, _VCFileProviderNonUIExtensionPointName, 
+                       _VCHandleDonatedIntentActionIdentifier, _VCInactiveAppsFromList, 
+                       _VCIsDeviceLocked, _VCIsInternalBuild, _VCIsShortcutsAppBundleIdentifier, 
+                       _VCLogContext, _VCLogInitIfNeeded, _VCLoggingCategory, _VCLoggingSubsystem, 
+                       _VCOpenUserActivityActionIdentifier, _VCPartialErrorsByItemIDKey, 
+                       _VCPerformOnFirstUnlock, _VCShortcutSuggestionsMaxCount, _VCSiriShortcutsSuiteName, 
+                       _VCUserDefaultsShareSheetShortcutsPresentKey, _VCValidatedUUIDFromString, 
+                       _VCVoiceShortcutClientDataDidUpdateNotification, _VCVoiceShortcutDataDidUpdateNotification, 
+                       _VCVoiceShortcutExistsWithPhraseAssociatedAppBundleIdentifierKey, 
+                       _VCVoiceShortcutExistsWithPhraseIdentifierKey, _VCVoiceShortcutExistsWithPhraseNameKey, 
+                       _VCVoiceShortcutKeyAssociatedAppBundleIdentifier, _VCVoiceShortcutKeyCachedBlacklistStatus, 
+                       _VCVoiceShortcutKeyDateCreated, _VCVoiceShortcutKeyDateLastModified, 
+                       _VCVoiceShortcutKeyIdentifier, _VCVoiceShortcutKeyKeyImageData, 
+                       _VCVoiceShortcutKeyPhrase, _VCVoiceShortcutKeySerializedWorkflowData, 
+                       _VCVoiceShortcutKeyShortcutDescription, _VCVoiceShortcutKeyShortcutName, 
+                       _VCVoiceShortcutManagerXPCInterface, _VCVoiceShortcutManagerXPCInterfaceMachServiceName, 
+                       _VCVoiceShortcutsErrorDomain, _VoiceShortcutClientVersionNumber, 
+                       _VoiceShortcutClientVersionString, _WFColorErrorDomain, _WFWorkflowControllerRunningStateKey ]
+    objc-classes:    [ VCAccessSpecifier, VCActionDonationAggregator, VCActionDonationDefaultsRecommender, 
+                       VCActionDonationFetcher, VCActionDonationRecommender, VCActionDonationSet, 
+                       VCConfiguredSleepWorkflow, VCInteractionDonation, VCInteractionDonationFetcher, 
+                       VCSleepAction, VCSleepDonationAction, VCSleepHomeAccessoryAction, 
+                       VCSleepOpenAppAction, VCSleepWorkflow, VCUserActivityDonation, 
+                       VCUserActivityDonationFetcher, VCVoiceShortcut, VCVoiceShortcutClient, 
+                       VCVoiceShortcutPhraseValidationResult, VCWidgetWorkflow, WFAccessibilityWorkflowRunnerClient, 
+                       WFActionExtensionWorkflowRunnerClient, WFColor, WFGradient, 
+                       WFINShortcutRunDescriptor, WFRemoteImageDrawingContext, WFShareSheetWorkflow, 
+                       WFSingleConnectionXPCListener, WFSleepWorkflowRunnerClient, 
+                       WFSuggestionsWorkflowRunnerClient, WFWidgetWorkflowRunnerClient, 
+                       WFWorkflowDatabaseRunDescriptor, WFWorkflowRunDescriptor, 
+                       WFWorkflowRunRequest, WFWorkflowRunnerClient, WFWorkflowRunningContext ]
+...

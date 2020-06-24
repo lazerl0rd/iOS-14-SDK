@@ -1,0 +1,24 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           6917FFFB-0DC5-3729-91F4-F1F3B521E7D5
+  - target:          arm64e-ios
+    value:           8450A418-3120-3099-89EA-09BDDE718153
+install-name:    '/System/Library/Frameworks/ExposureNotification.framework/ExposureNotification'
+current-version: 0
+compatibility-version: 0
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ENErrorDomain, _ENErrorF, _ENLocalizedString, _ENNestedErrorF, 
+                       _ENRPIDerive, _ENTEKGenerate, _ENXPCGetNextClientID ]
+    objc-classes:    [ ENExposureConfiguration, ENExposureDetectionClientSession, 
+                       ENExposureDetectionSession, ENExposureDetectionSummary, ENExposureInfo, 
+                       ENFile, ENManager, ENProtobufCoder, ENSignature, ENSignatureFile, 
+                       ENSimulator, ENTemporaryExposureKey, ENUserAlert ]
+...

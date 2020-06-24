@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           B509A559-27CF-3D88-8702-82B9C350AEE6
+  - target:          armv7s-ios
+    value:           E987D88F-E3F6-33DB-961B-DB0E734228F6
+  - target:          arm64-ios
+    value:           6C21F227-F32F-30CB-A049-D8113C6425E1
+  - target:          arm64e-ios
+    value:           9EA3D989-DF67-3C3A-938D-9840651AD814
+install-name:    '/System/Library/Frameworks/LocalAuthentication.framework/Support/DaemonUtils.framework/DaemonUtils'
+current-version: 801
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _DaemonUtilsVersionNumber, _DaemonUtilsVersionString ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _LANVRAMNamespaceStartupManager, __libBiometricKit ]
+    objc-classes:    [ BiometryHelper, Caller, CredentialRequest, DaemonUtils, EvaluationRequest, 
+                       InstalledAppsCache, LANVRAM, PushButtonMonitor, Request, StorageRequest ]
+...

@@ -1,0 +1,44 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           F0ED33C0-F07A-3C06-9FC9-D56FC015C6E3
+  - target:          armv7s-ios
+    value:           27FF2D65-C8C1-3E7C-B63F-62B8BCFF8434
+  - target:          arm64-ios
+    value:           B3832763-9233-3F8C-A6E2-352195529E7D
+  - target:          arm64e-ios
+    value:           9B4155A2-273C-3E1C-8E05-33683A995CE3
+install-name:    '/System/Library/PrivateFrameworks/TextInputUI.framework/TextInputUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _TUICandidateArrowButtonImageNameExtendArrow, _TUICandidateKindCustomHeader, 
+                       _TUICandidateKindDummyCandidate, _TUICandidateKindGroupHeader, 
+                       _TUICandidateKindLine, _TUICandidateKindSlottedCellSeparator, 
+                       _TUICandidateLayoutAutofillExtraCellWidth, _TUICandidateViewAnimationDuration, 
+                       _TUIDictationTitle, _TUIEmojiSearchTextFieldBackgroundViewAnimationDuration, 
+                       _TUIKeyboardDisplayNameFromIdentifier, _TUIKeyboardTitle, 
+                       _TUIPointIntegralWithScale, _TUIRectIntegralWithScale, _TUIScreenScaleForView, 
+                       __TextInputBundlesRoot, __TextInputUIBundle, _kBarButtonWidth, 
+                       _kMagnifyingGlassInsetAmount ]
+    objc-classes:    [ TUIAssistantButtonBarGroupView, TUIAssistantButtonBarView, 
+                       TUIAutofillExtraCandidateCell, TUIButtonBarGroupSet, TUIButtonBarItemView, 
+                       TUICandidateArrowButton, TUICandidateBackdropView, TUICandidateBaseCell, 
+                       TUICandidateCell, TUICandidateCollectionView, TUICandidateGrid, 
+                       TUICandidateGroupHeader, TUICandidateInlineTextView, TUICandidateLabel, 
+                       TUICandidateLayout, TUICandidateLayoutAttributes, TUICandidateLine, 
+                       TUICandidateSlottedSeparator, TUICandidateSortControl, TUICandidateView, 
+                       TUIEmojiSearchInputViewController, TUIEmojiSearchResultCollectionViewCell, 
+                       TUIEmojiSearchResultsCollectionViewController, TUIEmojiSearchSource, 
+                       TUIEmojiSearchTextField, TUIEmojiSearchTextFieldBackgroundView, 
+                       TUIEmojiSearchTextFieldPortalView, TUIEmojiSearchView, TUIKBGraphSerialization, 
+                       TUIKeyboardBackendController, TUIKeyboardInputManagerMux, 
+                       TUIKeyboardLayoutFactory, TUIPlaceholderCandidate, TUIPredictionCellButton, 
+                       TUIPredictionView, TUIPredictionViewCell, TUIPredictionViewStackContentView, 
+                       TUIPredictionViewStackView, TUIPreferencesController, TUIProactiveCandidateCell, 
+                       TUISuggestedInputMode, TUISuggestionCandidateCell, TUISystemInputAssistantLayout, 
+                       TUISystemInputAssistantLayoutSplit, TUISystemInputAssistantLayoutStandard, 
+                       TUISystemInputAssistantLayoutViewSet, TUISystemInputAssistantPageView, 
+                       TUISystemInputAssistantView, TUITypedStringCandidate ]
+...

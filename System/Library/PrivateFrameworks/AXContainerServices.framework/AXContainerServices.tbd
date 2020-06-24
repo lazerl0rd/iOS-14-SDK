@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           35751FC8-1A72-3287-A648-B87DE5197D30
+  - target:          arm64e-ios
+    value:           4C317316-615C-37CC-9C08-F6816CD93576
+install-name:    '/System/Library/PrivateFrameworks/AXContainerServices.framework/AXContainerServices'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ AXContainerManager ]
+...

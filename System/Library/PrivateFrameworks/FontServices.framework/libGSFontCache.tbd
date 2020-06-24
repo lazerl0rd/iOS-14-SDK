@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           3E189DC2-2749-39DE-97E3-469BB7504C22
+  - target:          armv7s-ios
+    value:           422AD891-8465-3E5F-81AD-719D13AB57D9
+  - target:          arm64-ios
+    value:           A4E2577A-9858-3873-90C0-688B00ACCF8B
+  - target:          arm64e-ios
+    value:           2D6CF033-A6D9-3FB5-B4ED-E20B3B416FF3
+install-name:    '/System/Library/PrivateFrameworks/FontServices.framework/libGSFontCache.dylib'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _GSFontCacheGetData, _GSFontCacheGetDictionary ]
+...

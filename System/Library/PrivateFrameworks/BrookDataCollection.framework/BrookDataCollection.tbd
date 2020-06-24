@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           E620FFE8-FC7B-3DDA-A666-F8FA1AB3D51A
+  - target:          arm64e-ios
+    value:           66ACB6BB-2A38-3C1E-AE80-4760BED4752F
+install-name:    '/System/Library/PrivateFrameworks/BrookDataCollection.framework/BrookDataCollection'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _BrookDataCollectionVersionNumber, _BrookDataCollectionVersionString, 
+                       _NSStringFromDataCollectionAuthorization, __BRKHandleForUploadNotification ]
+    objc-classes:    [ BRKAccelerationBufferedFileWriter, BRKAccelerationFileWriter, 
+                       BRKAudioFileWriter, BRKDataCollectionBundle, BRKDataCollectionLogger, 
+                       BRKDataCollectionScheduler, BRKEmbeddingsWriter, BRKLogFileWriter, 
+                       BRKMetricsLogger, BRKWriter ]
+...

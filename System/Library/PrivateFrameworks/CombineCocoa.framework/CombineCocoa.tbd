@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           0EEBBF8D-4FC0-3276-A20E-A380A65D43FC
+  - target:          arm64e-ios
+    value:           5E1BCFA3-BEFC-3C34-A87E-94AD7EEF55F7
+install-name:    '/System/Library/PrivateFrameworks/CombineCocoa.framework/CombineCocoa'
+current-version: 227.101
+compatibility-version: 0
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CombineCocoaVersionNumber, _CombineCocoaVersionString ]
+...

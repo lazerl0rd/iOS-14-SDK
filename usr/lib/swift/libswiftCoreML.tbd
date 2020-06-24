@@ -1,0 +1,25 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           F0D1C824-04DF-328A-992E-133E151ED609
+  - target:          arm64e-ios
+    value:           659A51CA-5CAD-3A1E-9E2E-23BC8321DFDE
+install-name:    '/usr/lib/swift/libswiftCoreML.dylib'
+current-version: 1.1
+swift-abi-version: 7
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ '_$sSR6CoreMLEySRyxGSo12MLMultiArrayCKcfC', '_$sSo12MLMultiArrayC6CoreMLEyABxKcSlRzSd7ElementRtzlufC', 
+                       '_$sSo12MLMultiArrayC6CoreMLEyABxKcSlRzSd7ElementRtzlufc', 
+                       '_$sSo12MLMultiArrayC6CoreMLEyABxKcSlRzSf7ElementRtzlufC', 
+                       '_$sSo12MLMultiArrayC6CoreMLEyABxKcSlRzSf7ElementRtzlufc', 
+                       '_$sSo12MLMultiArrayC6CoreMLEyABxKcSlRzs17FixedWidthInteger7ElementRpzlufC', 
+                       '_$sSo12MLMultiArrayC6CoreMLEyABxKcSlRzs17FixedWidthInteger7ElementRpzlufc', 
+                       '_$sSr6CoreMLEySryxGSo12MLMultiArrayCKcfC', '__swift_FORCE_LOAD_$_swiftCoreML' ]
+...

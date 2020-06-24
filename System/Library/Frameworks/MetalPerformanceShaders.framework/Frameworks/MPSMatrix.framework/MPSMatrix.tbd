@@ -1,0 +1,30 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           F0E9D366-36D0-3643-8961-0FD87B7DD4E0
+  - target:          arm64e-ios
+    value:           8E4C19E8-2763-358C-9ED6-81F2A960394F
+install-name:    '/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSMatrix.framework/MPSMatrix'
+current-version: 124.0.17
+allowable-clients:
+  - targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    clients:         [ MPSNDArray, MPSNeuralNetwork, MetalPerformanceShaders ]
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ MPSMatrixBinaryKernel, MPSMatrixCopy, MPSMatrixCopyDescriptor, 
+                       MPSMatrixDecompositionCholesky, MPSMatrixDecompositionLU, 
+                       MPSMatrixFindTopK, MPSMatrixLogSoftMax, MPSMatrixLogSoftMaxGradient, 
+                       MPSMatrixMultiplication, MPSMatrixRandom, MPSMatrixRandomDistributionDescriptor, 
+                       MPSMatrixRandomMTGP32, MPSMatrixRandomPhilox, MPSMatrixSoftMax, 
+                       MPSMatrixSoftMaxGradient, MPSMatrixSolveCholesky, MPSMatrixSolveLU, 
+                       MPSMatrixSolveTriangular, MPSMatrixUnaryKernel, MPSMatrixVectorMultiplication ]
+reexports:
+  - targets:         [ arm64-ios, arm64e-ios ]
+    symbols:         [ __Z21MPSDecrementReadCountP18MPSTemporaryMatrix, __Z21MPSDecrementReadCountP18MPSTemporaryVector ]
+...

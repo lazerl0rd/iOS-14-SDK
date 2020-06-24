@@ -1,0 +1,35 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           8CB7385F-E591-33C3-98BA-D1F97ABCC416
+  - target:          arm64e-ios
+    value:           9ED9E836-F9B6-3B07-B83E-9D30FBBEF8B9
+install-name:    '/System/Library/PrivateFrameworks/Translation.framework/Translation'
+current-version: 111.5
+compatibility-version: 0
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ __LTBuildVersion, __LTDeviceName, __LTLanguageCodeToSupportedLocale, 
+                       __LTProductName, __LTProductType, __LTProductVersion, __LTTranslationErrorDomain, 
+                       __LTTranslationModelTaskString, __LTTranslationServiceDelegateXPCInterface, 
+                       __LTTranslationServiceXPCInterface, _kLTUnknownLanguageCode ]
+    objc-classes:    [ _LTAlignment, _LTBatchTextTranslationRequest, _LTCombinedEngine, 
+                       _LTDaemon, _LTLanguageDetectionResult, _LTLanguageDetector, 
+                       _LTLanguagePairOfflineAvailability, _LTLocalePair, _LTParagraphTranslationRequest, 
+                       _LTSafariLatencyLoggingRequest, _LTSpeakRequest, _LTSpeechLIDLoggingRequest, 
+                       _LTSpeechRecognitionBin, _LTSpeechRecognitionResult, _LTSpeechRecognitionSausage, 
+                       _LTSpeechRecognitionTokensAlternative, _LTSpeechTranscription, 
+                       _LTSpeechTranslationRequest, _LTTextLanguageDetectionResult, 
+                       _LTTextLanguageDetector, _LTTextToSpeechTranslationRequest, 
+                       _LTTextTranslationRequest, _LTTranslateSettingsController, 
+                       _LTTranslationCandidate, _LTTranslationContext, _LTTranslationFeedback, 
+                       _LTTranslationRange, _LTTranslationRequest, _LTTranslationResult, 
+                       _LTTranslationSense, _LTTranslationSession, _LTTranslationSpan, 
+                       _LTTranslationStatistics, _LTTranslationToken, _LTTranslator ]
+...

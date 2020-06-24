@@ -1,0 +1,25 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           5B7A8549-93BE-3E72-BA3D-38171AD6ECFE
+  - target:          arm64e-ios
+    value:           4C7D5B25-D908-3254-A84F-8617A254C965
+install-name:    '/System/Library/PrivateFrameworks/RemoteTextInput.framework/RemoteTextInput'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _RTICanLogMessageAtLevel, _RTILogFacility, _RTIServiceAnonymousName, 
+                       _RTIServiceIOSMacName, _RTIServiceMediaRemoteName, _RTIServiceRapportName, 
+                       _RTIServiceSharingName, _RTIServiceSharingSafariName, _RTIServiceTVControlServicesName, 
+                       _RemoteTextInputVersionNumber, _RemoteTextInputVersionString, 
+                       __RTI_NSStringFromCGRect ]
+    objc-classes:    [ RTIDataPayload, RTIDocumentState, RTIDocumentTraits, RTIInputSystemClient, 
+                       RTIInputSystemClientSession, RTIInputSystemDataPayload, RTIInputSystemService, 
+                       RTIInputSystemServiceSession, RTIInputSystemSession, RTIInputSystemSourceSession, 
+                       RTIStyledIntermediateText, RTITextOperations, RTIUtilities ]
+...

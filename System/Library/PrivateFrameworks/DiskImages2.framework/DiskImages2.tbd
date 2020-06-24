@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           68B31E8A-6210-3D3D-91AB-00CF80189E0A
+  - target:          arm64e-ios
+    value:           4A10DC9E-CF75-3A71-A1CA-11E24472C175
+install-name:    '/System/Library/PrivateFrameworks/DiskImages2.framework/DiskImages2'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _DIErrorDomain, _DiskImages2VersionNumber, _DiskImages2VersionString ]
+    objc-classes:    [ DIAttachParams, DIBaseParams, DIConvertParams, DIDeviceHandle, 
+                       DIVerifyParams, DiskImages2 ]
+...

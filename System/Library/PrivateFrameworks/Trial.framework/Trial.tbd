@@ -1,0 +1,44 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           5DEE470F-F061-3CCC-8832-15AEA2341ABC
+  - target:          arm64e-ios
+    value:           2A33CC0C-7689-3993-8190-714B48EE7209
+install-name:    '/System/Library/PrivateFrameworks/Trial.framework/Trial'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _TRILogCategory_ClientFramework, _TRINamespaceUpdateNotificationName, 
+                       _TRIPersistedNetworkBehavior_DiscretionaryBehavior_EnumDescriptor, 
+                       _TRIPersistedNetworkBehavior_DiscretionaryBehavior_IsValidValue, 
+                       _TRISystemFactor_AllowFetchTasks, _TRISystemFactor_AllowTrialTelemetry, 
+                       _TRISystemFactor_CloudKitAssetDownloadTimeoutSeconds, _TRISystemFactor_CloudKitCacheControlMaxAge, 
+                       _TRISystemFactor_CloudKitUseNativeAPI, _TRISystemFactor_FetchExperimentsJitter, 
+                       _TRISystemFactor_FetchRollbacksInterval, _TRISystemFactor_FetchRollbacksJitter, 
+                       _TRISystemFactor_LogUserKeyboardEnabledInputMode, _TRISystemFactor_LogUserSettingsLanguageCode, 
+                       _TRISystemFactor_LogUserSettingsRegionCode, _TRISystemFactor_TaskQueueScheduledTaskDefaultGracePeriod, 
+                       _TRISystemFactor_TelemetryLevel, _TRISystemNamespaceName, 
+                       _TrialVersionNumber, _TrialVersionString, _kRotationDateSecondsSinceReferenceDate ]
+    objc-classes:    [ TRIAppContainer, TRIClient, TRIClientGuardedData, TRIDefaultFactorProvider, 
+                       TRIDevLogger, TRIDownloadNotification, TRIDownloadOptions, 
+                       TRIEntitlement, TRILazyObject, TRILevelChecked, TRILogTreatmentReader, 
+                       TRILogger, TRINaiveFactorLevelCache, TRINamespaceDescriptor, 
+                       TRINamespaceFactorProvider, TRINamespaceFactorProviderChain, 
+                       TRINamespaceStatus, TRINamespaceStatusProvider, TRINamespaceUpdateNotification, 
+                       TRINotificationCallback, TRINotificationState, TRIPersistedNamespaceStatus, 
+                       TRIPersistedNetworkBehavior, TRIPruningFactorLevelCache, TRIPruningFactorLevelCacheGuardedData, 
+                       TRIStandardPaths, TRIStopwatch, TRISubjectProvider, TRISubjectProviderGuardedData, 
+                       TRISubjectRotationNotification, TRISystemConfiguration, TRISystemInfo, 
+                       TRITrackingId, TRITreatmentInfo, TRITripersistedNamespaceStatusRoot, 
+                       TRITripersistedNetworkBehaviorRoot, TRIVersion, TRIXPCNamespaceManagementClient ]
+    objc-ivars:      [ TRIClientGuardedData.namespaceCallbacks, TRIClientGuardedData.namespaceUpdateHandlerTokens, 
+                       TRIClientGuardedData.trackingId, TRIClientGuardedData.updatedNamespaceNames, 
+                       TRIPruningFactorLevelCacheGuardedData.loadFactorLevels, TRIPruningFactorLevelCacheGuardedData.prefetchedLevels, 
+                       TRIPruningFactorLevelCacheGuardedData.requiredLevels, TRISubjectProviderGuardedData.nextRotationDate, 
+                       TRISubjectProviderGuardedData.subject, TRISubjectProviderGuardedData.tempDeviceIds ]
+...

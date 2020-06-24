@@ -1,0 +1,54 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           F10BF80D-5999-376A-BF65-9A9C401E78A1
+  - target:          arm64e-ios
+    value:           1AB6AFEC-6B2B-3E17-ABB4-A0D6FE5DA630
+install-name:    '/System/Library/PrivateFrameworks/PlatterKit.framework/PlatterKit'
+allowable-clients:
+  - targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    clients:         [ AppPredictionUI, BannerKitTest, BatteryCenterUI, BluetoothUIService, 
+                       CarPlaySupport, CardKit, ChargingViewService, ClipUIServices, 
+                       CoverSheet, Maps, RecentsAppPopover, Sharing, Siri, SiriUI, 
+                       SpringBoard, SpringBoardCore, UserNotificationsUIKit, UserNotificationsUIKitTests, 
+                       Widgets, WorkflowUI, druid, proximitycontrold ]
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _PLCAMediaTimingFunctionForViewAnimationCurve, _PLConfigureUILabelWithPLPillContentItemStyle, 
+                       _PLLogGeneral, _PLLogSubsystem, _PLLogTransition, _PLMainScreenScale, 
+                       _PLPlatterViewStyleCarPlayBanner, _PLPlatterViewStyleNavigationBanner, 
+                       _PLPlatterViewStyleNone, _PLPlatterViewStyleNotificationBanner, 
+                       _PLRegisterPlatterKitLogging, _PLSetViewFrameMaintainingTransform, 
+                       _PLViewAnimationOptionsForAnimationCurve, _PlatterKitFrameworkBundle, 
+                       _PlatterKitVersionNumber, _PlatterKitVersionString, _UILabelForPLPillContentItem, 
+                       _UIViewForPLPillContentItem, _kPLTitledMinimumContentPadding ]
+    objc-classes:    [ PLClickPresentationDismissalTransition, PLClickPresentationInteractionManager, 
+                       PLClickPresentationPresentationTransition, PLClickPresentationTransition, 
+                       PLExpandedPlatterHeaderContentView, PLExpandedPlatterPresentationController, 
+                       PLExpandedPlatterPresentationView, PLExpandedPlatterTransitioningDelegate, 
+                       PLExpandedPlatterView, PLGlyphControl, PLInterfaceActionGroupView, 
+                       PLLargeTextPlatterHeaderContentViewLayoutManager, PLMappedImageCache, 
+                       PLPillContentItem, PLPillContentWrapperView, PLPillView, PLPlatterCustomContentView, 
+                       PLPlatterHeaderContentView, PLPlatterHeaderContentViewLayoutManager, 
+                       PLPlatterHeaderViewDateLabelFactory, PLPlatterView, PLSummaryContentView, 
+                       PLTitledPlatterView, PLTitledSummaryPlatterView, PLViewControllerAnimator, 
+                       PLViewControllerEdgeAnimator, _PLViewControllerOneToOneTransitionContext ]
+    objc-ivars:      [ PLClickPresentationInteractionManager._clickPresentation, 
+                       PLClickPresentationInteractionManager._clickPresentationInteraction, 
+                       PLClickPresentationInteractionManager._clickPresentationInteractionManagerDelegateFlags, 
+                       PLClickPresentationInteractionManager._didPresent, PLClickPresentationInteractionManager._dismissalCompletion, 
+                       PLClickPresentationInteractionManager._presentationCompletion, 
+                       PLClickPresentationInteractionManager._presentingViewController, 
+                       PLClickPresentationTransition._animator, PLClickPresentationTransition._completion, 
+                       PLClickPresentationTransition._transitionContext, PLClickPresentationTransition._transitionDelegate, 
+                       PLPlatterCustomContentView._ancestorPlatterView, PLPlatterView._categoriesToProviders, 
+                       PLPlatterView._customContentView, PLPlatterView._recipeBundle, 
+                       PLPlatterView._recipeDynamic, PLPlatterView._recipeNamesByTraitCollection, 
+                       PLPlatterView._shadowView, PLTitledPlatterView._headerContentView ]
+...

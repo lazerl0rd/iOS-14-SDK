@@ -1,0 +1,31 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           88F68A04-1588-38D6-8E5C-60818CD4D422
+  - target:          arm64e-ios
+    value:           C0D42561-034D-3581-A141-481F858ADE5D
+install-name:    '/System/Library/PrivateFrameworks/ActivitySharingUI.framework/ActivitySharingUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ASBreadcrumbKeyForBulletinType, _ASCompetitionEndedDescriptionForFriend, 
+                       _ASCompetitionEndedTitleForFriend, _ASCompetitionFirstGlanceDescriptionForTypeWithFriends, 
+                       _ASCompetitionFirstGlanceSectionHeaderForType, _ASCompetitionLearnMoreDetailsAttributedStringForFriend, 
+                       _ASCompetitionLearnMoreIntroductionAttributedStringForFriend, 
+                       _ASCompetitionScoreCapCelebrationDescription, _ASCompetitionScoreCapCelebrationTitle, 
+                       _ASCompetitionStageStringWithCompetition, _ASCompetitionZeroPaddedScoreString, 
+                       _ASDailyAverageStringWithScore, _ASDisplayModeToString, _ASLaunchToMessagesWithRecipients, 
+                       _ASPointsStringWithScore, _ASWorkoutCaloriesString, _ASWorkoutCountString, 
+                       _ASWorkoutNameString, __ASCompetitionEndedKeyForFriend, _kASDisplayContextCompanion, 
+                       _kASDisplayContextGizmo ]
+    objc-classes:    [ ASCompetitionGizmoDetailView, ASCompetitionGraphView, ASCompetitionMessageBubbleView, 
+                       ASCompetitionParticipantScoreView, ASCompetitionScoreView, 
+                       ASCompetitionScoreViewConfiguration, ASCompetitionTimeRemainingLabel, 
+                       ASDisplayContext, ASFriendListDisplayContext, ASFriendListRow, 
+                       ASFriendListSection, ASFriendListSectionManager ]
+...

@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           D9777A54-4AE7-358A-8F9C-45309C2593B7
+  - target:          armv7s-ios
+    value:           8053BE2D-39F4-3935-8606-7ADBA1569356
+  - target:          arm64-ios
+    value:           876E9ECC-363C-36CA-A340-D287F58E6E9D
+  - target:          arm64e-ios
+    value:           AF5DBE54-7EAE-36B8-8618-ADEBD8305AE8
+install-name:    '/System/Library/PrivateFrameworks/iOSDiagnostics.framework/iOSDiagnostics'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _iOSDiagnosticsVersionNumber, _iOSDiagnosticsVersionString ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ DADiagnosticResponder, DADiagnosticsRemoteHostViewController, 
+                       DADiagnosticsRemoteViewController ]
+...

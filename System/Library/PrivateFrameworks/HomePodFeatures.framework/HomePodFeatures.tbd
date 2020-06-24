@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           20C24DA6-E21C-3C6C-A7EC-9A4D7FBBC320
+  - target:          arm64e-ios
+    value:           A66264A5-FB25-39E4-BF2C-30BD2BD4F820
+install-name:    '/System/Library/PrivateFrameworks/HomePodFeatures.framework/HomePodFeatures'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _HPFSiriRecognizeMyVoiceLanguages, _HPFSiriSupportedLanguages, 
+                       _HPFSupportsRestart, _HPFSupportsStereo, _HomePodFeaturesVersionNumber, 
+                       _HomePodFeaturesVersionString ]
+    objc-classes:    [ HomePodFeatures ]
+...

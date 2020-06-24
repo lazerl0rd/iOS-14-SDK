@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           C62B0985-CD18-384D-860A-376C00453D3D
+  - target:          arm64e-ios
+    value:           DA578B1F-1464-3379-B726-9803D1394EB6
+install-name:    '/System/Library/PrivateFrameworks/CoreCDPUIInternal.framework/CoreCDPUIInternal'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CoreCDPUIInternalVersionNumber, _CoreCDPUIInternalVersionString ]
+    objc-classes:    [ CDPRecoveryTestController, DummyRemoteDeviceSecretValidator, 
+                       SettingsController ]
+...

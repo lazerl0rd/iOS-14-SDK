@@ -1,0 +1,26 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           28F22AD8-EF1F-349A-B3CE-76D537F6B318
+  - target:          arm64e-ios
+    value:           205EBA5C-D89A-3FDA-AB80-D7DBEEC481AD
+install-name:    '/System/Library/PrivateFrameworks/Eyedropper.framework/Eyedropper'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ColorAnalyzerKMeansMaxIterations, _ColorAnalyzerSimilarColorsMinDistance, 
+                       _ColorApproxEqualToColor, _ColorCombineColors, _ColorDistanceToColor, 
+                       _ColorDivide, _ColorEqualToColor, _ColorMake, _ColorMakeWithColor, 
+                       _ColorUIColor, _ColorZero, _EDLensEdgeMargin, _EDLensHoverCenterViewColorBrightnessTolerance, 
+                       _EDLensHoverCircleRadius, _EDLensPanProjectionTime, _EDLensPetalCircleRadius, 
+                       _EDLensPixelBoxesPerDimension, _EDLensPositionIsCorner, _EDLensPositionIsEdge, 
+                       _EDLensProjectedOffscreenPercentCancelTrigger, _EDLensRingInset, 
+                       _EyedropperVersionNumber, _EyedropperVersionString ]
+    objc-classes:    [ EDAppDelegate, EDColorAnalyzer, EDGridView, EDLensView, EDWindow, 
+                       EDWindowRootViewController ]
+...

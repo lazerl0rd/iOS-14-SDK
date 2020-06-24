@@ -1,0 +1,27 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           14FEC463-A7E5-3779-8FB7-8CB6704386C2
+  - target:          armv7s-ios
+    value:           F76540D3-6ECB-3899-BCE8-031ABA067E72
+  - target:          arm64-ios
+    value:           59EF787A-54B3-3771-99A9-D670FE544057
+  - target:          arm64e-ios
+    value:           497F4457-A028-3A8F-9252-84217C20D459
+install-name:    '/System/Library/PrivateFrameworks/SyncedDefaults.framework/SyncedDefaults'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _LoggingSubsystem ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SYDGetAccountsLog, _SYDGetAnalyticsLog, _SYDGetCloudKitLog, 
+                       _SYDGetConnectionLog, _SYDGetCoreDataLog, _SYDGetDefaultLog, 
+                       _SYDGetMigrationLog, _SYDGetMiscLog, _SYDGetReachabilityLog, 
+                       _SYDGetSchedulerLog, _SYDGetTCCLog, _SYDGetTraceLog, _SYDRemotePreferencesSourceConfigurationDidChangeNotification, 
+                       _SYDRemotePreferencesSourceDidChangeNotification, _SYDUbiquitousKeyValueStoreDidChangeExternallyNotification, 
+                       _SYDXPCCreateCFObjectFromXPCObject, _SYDXPCCreateXPCObjectFromCFObject, 
+                       _SyncedDefaultsVersionNumber, _SyncedDefaultsVersionString ]
+    objc-classes:    [ SYDClient, SYDClientToDaemonConnection, SYDJournal, SYDRemotePreferencesSource, 
+                       SYDStoreConfiguration, SYDStoreID ]
+...

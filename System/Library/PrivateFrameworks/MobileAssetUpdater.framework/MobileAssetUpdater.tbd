@@ -1,0 +1,25 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           9BD559A9-1C1C-3CE8-8709-65AB423B3633
+  - target:          armv7s-ios
+    value:           5DF43A5B-214D-3F31-9703-099C4290D71E
+  - target:          arm64-ios
+    value:           74018FE3-C446-3153-8C6B-60018E3DCA65
+  - target:          arm64e-ios
+    value:           AE221A27-D25A-3E9B-B5D2-7B26C444F653
+install-name:    '/System/Library/PrivateFrameworks/MobileAssetUpdater.framework/MobileAssetUpdater'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _kMobileAssetUpdaterErrorDomain ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ MobileAssetUpdater ]
+    objc-ivars:      [ MobileAssetUpdater._alternateAssetTypes, MobileAssetUpdater._asset, 
+                       MobileAssetUpdater._assetDownloaded, MobileAssetUpdater._assetType, 
+                       MobileAssetUpdater._downloadOnCellularAllowed, MobileAssetUpdater._lock, 
+                       MobileAssetUpdater._logger, MobileAssetUpdater._overrideApplied, 
+                       MobileAssetUpdater._overrideFile, MobileAssetUpdater._purgeOverrideFile, 
+                       MobileAssetUpdater._query, MobileAssetUpdater._requireAssetMetadata ]
+...

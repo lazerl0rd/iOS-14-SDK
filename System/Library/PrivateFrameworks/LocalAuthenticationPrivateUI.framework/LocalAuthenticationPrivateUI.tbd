@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           BECDD133-565D-3510-8D3E-2044E95D746A
+  - target:          arm64e-ios
+    value:           43FDA34F-8D19-334E-821C-0AB7C9159316
+install-name:    '/System/Library/PrivateFrameworks/LocalAuthenticationPrivateUI.framework/LocalAuthenticationPrivateUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _LAUIPhysicalButtonNormalizedFrame ]
+    objc-classes:    [ LAUIAuthenticationView, LAUICheckmarkLayer, LAUIHorizontalArrowView, 
+                       LAUIPearlGlyphLabel, LAUIPearlGlyphView, LAUIPearlGlyphViewAutoLayoutWrapper, 
+                       LAUIPhysicalButtonView, LAUIRadialPingView ]
+...

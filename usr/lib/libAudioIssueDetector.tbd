@@ -1,0 +1,31 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           8A885E7B-7DF8-3E6F-987F-3D33DC8F7822
+  - target:          arm64e-ios
+    value:           0F8172AF-210F-3EB0-B9EB-90659B793B59
+install-name:    '/usr/lib/libAudioIssueDetector.dylib'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AudioDataAnalysisManagerCreate, _AudioDataAnalysisManagerCreateNodeEnvSPL, 
+                       _AudioDataAnalysisManagerCreateNodePCM, _AudioDataAnalysisManagerCreateNodeSPL, 
+                       _AudioDataAnalysisManagerDispose, _AudioDataAnalysisManagerInitialize, 
+                       _AudioDataAnalysisManagerProcessAudio, _AudioDataAnalysisManagerProcessEnvSPL, 
+                       _AudioDataAnalysisManagerProcessSPL, _AudioDataAnalysisManagerRemoveNode, 
+                       _AudioDataAnalysisManagerReset, _AudioDataAnalysisManagerSetDeviceInfo, 
+                       _AudioDataAnalysisManagerStartServices, _AudioDataAnalysisManagerUpdateReportingSessions, 
+                       _AudioIssueDetectorAnalyzeBuffer, _AudioIssueDetectorCreate, 
+                       _AudioIssueDetectorDispose, _AudioIssueDetectorInitialize, 
+                       _AudioIssueDetectorRemoveNode, _AudioIssueDetectorReset, _AudioIssueDetectorSetDownlinkVolume, 
+                       _AudioIssueDetectorSetNodeFormat, _AudioIssueDetectorSetNodeFormatWithDirection, 
+                       _AudioIssueDetectorSetRouteSpecificDownlinkGainAdjustment, 
+                       _AudioIssueDetectorSetSmartCaseMicMute, _AudioIssueDetectorSetUplinkMute, 
+                       _AudioIssueDetectorUpdateReportingSessions, _EnvironmentalDosimetryAgentCreate, 
+                       _EnvironmentalDosimetryAgentDispose ]
+...

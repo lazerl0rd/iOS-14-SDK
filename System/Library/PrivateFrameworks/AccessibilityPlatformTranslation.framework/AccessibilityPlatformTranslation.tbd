@@ -1,0 +1,26 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           E8EF6615-D6AC-37FC-9BA8-34B35C2978E5
+  - target:          arm64e-ios
+    value:           54B272EB-D0B1-3CB5-B7EA-488AEE9345A5
+install-name:    '/System/Library/PrivateFrameworks/AccessibilityPlatformTranslation.framework/AccessibilityPlatformTranslation'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AXPConvertValue, _AXPCustomActionIdentifier, _AXPCustomActionName, 
+                       _AXPCustomRotorDirection, _AXPCustomRotorName, _AXPCustomRotorSystemType, 
+                       _AXPCustomRotorTargetElement, _AXPCustomRotorTargetRange, 
+                       _AXPCustomRotorUUID, _AXPIsCatalyst, _AXPNilOrEmptyString, 
+                       _AccessibilityPlatformTranslationVersionNumber, _AccessibilityPlatformTranslationVersionString, 
+                       __AXPActionToString, __AXPAttributeToString, __AXPNotificationToString, 
+                       __AXPSetPlatformVariantForUnitTesting ]
+    objc-classes:    [ AXPIOSPlatformElement, AXPTranslationObject, AXPTranslator, 
+                       AXPTranslatorRequest, AXPTranslatorResponse, AXPTranslator_iOS, 
+                       AXPiOSElementData ]
+...

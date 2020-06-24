@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           DFEA490F-4969-3510-B908-36F3F8179523
+  - target:          arm64e-ios
+    value:           E95BCE39-FFF5-35CB-9B41-6483654E787E
+install-name:    '/System/Library/PrivateFrameworks/PLSnapshot.framework/PLSnapshot'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ PLSnapshotCPUStats, PLSnapshotUtilities ]
+...

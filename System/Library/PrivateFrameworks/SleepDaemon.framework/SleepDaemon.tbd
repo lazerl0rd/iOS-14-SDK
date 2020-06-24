@@ -1,0 +1,50 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           61DA2BE1-0091-3053-BD83-C56E2DDA96B0
+  - target:          arm64e-ios
+    value:           F1C78DF5-1532-3B4B-B9AB-4AE046B56AD9
+install-name:    '/System/Library/PrivateFrameworks/SleepDaemon.framework/SleepDaemon'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _HDSPAnalyticsDailyReportSummaryDayCount, _HDSPBundleID, _HDSPCurrentDataVersion, 
+                       _HDSPDataVersionKey, _HDSPDeviceWasUnlocked, _HDSPDiagnosticNotification, 
+                       _HDSPHealthKitModelMigrationVersionKey, _HDSPLocalizedCoachingString, 
+                       _HDSPLocalizedString, _HDSPMTAlarmClass, _HDSPMTAlarmManagerClass, 
+                       _HDSPMTAlarmManagerStateResetString, _HDSPMTMutableAlarmClass, 
+                       _HDSPMTSoundClass, _HDSPMobileTimerModelMigrationVersionKey, 
+                       _HDSPPowerSourceNotification, _HDSPQuietSourceForSource, _HDSPSleepDetectedActivity, 
+                       _HDSPWakeUpResultsNotificationAttemptDuration, _HDSPWakeUpResultsNotificationDaySummaryCount ]
+    objc-classes:    [ HDSPAnalyticsDailyReportBuilder, HDSPAnalyticsDisabledState, 
+                       HDSPAnalyticsManager, HDSPAnalyticsNeedsProtectedDataState, 
+                       HDSPAnalyticsQueryingState, HDSPAnalyticsSendingState, HDSPAnalyticsState, 
+                       HDSPAnalyticsStateMachine, HDSPAnalyticsWaitingState, HDSPAssertionManager, 
+                       HDSPChargingReminderManager, HDSPChargingReminderStateMachine, 
+                       HDSPContextStoreManager, HDSPDevicePowerMonitor, HDSPDeviceUnlockMonitor, 
+                       HDSPDiagnostics, HDSPDistributedNotificationCenter, HDSPDoNotDisturbManager, 
+                       HDSPEnvironment, HDSPEnvironmentStateMachine, HDSPGoodMorningAlertManager, 
+                       HDSPGoodMorningAlertStateMachine, HDSPMobileTimerBridge, HDSPNotificationListener, 
+                       HDSPPhoneReadyProvider, HDSPSetSleepModeIDSMessage, HDSPSimulatorReadyProvider, 
+                       HDSPSleepActionManager, HDSPSleepAlarmListener, HDSPSleepAlarmManager, 
+                       HDSPSleepDaemon, HDSPSleepEventList, HDSPSleepEventScheduler, 
+                       HDSPSleepLockScreenManager, HDSPSleepLockScreenStateMachine, 
+                       HDSPSleepModeBedtimeState, HDSPSleepModeManager, HDSPSleepModeManualBedtimeState, 
+                       HDSPSleepModeOffState, HDSPSleepModeWindDownState, HDSPSleepNotificationManager, 
+                       HDSPSleepScheduleModelManager, HDSPSleepScheduleModelMigrationManager, 
+                       HDSPSleepScheduleStateCoordinator, HDSPSleepSession, HDSPSleepSessionInterval, 
+                       HDSPSleepSessionManager, HDSPSleepStorage, HDSPSleepStoreServer, 
+                       HDSPSleepTrackingManager, HDSPSpringboardMonitor, HDSPSystemMonitor, 
+                       HDSPTimeAsleepTracker, HDSPTimeAsleepTrackerStateMachine, 
+                       HDSPTimeInBedTracker, HDSPWakeDetectionManager, HDSPWakeUpResultsNotificationDelayingForTrackingState, 
+                       HDSPWakeUpResultsNotificationDisabledState, HDSPWakeUpResultsNotificationNeedsProtectedDataState, 
+                       HDSPWakeUpResultsNotificationNotifiedState, HDSPWakeUpResultsNotificationQueryingState, 
+                       HDSPWakeUpResultsNotificationStateMachine, HDSPWakeUpResultsNotificationStateMachineState, 
+                       HDSPWakeUpResultsNotificationWaitingForWakeUpState, HDSPWatchOnWristMonitor, 
+                       HDSPWatchReadyProvider ]
+...

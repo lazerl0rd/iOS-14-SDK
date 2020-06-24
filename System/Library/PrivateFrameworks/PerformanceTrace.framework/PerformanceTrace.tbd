@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           66E86AF5-37D3-3B92-A15E-196E7B854B2B
+  - target:          arm64e-ios
+    value:           1DFFF986-27C2-33C0-8A0D-D40512239AEF
+install-name:    '/System/Library/PrivateFrameworks/PerformanceTrace.framework/PerformanceTrace'
+current-version: 91
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _PerformanceTraceVersionNumber, _PerformanceTraceVersionString, 
+                       _traceConfigTemplateForString, _traceGroupForString, _traceTypeForString ]
+    objc-classes:    [ PTTraceConfig, PTTraceSession ]
+...

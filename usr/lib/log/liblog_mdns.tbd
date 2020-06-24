@@ -1,0 +1,25 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           A868D9EA-4AAF-369E-8BD3-CE6EE72A5DDA
+  - target:          arm64e-ios
+    value:           6DC745FE-C92C-3A2A-9EC3-817FDEF42A6D
+install-name:    '/usr/lib/log/liblog_mdns.dylib'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _DNSComputeDNSKeyTag, _DNSMessageCollapse, _DNSMessageExtractDomainName, 
+                       _DNSMessageExtractDomainNameString, _DNSMessageExtractQuestion, 
+                       _DNSMessageExtractRecord, _DNSMessageGetAnswerSection, _DNSMessageGetOptRecord, 
+                       _DNSMessageToString, _DNSMessageWriteQuery, _DNSRecordDataToString, 
+                       _DNSRecordTypeStringToValue, _DNSRecordTypeValueToString, 
+                       _DomainLabelEqual, _DomainNameAppendDomainName, _DomainNameAppendString, 
+                       _DomainNameDupEx, _DomainNameEqual, _DomainNameFromString, 
+                       _DomainNameLabelCount, _DomainNameLength, _DomainNameToString, 
+                       _OSLogCopyFormattedString ]
+...

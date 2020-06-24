@@ -1,0 +1,28 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           A1797F21-449D-3A0C-A1CF-B9027FD40728
+  - target:          arm64e-ios
+    value:           48FB3965-9ED2-3031-B968-2A7099BC57AC
+install-name:    '/System/Library/PrivateFrameworks/ExchangeSync.framework/Frameworks/ESDaemonSupport.framework/ESDaemonSupport'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ESDAgentsStoppedNotification, _ESDRequestClientStatusDumpNotification, 
+                       ___RootDomainConnect, __devicePowerChanged, _gDADHighAvailabilityQueue, 
+                       _gDADOperationQueue, _handleSignal ]
+    objc-classes:    [ DAAgent, DAChangeHistoryClerk, DADClientAccountTimers, ESDAccessManager, 
+                       ESDAgentManager, ESDClient, ESDClientAttachmentDownloadDelegate, 
+                       ESDClientCalendarAvailabilityResponseDelegate, ESDClientCalendarDirectorySearchResponseDelegate, 
+                       ESDClientContactsSearchDelegate, ESDClientDelegate, ESDClientSettingsDelegate, 
+                       ESDClientShareResponseDelegate, ESDMain, ESDStatusReportAggregator, 
+                       ESFolderSyncRequest, ESWifiAssertionManager, _DAChangeHistoryABLegacyClerk, 
+                       _DAChangeHistoryContactsClerk ]
+    objc-ivars:      [ ESDStatusReportAggregator._completionBlock, ESDStatusReportAggregator._finished, 
+                       ESDStatusReportAggregator._numOutstandingReports, ESDStatusReportAggregator._persistentUUIDToStatusReport ]
+...

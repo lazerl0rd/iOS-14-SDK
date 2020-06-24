@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           D983C1C4-1C29-3F1F-9CC9-8EF2CAD33226
+  - target:          arm64e-ios
+    value:           A5FAECB1-7786-3E9F-B662-3BEA1B7558B6
+install-name:    '/System/Library/PrivateFrameworks/AppPredictionUIFoundation.framework/AppPredictionUIFoundation'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AppPredictionUIFoundationVersionNumber, _AppPredictionUIFoundationVersionString ]
+    objc-classes:    [ APUIActionContextMenu ]
+...

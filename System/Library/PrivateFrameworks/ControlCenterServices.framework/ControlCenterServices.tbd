@@ -1,0 +1,33 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           C13BCCEF-D59A-3BC4-B7C2-9177B18BC078
+  - target:          arm64e-ios
+    value:           B46A55A5-2DB2-33AF-938C-098419E24896
+install-name:    '/System/Library/PrivateFrameworks/ControlCenterServices.framework/ControlCenterServices'
+allowable-clients:
+  - targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    clients:         [ ConnectivityModule, ControlCenterServicesTests, ControlCenterSettings, 
+                       ControlCenterUI, CoverSheet, HearingAidUIServer, HomeKitDaemon, 
+                       LoginKit, PerformanceTraceModule, SUIAKit, SUIATPTests, SUICITests, 
+                       SUISimulatorTests, SleepDaemon, SleepLockScreen, SpringBoard, 
+                       SpringBoardCore, TVRemoteConnectionService, com.apple.BarcodeSupport.Helper, 
+                       controlcentertool, logind, replayd ]
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CCSControlCenterServicesErrorDomain, _CCSIsInternalInstall, 
+                       _CCSLogModuleSettings, _CCSLogRemoteService, _CCSModuleVisibilityPreferenceDescription, 
+                       _CCSRegisterControlCenterLogging, _CCSRemoteServiceName, _CCSRemoteServiceServerInterface, 
+                       _CCSResolveModuleVisibility, _CCSVisibilityPreferenceForBundleInfoDictionary, 
+                       _CCSVisibilityPreferenceForBundleProxy, _ControlCenterServicesVersionNumber, 
+                       _ControlCenterServicesVersionString, _kVersionNumber ]
+    objc-classes:    [ CCSControlCenterDefaults, CCSControlCenterService, CCSModuleMetadata, 
+                       CCSModulePresentationOptions, CCSModuleRepository, CCSModuleSettingsProvider, 
+                       CCSRemoteServiceConnection, CCSRemoteServiceProvider, CCSUsageMetrics ]
+...

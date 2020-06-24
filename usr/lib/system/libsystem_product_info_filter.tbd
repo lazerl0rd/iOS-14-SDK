@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           52AF82B0-4E33-3D6D-A5DA-08E7C8E21949
+  - target:          arm64e-ios
+    value:           866D4314-1A81-3B45-A75F-37371289AC59
+install-name:    '/usr/lib/system/libsystem_product_info_filter.dylib'
+current-version: 7
+parent-umbrella:
+  - targets:         [ arm64-ios, arm64e-ios ]
+    umbrella:        System
+...

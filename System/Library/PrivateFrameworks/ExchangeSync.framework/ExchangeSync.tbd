@@ -1,0 +1,28 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           B4249379-7C10-3951-959A-39C766B037CA
+  - target:          arm64e-ios
+    value:           FB875BAD-F806-3B30-B7E0-45E0CE995D0A
+install-name:    '/System/Library/PrivateFrameworks/ExchangeSync.framework/ExchangeSync'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ESIsRunningInExchangeSyncD, _kDAClientNameForChangeInsertion, 
+                       _kDAExchangeOAuthJWKSData, _kDAExchangeOAuthJWKSDataCachMaxTimeInterval, 
+                       _kDAExchangeOAuthJWKSDataCacheDate, _kDAExchangeOAuthJWKSURI, 
+                       _kDAExchangeOAuthTokenIssuer, _kDAExchangeOAuthVersion, _kESExchangePasswordPromptDate, 
+                       _kGenericDAAccountType, _kGenericDAAccountWithLoggingType, 
+                       _kSubCalCalendarStoreExternalId, _setESIsRunningInExchangeSyncD ]
+    objc-classes:    [ ESAccount, ESAccountActor, ESAccountClassNames, ESAccountLoader, 
+                       ESLocalDBHelper, ESLocalDBWatcher, ESUserNotificationInfo, 
+                       ESUserNotificationUtilities ]
+    objc-ivars:      [ ESAccountClassNames._accountClassName, ESAccountClassNames._agentClassName, 
+                       ESAccountClassNames._clientAccountClassName, ESAccountClassNames._daemonAccountClassName, 
+                       ESUserNotificationInfo._groupIdentifier, ESUserNotificationInfo._handler ]
+...

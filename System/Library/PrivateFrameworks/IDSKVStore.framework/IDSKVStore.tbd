@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           753D8050-AA6A-3FBD-A23C-36410D059B0F
+  - target:          armv7s-ios
+    value:           4F1CCA01-72F2-3AF2-B8E8-9AD006919EB3
+  - target:          arm64-ios
+    value:           6A077D0B-1445-38FA-A314-8150781FEFF3
+  - target:          arm64e-ios
+    value:           16836EB2-D7DF-3CC9-9E52-8A5253D5A646
+install-name:    '/System/Library/PrivateFrameworks/IDSKVStore.framework/IDSKVStore'
+current-version: 800
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ IDSKVDeleteContext, IDSKVStore ]
+...

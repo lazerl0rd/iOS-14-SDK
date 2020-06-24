@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           3E4BEF7B-BA16-3974-B50A-7751C6256429
+  - target:          arm64e-ios
+    value:           A620079E-D9CF-3EFA-AB91-4BBC2FE78EEA
+install-name:    '/Developer/Library/Frameworks/StoreKitTest.framework/StoreKitTest'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SKTestErrorDomain ]
+    objc-classes:    [ SKTestSession, SKTestTransaction ]
+...

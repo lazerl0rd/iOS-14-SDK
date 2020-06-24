@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           6C5602D3-1270-395C-86B2-DB59107AF5FB
+  - target:          arm64e-ios
+    value:           4067C2FC-69E2-3A34-81A6-8582B6242AB5
+install-name:    '/System/Library/PrivateFrameworks/CoreDuetSync.framework/CoreDuetSync'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ _DKSync3Coordinator, _DKSyncCoordinatorFactory ]
+...

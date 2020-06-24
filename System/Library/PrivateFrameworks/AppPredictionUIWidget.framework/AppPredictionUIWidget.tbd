@@ -1,0 +1,24 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           B62CF9C7-8FD6-3468-B0C6-B657B64AEF2A
+  - target:          arm64e-ios
+    value:           DFEEED89-A56A-3786-ADF8-F3A4B054E09C
+install-name:    '/System/Library/PrivateFrameworks/AppPredictionUIWidget.framework/AppPredictionUIWidget'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _APUIBundleIdentifierIsAppClip, _APUIDismissSuggestionShortcutItemType, 
+                       _APUIIconLocationAppPredictions, _APUINeverShowSuggestionShortcutItemType, 
+                       _APUIWidgetBundleIdReplacementFor, _AppPredictionUIWidgetVersionNumber, 
+                       _AppPredictionUIWidgetVersionString ]
+    objc-classes:    [ APUIActionSuggestionView, APUIAppClipView, APUIAppIconDataSource, 
+                       APUIAppIconGridView, APUIAppPredictionViewController, APUIAppSuggestionView, 
+                       APUISuggestionView, APUISuggestionsWidgetView, APUISuggestionsWidgetViewController, 
+                       APUIWidgetContainerView ]
+...

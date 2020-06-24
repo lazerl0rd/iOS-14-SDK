@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           28986781-3CE5-37D4-8E5F-3B3AB86193DA
+  - target:          arm64e-ios
+    value:           317AE07A-ECDA-32FB-B262-7C6570DC46C8
+install-name:    '/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework/GeneralSettingsUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _FindMyiPhoneControllerErrorDomain, __PSGLoggingFacility ]
+    objc-classes:    [ PSGBackupDisabledAppsInfo, PSGBackupUtils, PSGDateTimeController, 
+                       PSGFindMyiPhoneController, PSGGeneralController, PSGHomeButtonCustomizeController, 
+                       PSGMultitaskingGestureExplanationView, PSGUnderlineButton, 
+                       PSUICoreTelephonyPostponementCache ]
+...

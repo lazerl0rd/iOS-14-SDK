@@ -1,0 +1,30 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           F7724BDA-FFA5-3408-BD7B-EF2E9D6F9CAC
+  - target:          arm64e-ios
+    value:           A1CC937D-78C8-3BDC-B566-8776A640FFDC
+install-name:    '/System/Library/PrivateFrameworks/CarPlayServices.framework/CarPlayServices'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CRSAppActivationDidChangeNewCategoryKey, _CRSAppActivationDidChangeNotification, 
+                       _CRSAppActivationDidChangeOldCategoryKey, _CRSBooksIdentifier, 
+                       _CRSCalendarIdentifier, _CRSLogForCategory, _CRSNewsIdentifier, 
+                       _CRSNowPlayingIdentifier, _CRSOEMIdentifier, _CarPlayServicesVersionNumber, 
+                       _CarPlayServicesVersionString, _kCRSIconLayoutColumnCount, 
+                       _kCRSIconLayoutDefaultColumnCount, _kCRSIconLayoutDefaultRowCount, 
+                       _kCRSIconLayoutDisplaysOEMIcon, _kCRSIconLayoutHiddenIconsKey, 
+                       _kCRSIconLayoutIconOrderKey, _kCRSIconLayoutOEMIconLabel, 
+                       _kCRSIconLayoutRowCount ]
+    objc-classes:    [ CRSAppHistoryController, CRSAppHistoryService, CRSAppHistoryServiceSpecification, 
+                       CRSApplicationIcon, CRSIconLayoutController, CRSIconLayoutPage, 
+                       CRSIconLayoutService, CRSIconLayoutServiceSpecification, CRSIconLayoutState, 
+                       CRSInCallAssertion, CRSInCallAssertionService, CRSInCallAssertionSpecification, 
+                       CRSSessionController, CRSSessionService, CRSSessionSpecification ]
+...

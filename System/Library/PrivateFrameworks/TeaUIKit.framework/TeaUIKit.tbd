@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           3EA0D01A-D28A-30BF-9E5A-A397AD63C58A
+  - target:          arm64e-ios
+    value:           BC02EACE-07B9-3C2B-9260-FC632358E0AD
+install-name:    '/System/Library/PrivateFrameworks/TeaUIKit.framework/TeaUIKit'
+allowable-clients:
+  - targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    clients:         [ NewsInternalExtras,NewsPersonalization,NewsServices,NewsServicesInternal,NewsTag,NewsToday,NewsToday2,NewsTodayIntents,NewsWidgetIntents,News,NVCDemo,ArticleNotificationExtension,ArticleNotificationServiceExtension,MarketingNotificationExtension,OpenInNews,Feldspar Tests,NewsInternalSettings,NewsSettings,NewsUI,newsd,com.apple.news,NewsAnalyticsUpload,NewsUI2,NewsUI2Tests,NewsFeed,NewsFeedTests,NewsArticles,NewsArticlesTests,NewsAds,NewsAdsTests,NewsDES,NewsDESTests,NewsFormat,NewsFormatTests,NewsSubscription,NewsSubscriptionTests,NewsAnalytics,NewsAnalyticsTests,Stocks,StocksAnalytics,StocksAnalyticsTests,StocksCore,StocksCoreTests,StocksDetailIntents,StocksTests,StocksToday,StocksUI,StocksUITests,StocksWidget,WeatherCharts,WeatherDemo,TeaActivities,TeaActivitiesTests,TeaCharts,TeaChartsTests,TeaDB,TeaDBTests,TeaDemo,TeaFoundationTests,TeaSettings,TeaSettingsTests,TeaSnappy,TeaSnappyTests,TeaTemplate,TeaTemplateTests,TeaUI,TeaUITests ]
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _TeaUIKitVersionNumber, _TeaUIKitVersionString ]
+...

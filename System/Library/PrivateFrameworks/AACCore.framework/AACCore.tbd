@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           1F10DCC0-A269-34DF-997A-938174AE9C54
+  - target:          arm64e-ios
+    value:           FC468878-3BEC-356E-9EBE-460879C73509
+install-name:    '/System/Library/PrivateFrameworks/AACCore.framework/AACCore'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AECoreError, _AECoreErrorDomain, _AECoreErrorUserInfo, _AELocalizedStringFromTableInBundle, 
+                       _AEPolicySessionFailedToActivateSubsystemsKey, _AEPolicySessionFailedToDeactivateSubsystemsKey ]
+    objc-classes:    [ AEActivePolicySession, AELocalizedErrorDescriptions, AEOSGestalt, 
+                       AEOptionMirror, AEPerformancePrimitivesProvider, AEPolicyBundle, 
+                       AEPreferencesProvider, AERSingleAppModeConfiguration, AERSingleAppModePrimitivesProvider ]
+...

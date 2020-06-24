@@ -1,0 +1,30 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           8BF741FF-26FB-3F77-BF8C-1C359E4C2A74
+  - target:          arm64e-ios
+    value:           DB6F1074-B4EA-3545-B502-002E88C6699A
+install-name:    '/System/Library/PrivateFrameworks/ActivityRingsUI.framework/ActivityRingsUI'
+swift-abi-version: 7
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ARUIRingPercentageValueNoRing, _ARUITurbulenceLerp, _ActivityRingsUIFrameworkBundle, 
+                       _ActivityRingsUIVersionNumber, _ActivityRingsUIVersionString ]
+    objc-classes:    [ ARUIAnimatableObject, ARUIAnimatableObjectPropertyAnimation, 
+                       ARUIAnimatableProperty, ARUIBubbleGeometry, ARUIBubbleGroup, 
+                       ARUIBubbleRenderer, ARUIBubblesView, ARUICGPointPropertyAnimation, 
+                       ARUICountdownAnimator, ARUICountdownDefaultTimeline, ARUICountdownTimeline, 
+                       ARUICountdownView, ARUIFloatPropertyAnimation, ARUIManualAnimationSequencer, 
+                       ARUIMetricColors, ARUIPerlinTurbulenceField, ARUIRenderContext, 
+                       ARUIRenderer, ARUIRing, ARUIRingGroup, ARUIRingGroupAnimationState, 
+                       ARUIRingGroupController, ARUIRingGroupGlobalAnimationSequencer, 
+                       ARUIRingsImageFactory, ARUIRingsView, ARUIRingsViewRenderer, 
+                       ARUISprite, ARUISpriteSheet, ARUISpriteSheetFactory, ARUISpriteTexture, 
+                       ARUISpritesParticleRenderer, ARUITurbulenceApplier ]
+...

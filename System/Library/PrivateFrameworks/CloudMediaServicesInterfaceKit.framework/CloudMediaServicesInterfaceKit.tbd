@@ -1,0 +1,68 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           EA167B6A-9962-380F-BF9E-AAD72E0AB0A6
+  - target:          arm64e-ios
+    value:           301A16E3-DECE-3B74-A26A-87E9469FAAA0
+install-name:    '/System/Library/PrivateFrameworks/CloudMediaServicesInterfaceKit.framework/CloudMediaServicesInterfaceKit'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CMSCloudExtensionConfigurationErrorDomain, _CMSCloudExtensionLanguageCode, 
+                       _CMSCloudExtensionSessionErrorDomain, _CMSCloudExtensionSessionErrorUserDataDebugURLKey, 
+                       _CMSCloudExtensionSessionErrorUserDataExceptionKey, _CMSCloudExtensionSpecVersion, 
+                       _CMSCreateCloudExtensionHTTPRequest, _CMSExtensionEndpointForProtocolMethodName, 
+                       _CMSExtensionEndpointMediaQueuesPlayMedia, _CMSExtensionEndpointMediaQueuesUpdateActivity, 
+                       _CMSExtensionEndpointSiriIntentAddMedia, _CMSExtensionEndpointSiriIntentPlayMedia, 
+                       _CMSExtensionEndpointSiriIntentUpdateMediaAffinity, _CMSJSONWebSignatureErrorDomain, 
+                       _CMSProtocolAddMediaIntentHandlingConfirmMethodName, _CMSProtocolAddMediaIntentHandlingHandleMethodName, 
+                       _CMSProtocolAddMediaIntentHandlingName, _CMSProtocolAddMediaIntentHandlingResolveMediaDestinationMethodName, 
+                       _CMSProtocolAddMediaIntentHandlingResolveMediaItemsMethodName, 
+                       _CMSProtocolNameForExtensionEndpoint, _CMSProtocolPlayMediaIntentHandlingConfirmMethodName, 
+                       _CMSProtocolPlayMediaIntentHandlingHandleMethodName, _CMSProtocolPlayMediaIntentHandlingName, 
+                       _CMSProtocolPlayMediaIntentHandlingResolveMediaItemsMethodName, 
+                       _CMSProtocolPlayMediaIntentHandlingResolvePlayShuffledMethodName, 
+                       _CMSProtocolPlayMediaIntentHandlingResolvePlaybackQueueLocationMethodName, 
+                       _CMSProtocolPlayMediaIntentHandlingResolvePlaybackRepeatModeMethodName, 
+                       _CMSProtocolPlayMediaIntentHandlingResolvePlaybackSpeedMethodName, 
+                       _CMSProtocolPlayMediaIntentHandlingResolveResumePlaybackMethodName, 
+                       _CMSProtocolUpdateMediaAffinityIntentHandlingConfirmMethodName, 
+                       _CMSProtocolUpdateMediaAffinityIntentHandlingHandleMethodName, 
+                       _CMSProtocolUpdateMediaAffinityIntentHandlingName, _CMSProtocolUpdateMediaAffinityIntentHandlingResolveAffinityTypeMethodName, 
+                       _CMSProtocolUpdateMediaAffinityIntentHandlingResolveMediaItemsMethodName, 
+                       _CloudMediaServicesInterfaceKitVersionNumber, _CloudMediaServicesInterfaceKitVersionString, 
+                       _INAddMediaIntentResponseCodeFromString, _INAddMediaIntentResponseCodeToString, 
+                       _INAddMediaMediaDestinationUnsupportedReasonFromString, _INAddMediaMediaDestinationUnsupportedReasonToString, 
+                       _INIntentHandlingStatusFromString, _INIntentHandlingStatusToString, 
+                       _INInteractionDirectionFromString, _INInteractionDirectionToString, 
+                       _INMediaAffinityTypeFromString, _INMediaAffinityTypeToString, 
+                       _INMediaDestinationTypeFromString, _INMediaDestinationTypeToString, 
+                       _INMediaItemTypeFromString, _INMediaItemTypeToString, _INMediaReferenceFromString, 
+                       _INMediaReferenceToString, _INMediaSortOrderFromString, _INMediaSortOrderToString, 
+                       _INPlayMediaIntentResponseCodeFromString, _INPlayMediaIntentResponseCodeToString, 
+                       _INPlaybackQueueLocationFromString, _INPlaybackQueueLocationToString, 
+                       _INPlaybackRepeatModeFromString, _INPlaybackRepeatModeToString, 
+                       _INRecurrenceFrequencyFromString, _INRecurrenceFrequencyToString, 
+                       _INUpdateMediaAffinityIntentResponseCodeFromString, _INUpdateMediaAffinityIntentResponseCodeToString, 
+                       _cmsDateFormatter, _cmsSafeDictionary, _kAllowExplicitContentHomeKitSettingDefaultsKey, 
+                       _kAqueductServerEnvironmentOverrideOption, _kAqueductServerEnvironmentProduction, 
+                       _kAqueductServerOverrideOption, _kCachedEndpointConfigurationDictionary, 
+                       _kCachedEndpointConfigurationURL, _kCloudMediaServicesDefaultsDomain, 
+                       _kCloudMediaServicesInterfaceEntitlement, _kCloudMediaServicesInterfaceMachServiceName, 
+                       _kDefaultProdServerURL, _kHPSettingKeypathAllowExplicitContent, 
+                       _kHPSettingKeypathUpdateListeningHistory, _kOverrideSessionAuthHeader, 
+                       _kResolvedHomeUserID, _kResolvedSharedUserID, _kSessionAuthHeader, 
+                       _kSessionIdentifier, _kSpeakerUpdateListeningHistory, _kThirdPartyAppIdentifier, 
+                       _kThirdPartyBundleIdentifier, _kThirdPartyBundleVersion, _kThirdPartyServiceID, 
+                       _kUpdateListeningHistoryHomeKitSettingDefaultsKey ]
+    objc-classes:    [ CMSAuthenticationConfiguration, CMSAuthenticationCredential, 
+                       CMSCloudExtensionConfiguration, CMSCloudExtensionSession, 
+                       CMSExtensionEndpointConfiguration, CMSJSONWebSignature, CMSOAuthTokenHandler, 
+                       CMSServiceSetting, CMSSessionContextModel, CloudMediaServicesInterfaceXPCListener, 
+                       CloudMediaServicesPlayerInterface, CloudMediaServicesPreferences ]
+...

@@ -1,0 +1,77 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           0145CF28-BCE7-3ED1-9FF8-2D73AC65D31E
+  - target:          arm64e-ios
+    value:           8FE38DC1-CB78-3A4C-A5D2-AF19829D056C
+install-name:    '/System/Library/PrivateFrameworks/BookUtility.framework/BookUtility'
+current-version: 391.1
+compatibility-version: 0
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AMSBooksBagProfileName, _AMSBooksBagProfileVersion, _BUArrayDescription, 
+                       _BUAssertionFailed, _BUBagKeyAMDDomains, _BUBagKeyAMDFinishProvisioning, 
+                       _BUBagKeyAMDSyncMachine, _BUBagKeyAddFundsURL, _BUBagKeyAllowCitations, 
+                       _BUBagKeyAllowingCitations, _BUBagKeyAppAnalyticsURL, _BUBagKeyAutomaticDownloadQueueURL, 
+                       _BUBagKeyAutomaticMediaTypesFetchURL, _BUBagKeyAutomaticMediaTypesSetURL, 
+                       _BUBagKeyAvailableBookUpdates, _BUBagKeyAvailableBookUpdatesReloadFrequency, 
+                       _BUBagKeyBooksISBNURL, _BUBagKeyBooksMediaAPIHost, _BUBagKeyBooksMediaAPIPreviewHost, 
+                       _BUBagKeyBooksTabs, _BUBagKeyBuyProduct, _BUBagKeyCheckBookQueue, 
+                       _BUBagKeyCheckDownloadQueue, _BUBagKeyCommerceUIURLPatterns, 
+                       _BUBagKeyContentRestoreMaxItemCount, _BUBagKeyContentRestoreURL, 
+                       _BUBagKeyCountryCode, _BUBagKeyCurrencyCode, _BUBagKeyDTPurchasesPage, 
+                       _BUBagKeyDeleteUserReviewUrl, _BUBagKeyEndOfBookUpsellEnabled, 
+                       _BUBagKeyEndOfPictureBookUpsellEnabled, _BUBagKeyFamilyInfo, 
+                       _BUBagKeyForgottenPassword, _BUBagKeyIXStoreSheet, _BUBagKeyIXStoreSheetBooks, 
+                       _BUBagKeyIsAudiobooksStoreEnabled, _BUBagKeyIsBooksStoreEnabled, 
+                       _BUBagKeyJSAppURL, _BUBagKeyKVSGetAll, _BUBagKeyKVSPutAll, 
+                       _BUBagKeyLanguage, _BUBagKeyLanguageTag, _BUBagKeyLibraryLink, 
+                       _BUBagKeyMDFinishProvisioning, _BUBagKeyMDSyncMachine, _BUBagKeyMediaAPITokenProviderURL, 
+                       _BUBagKeyMetrics, _BUBagKeyMobileNetworkConstraints, _BUBagKeyMobileURLHandlers, 
+                       _BUBagKeyP2LaunchAudioBookStorePathPatterns, _BUBagKeyP2LaunchEbookstoreHostPatterns, 
+                       _BUBagKeyP2LaunchEbookstorePathPatterns, _BUBagKeyP2ServiceTermsURL, 
+                       _BUBagKeyPendingBooks, _BUBagKeyPendingSongs, _BUBagKeyPrivacyAcknowledgementURL, 
+                       _BUBagKeyProcessRedirectURL, _BUBagKeyPurchaseDAAP, _BUBagKeyReadingGoalShareURL, 
+                       _BUBagKeyResetAndRedirectURL, _BUBagKeySaveUserReviewURL, 
+                       _BUBagKeySearchHints, _BUBagKeySignSAPRequest, _BUBagKeySignSAPSetup, 
+                       _BUBagKeySignSAPSetupCert, _BUBagKeySongDownloadDone, _BUBagKeyStoreFront, 
+                       _BUBagKeyStorePlatformLookupURLUnpersonalized, _BUBagKeyTAFEmailBodyURLBase, 
+                       _BUBagKeyTrendingSearches, _BUBagKeyTrustedDomains, _BUBagKeyUserRateContentURL, 
+                       _BUBagKeyUserReviewsSortOptions, _BUBagKeyViewAudiobook, _BUBagKeyViewBook, 
+                       _BUBagKeyViewBookUpdateParams, _BUBagKeyWriteUserReviewURL, 
+                       _BUBooksGroupContainerIdentifier, _BUBundle, _BUCFTypeCast, 
+                       _BUCastRecord, _BUCastStatsDump, _BUClamp, _BUClassAndProtocolCast, 
+                       _BUCoalescingCallBlockLog, _BUCrashBreakpoint, _BUCrashFinalThrow, 
+                       _BUDynamicCast, _BUEncodedBlockInfoAreEqual, _BUEncodedBlockInfoCreate, 
+                       _BUErrorDomain, _BUErrorException, _BUForceUnitTestsToHaltDebugger, 
+                       _BUFractionalPart, _BUGrantDebuggerPermissionToStopExecution, 
+                       _BUHaltDebugger, _BUIsRunningTests, _BUIsStoreBookAssetID, 
+                       _BULocalizedErrorAlertMessageKey, _BULocalizedErrorAlertTitleKey, 
+                       _BUMix, _BUNetworkMonitorInterfaceDidChangeNotification, _BUObjectReferenceDescription, 
+                       _BUProtocolCast, _BURandom, _BURandomBetween, _BUReportAssertionFailureWithMessage, 
+                       _BUReverseSquare, _BURound, _BUShouldStopInDebugger, _BUSimulateAudiobookStoreAvailabilityKey, 
+                       _BUSineMap, _BUStaticCast, _BUStaticClassAndProtocolCast, 
+                       _BUStaticProtocolCast, _BUStoreIdFromObject, _BUZip64EndOfCentralDirectoryLocatorSignature, 
+                       _BUZip64EndOfCentralDirectorySignature, _BUZip64EndOfCentralDirectorySizeOfRecordLeadingBytes, 
+                       _BUZip64ExtraFieldSignature, _BUZipCentralFileHeaderSignature, 
+                       _BUZipDataDescriptorSignature, _BUZipDeflateCompressionMethod, 
+                       _BUZipEndOfCentralDirectoryMaxSize, _BUZipEndOfCentralDirectorySignature, 
+                       _BUZipInflateDefaultMaxBufferSize, _BUZipLocalFileHeaderSignature, 
+                       _BUZipLog, _BUZipVersionMadeBy, _BUZipVersionNeededToExtract, 
+                       _BUZipWriterMaxEntryDataSize, _BookUtilityLog ]
+    objc-classes:    [ BUBlockCallThrottler, BUBufferedReadChannel, BUBufferedReadChannelHelper, 
+                       BUBundleLookupClass, BUCellularIdentity, BUCellularSettings, 
+                       BUCoalescingCallBlock, BUContainedZipArchive, BUCountingAssertionProvider, 
+                       BUDescription, BUEncodedBlockInfoInternal, BUEncodedBlockInfoWithDecodedLengthInternal, 
+                       BUFileIOChannel, BUIOUtils, BUNetworkMonitor, BUReadChannelInputStreamAdapter, 
+                       BUTemporaryDirectory, BUUserAccount, BUUserAccountMonitor, 
+                       BUZipArchive, BUZipEntry, BUZipFileArchive, BUZipFileDescriptorWrapper, 
+                       BUZipFileWriter, BUZipInflateReadChannel, BUZipReadChannel, 
+                       BUZipWriter, BUZipWriterEntry, _BUCountingAssertion, _BUNullCellularIdentity ]
+...

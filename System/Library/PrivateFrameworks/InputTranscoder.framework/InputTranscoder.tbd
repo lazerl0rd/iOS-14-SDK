@@ -1,0 +1,29 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           19AAFF42-ECCF-334F-95C8-B3C7B9D12C23
+  - target:          arm64e-ios
+    value:           5E279EE5-99D8-38A5-92D4-1CA4AF67FBF7
+install-name:    '/System/Library/PrivateFrameworks/InputTranscoder.framework/InputTranscoder'
+current-version: 54
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ITCandidateEnumerateTokenIDs, _ITCandidateGetScore, _ITCandidateGetSources, 
+                       _ITCandidateGetString, _ITCandidateGetStrokedPath, _ITCandidateIsCompletion, 
+                       _ITDecoderClearNeuralNetworkBuffer, _ITDecoderCreate, _ITDecoderEnumerateCandidates, 
+                       _ITDecoderSetLinguisticContext, _ITKeyInfoNull, _ITTouchTranscoderAddLexicon, 
+                       _ITTouchTranscoderClearNeuralNetworkBuffer, _ITTouchTranscoderCreateSession, 
+                       _ITTouchTranscoderCreateWithKeyboardLayout, _ITTouchTranscoderSessionAddEvent, 
+                       _ITTouchTranscoderSessionEnumerateCandidates, _ITTouchTranscoderSessionSetLinguisticContext, 
+                       _ITTouchTranscoderSessionSetPrefix, _ITTouchTranscoderSupportsLocale, 
+                       _ITTouchTranscoderSupportsLocaleAndLayout, _ITTouchTranscoderUpdateKeyboardLayout, 
+                       _kITCandidateSourceDynamicLexicon, _kITCandidateSourceStaticLexicon, 
+                       _kITDecoderLocaleKey, _kITDecoderResourceDirectoryKey, _kITTouchTranscoderBundleURLKey, 
+                       _kITTouchTranscoderKeyboardLayoutNameKey, _kITTouchTranscoderLocaleKey ]
+...

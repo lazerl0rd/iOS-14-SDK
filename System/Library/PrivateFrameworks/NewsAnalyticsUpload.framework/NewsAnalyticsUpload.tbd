@@ -1,0 +1,30 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           9DD186CC-6B6E-35F4-89E6-80EBF589CD88
+  - target:          arm64e-ios
+    value:           699BA318-287E-32F4-9D74-53CC7A8DE8C1
+install-name:    '/System/Library/PrivateFrameworks/NewsAnalyticsUpload.framework/NewsAnalyticsUpload'
+allowable-clients:
+  - targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+    clients:         [ News, NewsAnalytics, NewsAnalyticsUploadTests, NewsServices, 
+                       NewsServicesInternal, Stocks, newsd ]
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _NAUAnalyticsEnvelopeTrackerContentTypeIsSupported, _NDAnalyticsEntryCanBeUploaded, 
+                       _NDAnalyticsEntryDeliveryWindow, _NDAnalyticsEntryDeliveryWindowEarlierDate, 
+                       _NDAnalyticsEnvelopeContentTypesFromEntries, _NDAnalyticsEnvelopeStoreEntriesFromStringRepresentations, 
+                       _NDAnalyticsEnvelopeStoreStringRepresentationsOfEntries, _NDAnalyticsEnvelopeSubmissionDatesByContentType, 
+                       _NDSharedClientLog, _NDSharedServiceLog, _NewsAnalyticsUploadVersionNumber, 
+                       _NewsAnalyticsUploadVersionString ]
+    objc-classes:    [ NAUAnalyticsEnvelopeTracker, NDAnalyticsEnvelopeManager, NDAnalyticsEnvelopeStore, 
+                       NDAnalyticsEnvelopeStoreEntry, NDAnalyticsPayloadAssembler, 
+                       NDAnalyticsPayloadInfo, NDAnalyticsPayloadUploader, NDAnalyticsUploadScheduler, 
+                       NDAppConfigAnalyticsPayloadAssemblerConfigProvider ]
+...

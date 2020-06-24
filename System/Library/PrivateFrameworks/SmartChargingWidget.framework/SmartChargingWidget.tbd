@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           D47F2419-1DCD-3050-B87E-BF475FA93242
+  - target:          arm64e-ios
+    value:           DC2E516A-1E88-3F46-80CF-C64E55C7E792
+install-name:    '/System/Library/PrivateFrameworks/SmartChargingWidget.framework/SmartChargingWidget'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SmartChargingWidgetVersionNumber, _SmartChargingWidgetVersionString ]
+...

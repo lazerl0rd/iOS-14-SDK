@@ -1,0 +1,19 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           947643C2-4B7A-39C3-8FAD-EC468224C6DF
+  - target:          arm64e-ios
+    value:           EAA5F6DC-FFFC-3D32-91AF-5F476C49B24A
+install-name:    '/System/Library/Frameworks/AppClip.framework/AppClip'
+current-version: 20.1
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _APActivationPayloadErrorDomain ]
+    objc-classes:    [ APActivationPayload ]
+...

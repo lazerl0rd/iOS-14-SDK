@@ -1,0 +1,21 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           FB138BA1-D9C8-392C-B8C1-7B4AE3C7A1ED
+  - target:          arm64e-ios
+    value:           668F28CC-BE34-34E2-8C1B-4DA0592878E4
+install-name:    '/System/Library/PrivateFrameworks/AppNotificationsLoggingClient.framework/AppNotificationsLoggingClient'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ATXNEventTypeToString, _ATXNRTOutcomeToSettingResponse, _ATXNSettingResponseToNEvent, 
+                       _ATXNSettingResponseToString, _ATXSuggestionTypeToString, 
+                       _AppNotificationsLoggingClientVersionNumber, _AppNotificationsLoggingClientVersionString ]
+    objc-classes:    [ ATXNotificationsAggregateLogger, ATXNotificationsInterface, 
+                       ATXNotificationsLoggingClient ]
+...

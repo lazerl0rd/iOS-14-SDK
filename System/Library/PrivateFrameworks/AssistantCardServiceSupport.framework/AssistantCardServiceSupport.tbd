@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           6D3ABEC4-63D7-3C7A-9B83-306C1F595D03
+  - target:          arm64e-ios
+    value:           AA2620CB-E5A8-3D70-B1B5-0BC3D999115E
+install-name:    '/System/Library/PrivateFrameworks/AssistantCardServiceSupport.framework/AssistantCardServiceSupport'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ ACSCardService, ACSCardServiceHelper ]
+...

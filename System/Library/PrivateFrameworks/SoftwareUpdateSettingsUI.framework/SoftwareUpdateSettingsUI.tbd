@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           46C940F7-3FD6-35F2-A725-049FDE99877C
+  - target:          arm64e-ios
+    value:           9B43CE29-2280-3053-84EA-8C024D4A8FB6
+install-name:    '/System/Library/PrivateFrameworks/SoftwareUpdateSettingsUI.framework/SoftwareUpdateSettingsUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SUPrefsErrorDomain, _SUSUISettingsIsBadgedForSoftwareUpdate, 
+                       __SUSUILoggingFacility ]
+    objc-classes:    [ SUSUISoftwareUpdateAutomaticUpdateController, SUSUISoftwareUpdateController, 
+                       SUSUISoftwareUpdateManager ]
+...

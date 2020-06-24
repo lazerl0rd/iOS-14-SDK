@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           003C007D-0DFA-3857-9AE1-C60304D46596
+  - target:          armv7s-ios
+    value:           EB2C5BBF-FB16-313E-BB1D-F7E504CFF502
+  - target:          arm64-ios
+    value:           79B70E2C-4E67-3ADF-9546-7B29DA95E16C
+  - target:          arm64e-ios
+    value:           00BF8B1C-1CFC-3E02-8889-527B3698248D
+install-name:    '/System/Library/PrivateFrameworks/ButtonResolver.framework/ButtonResolver'
+current-version: 0
+compatibility-version: 0
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _BRConfigGainKey, _BRConfigMaxTimeKey, _BRConfigMinTimeKey, 
+                       _BRConfigSpeedKey, _BRGlobalConfigForceFeelKey ]
+    objc-classes:    [ BRAsset, BRButtonResolverController, BRInterface, BRInterfaceAOP, 
+                       BRInterfaceKeyboard, BRInterfaceLegacy, BRSlotData, BRStateData ]
+...

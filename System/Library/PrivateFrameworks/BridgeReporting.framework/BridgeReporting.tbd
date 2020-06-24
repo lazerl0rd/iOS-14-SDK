@@ -1,0 +1,59 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           1C8301CE-E4BB-39EA-B592-A725C74E1960
+  - target:          arm64e-ios
+    value:           D4E6B3B8-E1B8-3E5E-B612-9D992CD04FB9
+install-name:    '/System/Library/PrivateFrameworks/BridgeReporting.framework/BridgeReporting'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _BRAutomation, _BRGetAllMetricKeysAndValues, _BRGetCurrentMetricIDFromMetricDir, 
+                       _BRIsInternalInstall, _BRMigrationBeganTimeKey, _BRMigrationDeviceUnpairedBecauseKeychainIsOffKey, 
+                       _BRMigrationDeviceUnpairedBecauseStaleKey, _BRMigrationErrorCodeKey, 
+                       _BRMigrationErrorDescriptionKey, _BRMigrationErrorDomainKey, 
+                       _BRMigrationFailedBTKeysNotSyncedKey, _BRMigrationIsAutomationKey, 
+                       _BRMigrationLikelyOffendingTransaction, _BRMigrationMetricSessionKey, 
+                       _BRMigrationPairedDeviceCountKey, _BRMigrationSucceededKey, 
+                       _BRMigrationSwitchCounterKey, _BRMigrationWatchBuildKey, _BRMigrationWatchBuildTypeKey, 
+                       _BRMigrationWatchEnclosureMaterialKey, _BRMigrationWatchHardwareKey, 
+                       _BRMigrationWatchMaxPairingVersionKey, _BRPairingChangedMetricKey, 
+                       _BRPairingMetricChangedNotification, _BRPairingTimeEventToString, 
+                       _BRReportingErrorDomain, _BRSignInFailureErrorForAccountType, 
+                       _BRSignInPairingTimeEventForAccountType, _BRStaleOrNoPairingMetric, 
+                       _BridgeReportingVersionNumber, _BridgeReportingVersionString, 
+                       _COSSignInAccountTypeFaceTime, _COSSignInAccountTypeiCloud, 
+                       _COSSignInAccountTypeiMessage, _COSSignInAccountTypeiTunes, 
+                       _br_metriccollection_log, _kAlreadyPairedWatchCount, _kArchivedWatchCount, 
+                       _kAutomationFlow, _kBeginNRHPPairing, _kEndToEndPairingComplete, 
+                       _kEndToEndPairingTimed, _kFaceTimePasswordSignInSkipped, _kFaceTimePasswordSignInSuccess, 
+                       _kFaceTimePasswordSignInTimed, _kFaceTimeSignInFailureError, 
+                       _kFaceTimeSilentSignInSuccess, _kFaceTimeSilentSignInTimed, 
+                       _kFireLockOn, _kGizmoBuild, _kGizmoHW, _kLastControllerAction, 
+                       _kNRPairingFailure, _kNRPairingSuccess, _kNRSubreason, _kNoNRDetails, 
+                       _kPairingBeginsKey, _kPairingBeginsTime, _kPairingEndedBeforeNRPairing, 
+                       _kPairingMetricBridgePlistName, _kPairingMetricNRPlistName, 
+                       _kPairingMetricPlistName, _kPairingMetricPrefix, _kPairingMetricsArchiveDir, 
+                       _kPairingMetricsDir, _kReportSubmitted, _kScannedWatchCode, 
+                       _kSelectedLeftWrist, _kSelectedRestoreChoice, _kSignInFailureError, 
+                       _kSignInSuccessful, _kSignInTimed, _kSilentSignInSuccess, 
+                       _kSilentSignInTimed, _kStartSilentSignIn, _kStartedActivation, 
+                       _kTermsPresented, _kUHPPair, _kUnexpectedEvent, _kUserBackedOutAfterNRPairingSuccess, 
+                       _kWatchActivated, _kWatchActivationTimed, _kiCloudPasswordSignInSkipped, 
+                       _kiCloudPasswordSignInSuccess, _kiCloudPasswordSignInTimed, 
+                       _kiCloudSignInFailureError, _kiCloudSilentSignInSuccess, _kiCloudSilentSignTimed, 
+                       _kiMessagePasswordSignInSkipped, _kiMessagePasswordSignInSuccess, 
+                       _kiMessagePasswordSignInTimed, _kiMessageSignInFailureError, 
+                       _kiMessageSilentSignInSuccess, _kiMessageSilentSignInTimed, 
+                       _kiTunesPasswordSignInSkipped, _kiTunesPasswordSignInSuccess, 
+                       _kiTunesPasswordSignInTimed, _kiTunesSignInFailureError, _kiTunesSilentSignInSuccess, 
+                       _kiTunesSilentSignInTimed ]
+    objc-classes:    [ BRRTCMigrationMetric, BRRTCMigrationMetricDeviceDetails, BRRTCMigrationReportManager, 
+                       BRRTCPairingMetric, BRRTCPairingReportManager, BRRTCSession, 
+                       BRReportManager, BRSetupControllerDetails, BRSetupControllerTracker ]
+...

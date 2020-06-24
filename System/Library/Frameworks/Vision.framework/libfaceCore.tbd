@@ -1,0 +1,35 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           2CAB8703-007D-34F9-94F7-0FE0FC3DE5CC
+  - target:          arm64e-ios
+    value:           6346C43D-003E-34D7-B955-8C7F1698306F
+install-name:    '/System/Library/Frameworks/Vision.framework/libfaceCore.dylib'
+current-version: 4.0.30
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _FCRDetectionParamDetectionRegion, _FCRDetectionParamEnhancedEyesAndMouthLocalization, 
+                       _FCRDetectionParamInitialAngle, _FCRExtractionParamEnhancedEyesAndMouthLocalization, 
+                       _FCRExtractionParamExtractBlink, _FCRExtractionParamExtractFaceBlur, 
+                       _FCRExtractionParamExtractFaceprint, _FCRExtractionParamExtractLandmarkPoints, 
+                       _FCRExtractionParamExtractNaturalSmileFeatures, _FCRExtractionParamExtractSmile, 
+                       _FCRExtractionParamInitialAngle, _FCRFaceBlurScore, _FCRFaceBlurred, 
+                       _FCRFaceDetectionParameters, _FCRFaceDetectorErrorDomain, 
+                       _FCRFaceExpressionLeftEyeClosed, _FCRFaceExpressionLeftEyeClosedScore, 
+                       _FCRFaceExpressionRightEyeClosed, _FCRFaceExpressionRightEyeClosedScore, 
+                       _FCRFaceExpressionSmile, _FCRFaceExpressionSmileScore, _FCRFastFaceDetectionParameters, 
+                       _FCRKeypointTrackingParameters, _FCRPreciseDetectionParameters, 
+                       _FCRSetupParamDetectProfiles, _FCRSetupParamDetectorType, 
+                       _FCRSetupParamDetectorTypeFaceDetection, _FCRSetupParamDetectorTypeFastFaceDetection, 
+                       _FCRSetupParamDetectorTypePBM, _FCRSetupParamDetectorTypePreciseFaceDetection, 
+                       _FCRSetupParamMinFaceSize, _FCRSetupParamNumberOfAngles, _FCRSetupParamTrackingType, 
+                       _FCRSetupParamTrackingTypeKeypoints, _FCRSetupParamTrackingTypeNone, 
+                       _FCRSetupParamTrackingTypeStandard, _FCRStandardTrackingParameters ]
+    objc-classes:    [ FaceCoreDetector, FaceCoreFace, FaceCoreImage ]
+...

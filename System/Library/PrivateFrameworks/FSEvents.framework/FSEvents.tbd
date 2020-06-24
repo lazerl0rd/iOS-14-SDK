@@ -1,0 +1,27 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           A7114B67-5D7B-36D7-8B8C-475045EC668D
+  - target:          arm64e-ios
+    value:           C5BD0452-F48A-3104-8D4E-8FCAF130713B
+install-name:    '/System/Library/PrivateFrameworks/FSEvents.framework/FSEvents'
+current-version: 1287
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _FSEventStreamCopyDescription, _FSEventStreamCopyPathsBeingWatched, 
+                       _FSEventStreamCreate, _FSEventStreamCreateRelativeToDevice, 
+                       _FSEventStreamFlushAsync, _FSEventStreamFlushSync, _FSEventStreamGetDeviceBeingWatched, 
+                       _FSEventStreamGetLatestEventId, _FSEventStreamInvalidate, 
+                       _FSEventStreamRelease, _FSEventStreamRetain, _FSEventStreamScheduleWithRunLoop, 
+                       _FSEventStreamSetDispatchQueue, _FSEventStreamSetExclusionPaths, 
+                       _FSEventStreamShow, _FSEventStreamStart, _FSEventStreamStop, 
+                       _FSEventStreamUnscheduleFromRunLoop, _FSEventsCopyUUIDForDevice, 
+                       _FSEventsGetCurrentEventId, _FSEventsGetLastEventIdForDeviceBeforeTime, 
+                       _FSEventsPurgeEventsForDeviceUpToEventId ]
+...

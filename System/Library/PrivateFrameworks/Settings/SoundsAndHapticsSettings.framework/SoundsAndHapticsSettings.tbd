@@ -1,0 +1,23 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           69BFFFD4-433A-3B49-A815-154E6AEC2F79
+  - target:          arm64e-ios
+    value:           E7D2E3A2-A995-3357-A257-0132D29D4E06
+install-name:    '/System/Library/PrivateFrameworks/Settings/SoundsAndHapticsSettings.framework/SoundsAndHapticsSettings'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _InitAVController, _SHSCanAdjustVolumeUsingButtonsPreferencesForSpringBoardKey, 
+                       _SHSCanAdjustVolumeUsingButtonsPreferencesKey, _SHSLogForCategory, 
+                       _SHSSoundsPreferencesDomain, _SHSSystemHapticsPreferencesKey, 
+                       _SHSSystemHapticsSetting, _SHS_BundleForSoundsAndHapticsSettingsFramework, 
+                       _SHS_LocalizedStringForSounds ]
+    objc-classes:    [ SHSAudioPlayback, SHSSoundsPrefController, SHSSpeakersPrefController, 
+                       SHSToneController ]
+...

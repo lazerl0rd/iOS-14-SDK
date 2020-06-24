@@ -1,0 +1,27 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           993FC472-636A-308C-8C87-632D96E37A9B
+  - target:          arm64e-ios
+    value:           33B3381F-C12D-3FCE-84D8-BDFBF4BAD174
+install-name:    '/System/Library/PrivateFrameworks/VirtualGarage.framework/VirtualGarage'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _NSStringFromVGChargingConnectorTypeOptions, _VGChargingConnectorTypeOptionsList, 
+                       _VGChargingConnectorTypeOptionsPacked, _VGChargingConnectorTypeOptionsUnpacked, 
+                       _VGGetAssertLog, _VGGetDataCoordinatorLog, _VGGetExternalAccessoryLog, 
+                       _VGGetOEMApplicationLog, _VGGetPersistingLog, _VGGetVirtualGarageLog, 
+                       _VGHexRepresentationFromRGB, _VGHexRepresentationFromRGBA, 
+                       _VGVehicleConnectorInfosFromVGPowerByConnectorDictionary, 
+                       _VGVehicleStateStorageReadFrom, _startHostingVirtualGarageServiceWithPersister, 
+                       _stopHostingVirtualGarageService ]
+    objc-classes:    [ VGDataCoordinator, VGOEMApplication, VGOEMApplicationFinder, 
+                       VGVehicle, VGVehicleDeduper, VGVehicleState, VGVehicleStateStorage, 
+                       VGVirtualGarage, VGVirtualGarageService ]
+...

@@ -1,0 +1,26 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           CC7D63F0-4B9F-30D8-923F-14F6E900B98A
+  - target:          arm64e-ios
+    value:           6A0C07E7-DD01-355C-966E-E7A78E45EC3A
+install-name:    '/System/Library/PrivateFrameworks/ProactiveCDNDownloader.framework/ProactiveCDNDownloader'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ATXAppAndClipEntriesPbReadFrom, _ProactiveCDNDownloaderVersionNumber, 
+                       _ProactiveCDNDownloaderVersionString ]
+    objc-classes:    [ ATXAppAndClipEntriesPb, ATXAppAndClipEntriesReader, ATXAppAndClipEntry, 
+                       ATXDigestConverter, ATXGEOTileDataReader, ATXGEOTileLoader, 
+                       ATXProactiveCDNDownloader ]
+    objc-ivars:      [ ATXAppAndClipEntriesPb._adamIds, ATXAppAndClipEntriesPb._deltaLatitudes, 
+                       ATXAppAndClipEntriesPb._deltaLongitudes, ATXAppAndClipEntriesPb._isTouristApps, 
+                       ATXAppAndClipEntriesPb._radius, ATXAppAndClipEntriesPb._ranks, 
+                       ATXAppAndClipEntriesPb._tileLatitudeE7, ATXAppAndClipEntriesPb._tileLongitudeE7, 
+                       ATXAppAndClipEntriesPb._urlHashs ]
+...

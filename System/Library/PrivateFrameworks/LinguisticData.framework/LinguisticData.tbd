@@ -1,0 +1,28 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           2F84990B-7BC4-3B28-BCD4-763583EE2B7A
+  - target:          arm64e-ios
+    value:           1FF33F39-64A7-3A4A-85E7-DA0E9CB8A1E3
+install-name:    '/System/Library/PrivateFrameworks/LinguisticData.framework/LinguisticData'
+current-version: 377
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _LDCopyLocaleIdentifierOverrideForLocaleIdentifier, _LDCreateMobileAssetType, 
+                       _LDCreateSystemLexiconCompatibilityVersion, _LDEnumerateAssetDataItems, 
+                       _kLDAssetTypeCharacterLanguageModel, _kLDAssetTypeContinuousPathModel, 
+                       _kLDAssetTypeDeltaLexicon, _kLDAssetTypeEventDetectionModel, 
+                       _kLDAssetTypeIntentDetectionModel, _kLDAssetTypeLanguageIdentificationModel, 
+                       _kLDAssetTypeLanguageModel, _kLDAssetTypeLexicon, _kLDAssetTypeMorphologicalAnalyzer, 
+                       _kLDAssetTypeMultilingualModel, _kLDAssetTypeNaturalLanguageSearchModel, 
+                       _kLDAssetTypePOSTaggingModel, _kLDAssetTypePolarityModel, 
+                       _kLDAssetTypeProactiveGrammar, _kLDAssetTypeSearchQueryLanguageModel, 
+                       _kLDAssetTypeSpellcheckerData, _kLDAssetTypeTokenizationModel, 
+                       _kLDAssetTypeTransliterationModel ]
+...

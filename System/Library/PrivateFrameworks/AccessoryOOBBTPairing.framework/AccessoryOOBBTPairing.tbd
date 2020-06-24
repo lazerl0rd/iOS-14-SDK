@@ -1,0 +1,27 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           27E9A8E4-C227-3B34-AE97-DA0F68D200B5
+  - target:          arm64e-ios
+    value:           C60FC814-604E-3D9C-9A35-1E026CBD69B6
+install-name:    '/System/Library/PrivateFrameworks/AccessoryOOBBTPairing.framework/AccessoryOOBBTPairing'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _ACCOOBBTPairing2Supported, _ACCOOBBTPairingAccFwVer, _ACCOOBBTPairingAccHwVer, 
+                       _ACCOOBBTPairingAccManufacturer, _ACCOOBBTPairingAccModel, 
+                       _ACCOOBBTPairingAccName, _ACCOOBBTPairingAccSerialNum, _ACCOOBBTPairingCarPlaySupported, 
+                       _ACCOOBBTPairingCertData, _ACCOOBBTPairingCertSerial, _ACCOOBBTPairingCompletionMACAddressKey, 
+                       _ACCOOBBTPairingCompletionNotification, _ACCOOBBTPairingCompletionStatusKey, 
+                       _ACCOOBBTPairingComponentInfoID, _ACCOOBBTPairingComponentInfoMacAddr, 
+                       _ACCOOBBTPairingComponentInfoName, _ACCOOBBTPairingComponentInfoUID, 
+                       _ACCOOBBTPairingConnectionIDKey, _ACCOOBBTPairingDisplayName, 
+                       _ACCOOBBTPairingLaunchNotification, _AccessoryOOBBTPairingVersionNumber, 
+                       _AccessoryOOBBTPairingVersionString ]
+    objc-classes:    [ ACCOOBBTPairingAccessory, ACCOOBBTPairingProvider ]
+...

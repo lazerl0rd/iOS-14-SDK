@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           FD150432-78BB-3400-B9C2-C0BE39794A47
+  - target:          arm64e-ios
+    value:           74D4D0D9-D78E-3931-9456-BEDE50702003
+install-name:    '/System/Library/PrivateFrameworks/GPUCompiler.framework/Libraries/libComposeFilters.dylib'
+current-version: 31001.23.4
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _composeImageFilterFunctionsFromModulesSPI, _composeImageFilterFunctionsSPI ]
+...

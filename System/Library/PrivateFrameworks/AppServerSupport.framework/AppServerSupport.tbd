@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           65FA2209-C4B8-3EF3-8752-768EEA679D32
+  - target:          arm64e-ios
+    value:           DB29B544-007E-3BB6-B531-90A3FAAC8108
+install-name:    '/System/Library/PrivateFrameworks/AppServerSupport.framework/AppServerSupport'
+current-version: 2001
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ __launch_get_last_exit_reason_4SB, _launch_get_running_pid_4SB ]
+    objc-classes:    [ LASSProperties4RB, OSLaunchdDomain, OSLaunchdError, OSLaunchdJob, 
+                       OSLaunchdJobExitStatus, OSLaunchdJobInfo ]
+...

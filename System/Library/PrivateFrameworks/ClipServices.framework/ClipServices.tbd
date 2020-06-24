@@ -1,0 +1,59 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           E16F85FC-A873-32CE-9C62-250034AEDA40
+  - target:          arm64e-ios
+    value:           0DE9B4DC-5C97-38FA-B730-A79752A7F0AB
+install-name:    '/System/Library/PrivateFrameworks/ClipServices.framework/ClipServices'
+current-version: 20.1
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CPSAppClipBundleIdentifierPrefix, _CPSBypassAccountEligibilityCheck, 
+                       _CPSBypassAccountEligibilityCheckKey, _CPSClipIconSize, _CPSClipMetadataFetchIgnoresCache, 
+                       _CPSClipMetadataFetchIgnoresCacheKey, _CPSClipMetadataKeyABRClipAction, 
+                       _CPSClipMetadataKeyABRClipCaption, _CPSClipMetadataKeyABRClipHeroImage, 
+                       _CPSClipMetadataKeyABRClipName, _CPSClipMetadataKeyClipBundleID, 
+                       _CPSClipMetadataKeyClipBusinessIconURL, _CPSClipMetadataKeyClipBuyParams, 
+                       _CPSClipMetadataKeyClipIPAURL, _CPSClipMetadataKeyClipIncompatibleWithCurrentDevice, 
+                       _CPSClipMetadataKeyClipRequestURL, _CPSClipMetadataKeyClipRequestsLocationConfirmationPermission, 
+                       _CPSClipMetadataKeyClipRequestsNotificationPermission, _CPSClipMetadataKeyClipTargetURL, 
+                       _CPSClipMetadataKeyClipURL, _CPSClipMetadataKeyClipURLHash, 
+                       _CPSClipMetadataKeyClipVerifiedAssociatedDomains, _CPSClipMetadataKeyFullAppBundleID, 
+                       _CPSClipMetadataKeyFullAppCaption, _CPSClipMetadataKeyFullAppContentRating, 
+                       _CPSClipMetadataKeyFullAppIconCachedFilePath, _CPSClipMetadataKeyFullAppIconURL, 
+                       _CPSClipMetadataKeyFullAppName, _CPSClipMetadataKeyFullAppStoreURL, 
+                       _CPSClipMetadataKeyHasAppStoreMetadata, _CPSClipMetadataKeyInvocationPolicy, 
+                       _CPSClipMetadataKeyItemID, _CPSClipMetadataKeyPoweredByThirdParty, 
+                       _CPSClipMetadataKeyProvider, _CPSClipMetadataKeyStoreClipCaption, 
+                       _CPSClipMetadataKeyStoreClipHeroImage, _CPSClipMetadataKeyStoreClipName, 
+                       _CPSClipMetadataKeyStoreClipOpenButtonTitle, _CPSClipMetadataKeyWebClipID, 
+                       _CPSClipShouldStallProgressKey, _CPSClipURLIsEnabledPreferenceKey, 
+                       _CPSClipUsesDemoMetadataKey, _CPSClipsFeatureEnabled, _CPSConfigurationContextForObject, 
+                       _CPSDaemonMachServiceName, _CPSDeviceIsLocked, _CPSErrorDomain, 
+                       _CPSLaunchAlertViewControllerName, _CPSNotificationNameTestComplete, 
+                       _CPSSessionLaunchReasonDeveloperTools, _CPSSessionLaunchReasonLocationBased, 
+                       _CPSSessionLaunchReasonMail, _CPSSessionLaunchReasonMaps, 
+                       _CPSSessionLaunchReasonMessages, _CPSSessionLaunchReasonNFC, 
+                       _CPSSessionLaunchReasonOther, _CPSSessionLaunchReasonQR, _CPSSessionLaunchReasonSafari, 
+                       _CPSSessionLaunchReasonSpringBoard, _CPSShouldValidateAssociatedDomains, 
+                       _CPSShouldValidateAssociatedDomainsKey, _CPSSingleWhiteSpaceString, 
+                       _CPSViewServiceBundleIdentifier, _ClipLaunchOptionInstallSkipLaunchingKey, 
+                       _ClipLaunchOptionLocationConfirmationPermissionEnabledKey, 
+                       _ClipLaunchOptionPredefinedBundleIDKey, _ClipLaunchOptionUserNotificationPermissionEnabledKey, 
+                       __CPSLocalizedString ]
+    objc-classes:    [ CPSAnalyticsLogger, CPSAppBundleInstaller, CPSAppClipRecord, 
+                       CPSAppInfoFetcher, CPSAppInstaller, CPSBusinessItemFetcher, 
+                       CPSClipCleanupManager, CPSClipDataSQLiteStore, CPSClipEntryPointRecord, 
+                       CPSClipEventsReporter, CPSClipInvocationPolicy, CPSClipMetadata, 
+                       CPSClipMetadataRequest, CPSClipRequest, CPSClipURL, CPSImageDownloader, 
+                       CPSInstallationController, CPSLocationProvider, CPSOpenClipCardPresenter, 
+                       CPSPromise, CPSSession, CPSSessionConfiguration, CPSSessionManager, 
+                       CPSSessionProxy, CPSSessionRemoteObserver, CPSUtilities, CPSWebClip, 
+                       CPSWebClipStore ]
+...

@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           88208863-5B53-3ABF-AFD0-05EEDF9C1191
+  - target:          arm64e-ios
+    value:           5C709987-5849-3822-98FE-31B4B5C8DBD7
+install-name:    '/System/Library/PrivateFrameworks/RapportUI.framework/RapportUI'
+current-version: 0
+compatibility-version: 0
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _RPImageForDeviceModel, _RPUILocalizedString, _RPUILocalizedStringF, 
+                       _RPUILocalizedStringV ]
+    objc-classes:    [ RPPINEntryView, RPPairingManagerUIController, RPPairingPromptViewController, 
+                       RPPairingShowViewController, RPPairingUIController ]
+...

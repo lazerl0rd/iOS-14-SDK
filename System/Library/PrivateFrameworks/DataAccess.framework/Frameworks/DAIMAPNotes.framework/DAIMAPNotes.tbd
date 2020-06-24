@@ -1,0 +1,17 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           C1963199-25BA-3821-96AD-22AE9126BFF6
+  - target:          armv7s-ios
+    value:           2AD941E5-CA4F-30CE-8D3F-F348E981E2B7
+  - target:          arm64-ios
+    value:           62AB9FBB-3A24-3BE6-B8E4-CAD3F344B918
+  - target:          arm64e-ios
+    value:           FEEEBD66-F3C5-3354-BA22-694819461DBD
+install-name:    '/System/Library/PrivateFrameworks/DataAccess.framework/Frameworks/DAIMAPNotes.framework/DAIMAPNotes'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    objc-classes:    [ DAIMAPNotesAccount ]
+...

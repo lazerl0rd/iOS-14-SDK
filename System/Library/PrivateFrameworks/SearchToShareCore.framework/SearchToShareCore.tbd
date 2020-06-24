@@ -1,0 +1,39 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           515CA9C7-484B-352B-A569-93C80E933C78
+  - target:          arm64e-ios
+    value:           DE69E2CF-43F5-3ECB-A4DA-1896B0EB7D73
+install-name:    '/System/Library/PrivateFrameworks/SearchToShareCore.framework/SearchToShareCore'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _STSErrorDomain, _STSGridLayoutElementKindFooter, _STSGridLayoutElementKindHeader, 
+                       _STSImageCellIdentifier, _STSImageCellImageAnimationDuration, 
+                       _STSLegalNoticeDisplayMax, _STSLocalizedString, _STSSearchBrowserHeaderHeight, 
+                       _STSSearchModelResultTypeImage, _STSSearchModelResultTypeVideo, 
+                       _STSVideoCellIdentifier, _SearchToShareCoreVersionNumber, 
+                       _SearchToShareCoreVersionString, _UISizeAspectFitSizeInSizeScale, 
+                       __NumberOfQueryKey, _createNonAlphaImageFromImage, _kSTSImageDownloadOperationSize, 
+                       _kSTSImageDownloadOperationStatusCode, _kSTSImageDownloadOperationTimingData ]
+    objc-classes:    [ CategoriesDataSource, STSAlertController, STSAnimatedImageInfo, 
+                       STSCategoryResult, STSCategorySectionHeader, STSCategoryTableViewCell, 
+                       STSCategoryTitleTableViewCell, STSCategoryView, STSCategoryViewController, 
+                       STSCellDownloadOverlayView, STSDetailTransitionAnimator, STSDownloadOperationInfo, 
+                       STSDropDownRootView, STSFeedbackReporter, STSGridLayout, STSGridTile, 
+                       STSHeaderView, STSImageCache, STSImageCell, STSImageDetailViewController, 
+                       STSImageDownloadOperation, STSLoadMoreFooter, STSPayload, 
+                       STSPicker, STSPickerView, STSPluginLoader, STSProgressArcLayer, 
+                       STSResultDetailFooter, STSResultDetailView, STSResultDetailViewController, 
+                       STSRootView, STSRoundProgressView, STSSearchBar, STSSearchBrowserHeaderView, 
+                       STSSearchBrowserRootView, STSSearchBrowserRootViewController, 
+                       STSSearchDropDownViewController, STSSearchModel, STSSearchNoticeView, 
+                       STSSearchResultSection, STSSuggestionFooter, STSSuggestionView, 
+                       STSSuggestionViewController, STSTileOverlay, STSVideoCell, 
+                       STSVideoDetailViewController, STSZKWBrowserHeaderView, SuggestionsDataSource ]
+...

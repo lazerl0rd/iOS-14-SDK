@@ -1,0 +1,25 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           FF7D9F1D-912A-38F6-9F8F-1288D0F8D84E
+  - target:          armv7s-ios
+    value:           8E6CB208-684F-3CE6-A5F9-365AEB39D183
+  - target:          arm64-ios
+    value:           74EB7FB1-EAA6-3615-AF14-4609C3CF36D5
+  - target:          arm64e-ios
+    value:           3AF6036B-9893-37B9-918F-7B429090B7C1
+install-name:    '/System/Library/PrivateFrameworks/CoreDuetDaemonProtocol.framework/CoreDuetDaemonProtocol'
+exports:
+  - targets:         [ armv7-ios, armv7s-ios ]
+    symbols:         [ _CDDSetError ]
+    objc-classes:    [ CDDPluginConnection, CDDPluginResponder ]
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CDAttributeAdmissionBypassUsageHistory, _CDDProtocolMessageXPCFieldBudgetOptions, 
+                       _CDDProtocolMessageXPCFieldEndTimestamps, _CDDProtocolMessageXPCFieldStartTimestamps, 
+                       __CDDComplicationChangeNotificationString, __CDDComplicationChangeOverCloudNotificationString, 
+                       __CDDCurrentActiveComplications, __CDDExtensionIdForCompanionBundle ]
+    objc-classes:    [ CDDClientConnection, CDDHistoryWindow, CDDServerResponder, 
+                       CDDXPCConnection, CDPClientConnection ]
+...

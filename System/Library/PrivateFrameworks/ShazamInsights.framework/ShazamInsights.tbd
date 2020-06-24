@@ -1,0 +1,22 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           7E546473-3CB1-34C3-AB45-C7F135EC3E78
+  - target:          arm64e-ios
+    value:           D215BAE5-67AB-3E42-8AB1-6D2EF554E3F8
+install-name:    '/System/Library/PrivateFrameworks/ShazamInsights.framework/ShazamInsights'
+current-version: 43
+compatibility-version: 0
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SQErrorDomain ]
+    objc-classes:    [ SQGenre, SQMediaItem, SQPool, SQPoolQuery, SQProfile, SQQuery, 
+                       SQQueryProvider, SQRegion, SQRegionQuery, SQSimilarityCluster, 
+                       SQSimilarityClusterQuery ]
+...

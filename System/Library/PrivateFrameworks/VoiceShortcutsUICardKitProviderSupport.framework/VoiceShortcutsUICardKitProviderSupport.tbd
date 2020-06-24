@@ -1,0 +1,20 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           4161C793-C83B-38AF-A533-E049095DC5D3
+  - target:          arm64e-ios
+    value:           D6C34041-C5C4-3808-ADD5-3B70F613A06F
+install-name:    '/System/Library/PrivateFrameworks/VoiceShortcutsUICardKitProviderSupport.framework/VoiceShortcutsUICardKitProviderSupport'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _VoiceShortcutsUICardKitProviderSupportVersionNumber, _VoiceShortcutsUICardKitProviderSupportVersionString ]
+    objc-classes:    [ VSUIActionStatusView, VSUICKPEntryPoint, VSUIPerformActionCardProvider, 
+                       VSUIPerformActionCardViewController, VSUIProgressCardViewController, 
+                       VSUIVoiceShortcutCard, _VSUIActionStatusErrorView ]
+...

@@ -1,0 +1,25 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           D5BAA7DD-F953-3623-9BCA-A6CBEBCE3E1F
+  - target:          arm64e-ios
+    value:           EEC96DC2-3A4D-3E73-9AE0-F21F3738D06A
+install-name:    '/System/Library/PrivateFrameworks/FilesActionsUI.framework/FilesActionsUI'
+current-version: 32
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _FAUICreatePDFFromDocumentURLs, _FAUICreateTempFileURLInTemporaryDirectory, 
+                       _FAUICreateTemporaryFolderURLAppropriateForURL, _FAUIInitLogging, 
+                       _FAUIRotateImage, _FAUIRotateImages, _FAUIRotateMovies, _FilesActionsUIVersionNumber, 
+                       _FilesActionsUIVersionString, __AppendDocumentToDocument, 
+                       __AppendImageToDocument, __CleanupTemporaryImage, __CreateTemporaryImageFileURL, 
+                       __CreateTemporaryPDFFileURL, __DownsampleImage, __FAUIRotateMovie, 
+                       __FAUIRotationDirectionToRadians, __FormattedDate, __NewDocumentFileName, 
+                       __SortedFileURLsUsingStandardSort, _fauiLogHandle ]
+...

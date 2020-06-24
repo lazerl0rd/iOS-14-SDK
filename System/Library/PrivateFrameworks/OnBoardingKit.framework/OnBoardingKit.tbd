@@ -1,0 +1,64 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           C6030FEF-5B1C-38E7-9C7E-EF4A96908759
+  - target:          arm64e-ios
+    value:           2C676F63-EDB5-3C69-9F34-4C3E6543EF1F
+install-name:    '/System/Library/PrivateFrameworks/OnBoardingKit.framework/OnBoardingKit'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _OBPrivacyActivationIdentifier, _OBPrivacyActivityIdentifier, 
+                       _OBPrivacyAdvertisingIdentifier, _OBPrivacyAnalyticsAppIdentifier, 
+                       _OBPrivacyAnalyticsDeviceIdentifier, _OBPrivacyAnalyticsiCloudIdentifier, 
+                       _OBPrivacyAppStoreIdentifier, _OBPrivacyAppleArcadeIdentifier, 
+                       _OBPrivacyAppleCardIdentifier, _OBPrivacyAppleIDIdentifier, 
+                       _OBPrivacyAppleMusicFriendsIdentifier, _OBPrivacyAppleMusicIdentifier, 
+                       _OBPrivacyApplePayCashIdentifier, _OBPrivacyApplePayIdentifier, 
+                       _OBPrivacyAskSiriIdentifier, _OBPrivacyBusinessChatIdentifier, 
+                       _OBPrivacyClassKitIdentifier, _OBPrivacyCloudCallingIdentifier, 
+                       _OBPrivacyContactTracingIdentifier, _OBPrivacyDictationIdentifier, 
+                       _OBPrivacyEmergencySOSIdentifier, _OBPrivacyFaceIDIdentifier, 
+                       _OBPrivacyFindMyIdentifier, _OBPrivacyGameCenterIdentifier, 
+                       _OBPrivacyGymKitIdentifier, _OBPrivacyHealthRecordsIdentifier, 
+                       _OBPrivacyImproveHealthIdentifier, _OBPrivacyImproveHealthRecordsIdentifier, 
+                       _OBPrivacyImproveMapsIdentifier, _OBPrivacyImproveSiriIdentifier, 
+                       _OBPrivacyLIDARCameraIdentifier, _OBPrivacyLocationServicesIdentifier, 
+                       _OBPrivacyMapsRAPIdentifier, _OBPrivacyNewsIdentifier, _OBPrivacyNewsletterIdentifier, 
+                       _OBPrivacyPodcastsIdentifier, _OBPrivacyPrivacyPaneIdentifier, 
+                       _OBPrivacyPrivacyPaneMiniIdentifier, _OBPrivacySafariIdentifier, 
+                       _OBPrivacySafariSearchIdentifier, _OBPrivacySearchIdentifier, 
+                       _OBPrivacySensorKitIdentifier, _OBPrivacySignInWithAppleIdentifier, 
+                       _OBPrivacySiriIdentifier, _OBPrivacySiriSuggestionsIdentifier, 
+                       _OBPrivacySpotlightSearchIdentifier, _OBPrivacySpotlightSuggestionsIdentifier, 
+                       _OBPrivacyStocksIdentifier, _OBPrivacyTVAppIdentifier, _OBPrivacyTVProviderIdentifier, 
+                       _OBPrivacyTranslateIdentifier, _OBPrivacyVideosIdentifier, 
+                       _OBPrivacyWalletIdentifier, _OBPrivacyWheelchairIdentifier, 
+                       _OBPrivacyiBooksIdentifier, _OBPrivacyiCloudKeychainIdentifier, 
+                       _OBPrivacyiMessageFaceTimeIdentifier, _OBPrivacyiTunesStoreIdentifier, 
+                       _OBPrivacyiTunesUIdentifier, _OBProcessNameForPID, __OBCGFloatByDeviceHeight, 
+                       __OBHeaderTextStyle, __OBHeightByDeviceSize, __OBLoggingFacility, 
+                       __OBWidthByDeviceSize ]
+    objc-classes:    [ OBAnalyticsManager, OBAnimationController, OBAnimationState, 
+                       OBAnimationView, OBBaseWelcomeController, OBBoldTrayButton, 
+                       OBBuddyContinueButton, OBBuddyPaneHeaderView, OBBuddyStyle, 
+                       OBBulletedList, OBBundle, OBBundleManager, OBButtonTray, OBCapabilities, 
+                       OBDevice, OBFlow, OBHeaderAccessoryButton, OBHeaderView, OBImage, 
+                       OBLinkTrayButton, OBNavigationBarDisplayState, OBNavigationController, 
+                       OBPrivacyCombinedController, OBPrivacyFlow, OBPrivacyLinkController, 
+                       OBPrivacyLinkController_iOS, OBPrivacyPresenter, OBPrivacySplashController, 
+                       OBPrivacySplashListView, OBSetupAssistantBulletedListController, 
+                       OBSetupAssistantDynamicLayoutController, OBSetupAssistantFinishedController, 
+                       OBSetupAssistantHollowController, OBSetupAssistantLanguageLocaleController, 
+                       OBSetupAssistantPasscodeViewController, OBSetupAssistantProgressController, 
+                       OBSetupAssistantSpinnerController, OBSplashBullet, OBSplashContent, 
+                       OBSplashController, OBStackedIconTextList, OBTableWelcomeController, 
+                       OBTextAccessoryButton, OBTextBulletedListAccessoryButton, 
+                       OBTextSectionAccessoryButton, OBTextWelcomeController, OBTouchIDEnrollmentWelcomeController, 
+                       OBTrayButton, OBWelcomeController, OBWelcomeFullCenterContentController ]
+...

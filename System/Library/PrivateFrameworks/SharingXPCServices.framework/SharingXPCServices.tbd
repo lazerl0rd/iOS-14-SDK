@@ -1,0 +1,18 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           6CE5106B-3ECB-3E62-9A2B-32C51C1D928E
+  - target:          arm64e-ios
+    value:           B3942EA0-C472-3FFC-A808-361F00A8E73B
+install-name:    '/System/Library/PrivateFrameworks/SharingXPCServices.framework/SharingXPCServices'
+current-version: 1554.6
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _SharingXPCServicesVersionNumber, _SharingXPCServicesVersionString ]
+...

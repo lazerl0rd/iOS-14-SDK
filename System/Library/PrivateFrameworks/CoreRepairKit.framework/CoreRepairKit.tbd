@@ -1,0 +1,24 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           A61EE86E-14E1-3A81-8A71-34A3E5AAEDB4
+  - target:          arm64e-ios
+    value:           9B317516-8CA3-3B97-B864-18FA0F7BD562
+install-name:    '/System/Library/PrivateFrameworks/CoreRepairKit.framework/CoreRepairKit'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CRErrorDomain, _CoreRepairKitVersionNumber, _CoreRepairKitVersionString, 
+                       __logHandler, _connObj, _getDeviceChemID, _hasHadBatteryRepair, 
+                       _hasHadBatteryRepairUsingCBCC, _kCRAppleAuthCPInternalBattery, 
+                       _kCRAppleAuthCPInternalTouchController, _kMRDataCollectionQueryTimeout ]
+    objc-classes:    [ CRComponentAuth, CREANWriter, CRFDRBaseDeviceHandler, CRFDRDeviceController, 
+                       CRFDRSeal, CRPersonalizationElement, CRPersonalizationManager, 
+                       CRPluginsController, CRRepairStatus, CRURLSessionDelegate, 
+                       MRDataCollectionNotice ]
+...

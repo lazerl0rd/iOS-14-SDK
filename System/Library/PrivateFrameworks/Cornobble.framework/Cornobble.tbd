@@ -1,0 +1,25 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           F8BA4912-B01C-3B1C-B748-426781DF176F
+  - target:          arm64e-ios
+    value:           BD8D7665-9354-3C71-9526-034AAE735249
+install-name:    '/System/Library/PrivateFrameworks/Cornobble.framework/Cornobble'
+current-version: 17
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _CRNAxisFromScrollDirection, _CRNCGPointAdvanceInDirectionByAmount, 
+                       _CRNCGRectGetMidpoint, _CRNCGRectGetMidpointAlongSide, _CRNContentSizeAlongAxis, 
+                       _CRNContentSizeInDirection, _CRNOppositeDirectionFrom, _CRNPredominantAxisOfContentOf, 
+                       _CRNQuadrantOfContentOffsetFor, _CRNSizeAlongAxis, _CRNViewFrameInWindow ]
+    objc-classes:    [ CRNBlockScrollTestParameters, CRNFluidSplitViewInteraction, 
+                       CRNGroupScrollTestParameters, CRNOscillationScrollTestParameters, 
+                       CRNPagingScrollTestParameters, CRNStandardScrollTestParameters, 
+                       CornobbleTestRunner ]
+...

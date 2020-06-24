@@ -1,0 +1,28 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           66883CD8-C6D9-36AD-8E70-3080B14B773C
+  - target:          arm64e-ios
+    value:           9D0928AF-FF67-354C-B59A-D6F8120030DC
+install-name:    '/System/Library/PrivateFrameworks/AppleNeuralEngine.framework/AppleNeuralEngine'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AppleNeuralEngineVersionNumber, _AppleNeuralEngineVersionString, 
+                       __ANEDaemonInterface, __ANEDaemonInterfacePrivate, _kANEFCompilerOptionsFilenameKey, 
+                       _kANEFIntermediateBufferHandle, _kANEFModelANECIRValue, _kANEFModelCoreMLValue, 
+                       _kANEFModelDescriptionKey, _kANEFModelInputSymbolIndexArrayKey, 
+                       _kANEFModelIsEncrypted, _kANEFModelLoadPerformanceStatsKey, 
+                       _kANEFModelOutputSymbolIndexArrayKey, _kANEFModelPreCompiledValue, 
+                       _kANEFModelProcedureIDKey, _kANEFModelProceduresArrayKey, 
+                       _kANEFModelTypeKey, _kANEFPerformanceStatsMaskKey ]
+    objc-classes:    [ _ANEClient, _ANECloneHelper, _ANEDaemonConnection, _ANEDataReporter, 
+                       _ANEDeviceController, _ANEDeviceInfo, _ANEErrors, _ANEHashEncoding, 
+                       _ANEIOSurfaceObject, _ANELog, _ANEModel, _ANEPerformanceStats, 
+                       _ANEProgramForEvaluation, _ANEQoSMapper, _ANERequest, _ANEStrings ]
+...

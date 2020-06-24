@@ -1,0 +1,29 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ armv7-ios, armv7s-ios, arm64-ios, arm64e-ios ]
+uuids:
+  - target:          armv7-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          armv7s-ios
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64-ios
+    value:           D91D7C56-A0A9-3949-AB79-517AA7D9FE4E
+  - target:          arm64e-ios
+    value:           95F91C51-912E-364E-978D-B644784470DF
+install-name:    '/System/Library/PrivateFrameworks/AppleMediaServicesUI.framework/AppleMediaServicesUI'
+exports:
+  - targets:         [ arm64-ios, arm64e-ios, armv7-ios, armv7s-ios ]
+    symbols:         [ _AMSNotificationSettingsVisibleKey, _AMSUIDynamicClientOptionsKeyMarketingItemQueryParams ]
+    objc-classes:    [ AMSPaymentVerificationTokenResult, AMSUIAlertDialogTask, AMSUIAuthKitUpdateTask, 
+                       AMSUIAuthenticateTask, AMSUIBundleViewController, AMSUICGRectHelper, 
+                       AMSUICardMetadata, AMSUICommonButton, AMSUICommonCollectionView, 
+                       AMSUICommonDynamicColor, AMSUICommonLabel, AMSUICommonScreen, 
+                       AMSUICommonStackView, AMSUICommonTextView, AMSUICommonView, 
+                       AMSUICommonViewController, AMSUICommonVisualEffectView, AMSUIDynamicViewController, 
+                       AMSUIEngagementTask, AMSUIManageSubsriptionSpecifierProvider, 
+                       AMSUIMarketingItemViewController, AMSUIMessageGroup, AMSUINotificationSettingsViewController, 
+                       AMSUIOnboardingFeature, AMSUIOnboardingViewController, AMSUIPasswordSettingsViewController, 
+                       AMSUIPaymentVerificationTokenFetchTask, AMSUIPrivacyViewController, 
+                       AMSUISubscriptionsViewController, AMSUIUpdateMultiUserTokenTask, 
+                       AMSUIUserNotificationViewController, AMSUIWebAppearance, AMSUIWebViewController ]
+...
